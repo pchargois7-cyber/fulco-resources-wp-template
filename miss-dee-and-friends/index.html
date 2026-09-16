@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Magic Hair Bus</title>
+<meta name="description" content="Miss Dee and Friends presents The Magic Hair Bus: a mobile kids' hair salon rolling through the Houston area. Baby cuts, kids' cuts, sensory-friendly cuts, parties, pop-ups and home visits.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap">
+<style>
+  /* ---------- tokens ---------- */
+  :root {
+    --yellow: #FFD814;
+    --yellow-deep: #F2C400;
+    --teal: #2FC9BC;
+    --teal-ink: #0E7C74;
+    --teal-soft: #D7F6F2;
+    --lavender: #E6E6FA;
+    --ground: #F7F5FF;
+    --paper: #FFFFFF;
+    --ink: #241E4E;
+    --ink-soft: #5B5680;
+    --pink: #FF7BAC;
+    --pink-soft: #FFE1EC;
+    --line: #DCD8F0;
+    --shadow: 0 10px 30px rgba(36, 30, 78, 0.10);
+    --radius: 22px;
+    --display: "Fredoka", "Nunito", "Segoe UI Rounded", "Arial Rounded MT Bold", system-ui, sans-serif;
+    --body: "Nunito", "Segoe UI", system-ui, -apple-system, sans-serif;
+    color-scheme: light;
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: var(--body);
+    font-size: 17px;
+    line-height: 1.6;
+    color: var(--ink);
+    background: var(--ground);
+    background-image:
+      radial-gradient(circle at 6% 12%, rgba(255,216,20,.28) 0 7px, transparent 8px),
+      radial-gradient(circle at 92% 8%, rgba(47,201,188,.28) 0 6px, transparent 7px),
+      radial-gradient(circle at 78% 92%, rgba(255,123,172,.25) 0 5px, transparent 6px),
+      radial-gradient(circle at 18% 88%, rgba(47,201,188,.22) 0 5px, transparent 6px);
+    background-attachment: fixed;
+  }
+  img { max-width: 100%; display: block; }
+  a { color: var(--teal-ink); }
+  h1, h2, h3, h4 { font-family: var(--display); line-height: 1.1; margin: 0; text-wrap: balance; font-weight: 700; }
+  p { margin: 0; }
+  :focus-visible { outline: 3px solid var(--teal-ink); outline-offset: 3px; border-radius: 6px; }
+
+  .wrap { width: min(1120px, 100%); margin-inline: auto; padding-inline: 20px; }
+  section { padding-block: 72px; }
+  @media (max-width: 640px) { section { padding-block: 52px; } }
+
+  .eyebrow {
+    display: inline-block; font-family: var(--display); font-weight: 600; font-size: .95rem;
+    letter-spacing: .08em; text-transform: uppercase; color: var(--teal-ink);
+    background: var(--teal-soft); padding: 6px 14px; border-radius: 999px; margin-bottom: 14px;
+  }
+  .h2 { font-size: clamp(2rem, 4.2vw, 3rem); }
+  .lede { color: var(--ink-soft); font-size: 1.1rem; max-width: 60ch; }
+
+  /* ---------- buttons ---------- */
+  .btn {
+    display: inline-flex; align-items: center; gap: 10px; font-family: var(--display); font-weight: 600;
+    font-size: 1.05rem; padding: 14px 24px; border-radius: 999px; text-decoration: none; border: 3px solid var(--ink);
+    color: var(--ink); background: var(--paper); box-shadow: 0 5px 0 var(--ink); transition: transform .12s ease, box-shadow .12s ease;
+    cursor: pointer; line-height: 1;
+  }
+  .btn:hover { transform: translateY(2px); box-shadow: 0 3px 0 var(--ink); }
+  .btn:active { transform: translateY(5px); box-shadow: 0 0 0 var(--ink); }
+  .btn-yellow { background: var(--yellow); }
+  .btn-teal { background: var(--teal); }
+  .btn-pink { background: var(--pink); }
+  .btn-sm { padding: 9px 16px; font-size: .95rem; border-width: 2px; box-shadow: 0 3px 0 var(--ink); }
+  .btn-sm:hover { box-shadow: 0 2px 0 var(--ink); transform: translateY(1px); }
+  .btn svg { width: 20px; height: 20px; flex: none; }
+
+  /* ---------- header ---------- */
+  .topbar {
+    position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20;
+    background: rgba(247,245,255,.88); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+    border-bottom: 3px solid var(--ink);
+  }
+  .topbar .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 72px; }
+  .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--ink); font-family: var(--display); font-weight: 700; font-size: 1.15rem; line-height: 1.1; }
+  .brand .badge { width: 44px; height: 44px; border-radius: 14px; background: var(--yellow); border: 3px solid var(--ink); display: grid; place-items: center; flex: none; transform: rotate(-6deg); }
+  .brand .badge svg { width: 26px; height: 26px; }
+  .brand small { display: block; font-family: var(--body); font-weight: 700; font-size: .72rem; color: var(--ink-soft); letter-spacing: .06em; text-transform: uppercase; }
+  .nav { display: flex; align-items: center; gap: 4px; }
+  .nav a { text-decoration: none; color: var(--ink); font-weight: 800; font-size: .98rem; padding: 8px 12px; border-radius: 999px; }
+  .nav a:hover { background: var(--lavender); }
+  .nav .btn { margin-left: 8px; }
+  .menu-btn { display: none; border: 3px solid var(--ink); background: var(--paper); border-radius: 12px; width: 46px; height: 46px; place-items: center; cursor: pointer; box-shadow: 0 3px 0 var(--ink); }
+  .menu-btn svg { width: 24px; height: 24px; }
+  @media (max-width: 860px) {
+    .menu-btn { display: grid; }
+    .nav { display: none; position: absolute; left: 0; right: 0; top: 100%; background: var(--paper); border-bottom: 3px solid var(--ink); padding: 14px 20px 20px; flex-direction: column; align-items: stretch; gap: 6px; box-shadow: var(--shadow); }
+    .nav.open { display: flex; }
+    .nav a { padding: 12px 14px; font-size: 1.05rem; }
+    .nav .btn { margin: 8px 0 0; justify-content: center; }
+  }
+
+  /* ---------- hero ---------- */
+  .hero { padding-block: 56px 40px; overflow: hidden; }
+  .hero .wrap { display: grid; grid-template-columns: 1.05fr .95fr; gap: 40px; align-items: center; }
+  .hero h1 { font-size: clamp(2.6rem, 6.4vw, 4.6rem); letter-spacing: -.01em; }
+  .hero h1 .pop { display: inline-block; color: var(--ink); background: var(--yellow); padding: 0 .25em; border-radius: .25em; transform: rotate(-2deg); box-shadow: 4px 4px 0 var(--ink); }
+  .hero .presents { font-family: var(--display); font-weight: 600; font-size: clamp(1.1rem, 2.2vw, 1.4rem); color: var(--ink-soft); margin-bottom: 10px; }
+  .hero .lede { margin-top: 20px; }
+  .hero .cta { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 28px; }
+  .stickers { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 30px; }
+  .sticker {
+    font-family: var(--display); font-weight: 600; font-size: .9rem; padding: 8px 14px; border-radius: 999px;
+    border: 2.5px solid var(--ink); background: var(--paper); box-shadow: 3px 3px 0 var(--ink);
+  }
+  .sticker:nth-child(1) { background: var(--teal); transform: rotate(-3deg); }
+  .sticker:nth-child(2) { background: var(--pink); transform: rotate(2deg); }
+  .sticker:nth-child(3) { background: var(--lavender); transform: rotate(-1.5deg); }
+  .sticker:nth-child(4) { background: var(--yellow); transform: rotate(2.5deg); }
+  .bus-stage { position: relative; }
+  .bus-stage svg { width: 100%; height: auto; }
+  .bus { animation: bob 3.2s ease-in-out infinite; transform-origin: 50% 90%; }
+  .wheel { animation: spin 2.4s linear infinite; transform-box: fill-box; transform-origin: center; }
+  .sparkle { animation: twinkle 2s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+  .sparkle:nth-of-type(2) { animation-delay: .6s; }
+  .sparkle:nth-of-type(3) { animation-delay: 1.2s; }
+  @keyframes bob { 0%, 100% { transform: translateY(0) rotate(0); } 50% { transform: translateY(-7px) rotate(-.6deg); } }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  @keyframes twinkle { 0%, 100% { transform: scale(.7); opacity: .5; } 50% { transform: scale(1.15); opacity: 1; } }
+  @media (max-width: 900px) {
+    .hero .wrap { grid-template-columns: 1fr; }
+    .bus-stage { max-width: 520px; margin-inline: auto; }
+  }
+
+  /* ---------- marquee ---------- */
+  .marquee { background: var(--yellow); border-block: 3px solid var(--ink); overflow: hidden; padding-block: 12px; }
+  .marquee .track { display: flex; gap: 0; width: max-content; animation: slide 28s linear infinite; }
+  .marquee span { font-family: var(--display); font-weight: 600; font-size: 1.1rem; white-space: nowrap; padding-inline: 18px; }
+  .marquee span::after { content: "✦"; margin-left: 36px; color: var(--ink); }
+  @keyframes slide { to { transform: translateX(-50%); } }
+
+  /* ---------- services ---------- */
+  .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 20px; margin-top: 36px; }
+  .ticket {
+    background: var(--paper); border: 3px solid var(--ink); border-radius: var(--radius); padding: 26px 24px;
+    box-shadow: 6px 6px 0 var(--ink); display: flex; flex-direction: column; gap: 12px; position: relative;
+    transition: transform .15s ease;
+  }
+  .ticket:hover { transform: translate(-2px, -2px) rotate(-.5deg); }
+  .ticket .icon { width: 58px; height: 58px; border-radius: 18px; border: 3px solid var(--ink); display: grid; place-items: center; }
+  .ticket .icon svg { width: 32px; height: 32px; }
+  .ticket:nth-child(1) .icon { background: var(--yellow); }
+  .ticket:nth-child(2) .icon { background: var(--teal); }
+  .ticket:nth-child(3) .icon { background: var(--lavender); }
+  .ticket:nth-child(4) .icon { background: var(--pink); }
+  .ticket:nth-child(5) .icon { background: var(--yellow); }
+  .ticket:nth-child(6) .icon { background: var(--teal); }
+  .ticket h3 { font-size: 1.4rem; }
+  .ticket p { color: var(--ink-soft); font-size: 1rem; }
+  .ticket .tag { position: absolute; top: -14px; right: 18px; background: var(--pink); border: 2.5px solid var(--ink); border-radius: 999px; font-family: var(--display); font-weight: 600; font-size: .8rem; padding: 4px 12px; transform: rotate(3deg); }
+
+  /* ---------- events board ---------- */
+  .events { background: var(--ink); color: var(--paper); position: relative; }
+  .events .eyebrow { background: rgba(255,255,255,.12); color: var(--yellow); }
+  .events .lede { color: rgba(255,255,255,.78); }
+  .events-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 20px; }
+  .board { margin-top: 36px; display: grid; gap: 16px; }
+  .event {
+    display: grid; grid-template-columns: 96px 1fr auto; gap: 22px; align-items: center;
+    background: var(--paper); color: var(--ink); border: 3px solid var(--ink); border-radius: var(--radius);
+    padding: 20px 22px; box-shadow: 6px 6px 0 var(--teal);
+  }
+  .event.is-today { box-shadow: 6px 6px 0 var(--yellow); }
+  .event .date {
+    text-align: center; border: 3px solid var(--ink); border-radius: 18px; background: var(--yellow); padding: 10px 6px;
+    font-family: var(--display); line-height: 1; font-variant-numeric: tabular-nums;
+  }
+  .event .date .dow { font-size: .8rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; }
+  .event .date .day { font-size: 2.3rem; font-weight: 700; margin: 4px 0; }
+  .event .date .mon { font-size: .95rem; font-weight: 600; text-transform: uppercase; letter-spacing: .06em; }
+  .event .title { font-size: 1.45rem; }
+  .event .meta { display: flex; flex-wrap: wrap; gap: 6px 16px; color: var(--ink-soft); margin-top: 6px; font-weight: 700; font-size: .98rem; }
+  .event .meta span { display: inline-flex; align-items: center; gap: 6px; }
+  .event .meta svg { width: 16px; height: 16px; flex: none; }
+  .event .note { margin-top: 8px; color: var(--ink-soft); }
+  .event .pills { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 8px; }
+  .pill { font-family: var(--display); font-weight: 600; font-size: .78rem; letter-spacing: .04em; text-transform: uppercase; padding: 4px 10px; border-radius: 999px; border: 2px solid var(--ink); background: var(--teal-soft); }
+  .pill.today { background: var(--yellow); }
+  .pill.sample { background: var(--pink-soft); border-style: dashed; }
+  .event .actions { display: flex; flex-direction: column; gap: 10px; align-items: stretch; }
+  .event.past { opacity: .6; box-shadow: 6px 6px 0 var(--line); }
+  .board-empty { background: var(--paper); color: var(--ink); border: 3px dashed var(--yellow); border-radius: var(--radius); padding: 36px 28px; text-align: center; font-family: var(--display); font-size: 1.3rem; font-weight: 600; }
+  .board-empty a { color: var(--teal-ink); }
+  .board-foot { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 14px; margin-top: 24px; color: rgba(255,255,255,.7); font-size: .95rem; }
+  .board-foot label { display: inline-flex; align-items: center; gap: 8px; cursor: pointer; font-weight: 700; }
+  .board-foot input { width: 18px; height: 18px; accent-color: var(--yellow); }
+  .book-bus { margin-top: 28px; background: var(--yellow); color: var(--ink); border: 3px solid var(--paper); border-radius: var(--radius); padding: 26px 28px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 18px; }
+  .book-bus h3 { font-size: 1.6rem; }
+  .book-bus p { color: var(--ink-soft); font-weight: 700; }
+  @media (max-width: 720px) {
+    .event { grid-template-columns: 80px 1fr; }
+    .event .actions { grid-column: 1 / -1; flex-direction: row; flex-wrap: wrap; }
+    .event .date .day { font-size: 1.9rem; }
+  }
+
+  /* ---------- how it goes ---------- */
+  .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 36px; counter-reset: step; }
+  .step { background: var(--paper); border: 3px solid var(--ink); border-radius: var(--radius); padding: 28px 24px 26px; position: relative; box-shadow: 6px 6px 0 var(--lavender); }
+  .step::before {
+    counter-increment: step; content: counter(step);
+    position: absolute; top: -20px; left: 20px; width: 44px; height: 44px; border-radius: 50%; border: 3px solid var(--ink);
+    background: var(--teal); font-family: var(--display); font-weight: 700; font-size: 1.3rem; display: grid; place-items: center;
+  }
+  .step h3 { font-size: 1.35rem; margin-top: 8px; }
+  .step p { color: var(--ink-soft); margin-top: 8px; }
+  @media (max-width: 760px) { .steps { grid-template-columns: 1fr; gap: 30px; } }
+
+  /* ---------- meet miss dee ---------- */
+  .meet .wrap { display: grid; grid-template-columns: .9fr 1.1fr; gap: 48px; align-items: center; }
+  .frame { position: relative; }
+  .frame .photo {
+    aspect-ratio: 4 / 5; width: 100%; max-width: 100%; border: 3px solid var(--ink); border-radius: 28px; overflow: hidden;
+    background: var(--teal); box-shadow: 8px 8px 0 var(--yellow); transform: rotate(-2deg); display: grid; place-items: center;
+  }
+  .frame .photo img { width: 100%; height: 100%; object-fit: cover; }
+  .frame .photo .fallback { display: none; text-align: center; padding: 24px; font-family: var(--display); font-weight: 600; font-size: 1.2rem; color: var(--ink); }
+  .frame .photo .fallback svg { width: 120px; height: 120px; margin: 0 auto 10px; }
+  .frame .photo.no-img img { display: none; }
+  .frame .photo.no-img .fallback { display: block; }
+  .frame .caption { position: absolute; bottom: -18px; right: -6px; background: var(--paper); border: 2.5px solid var(--ink); border-radius: 999px; padding: 8px 16px; font-family: var(--display); font-weight: 600; box-shadow: 3px 3px 0 var(--ink); transform: rotate(3deg); }
+  .meet .copy p + p { margin-top: 14px; }
+  .meet .copy p { color: var(--ink-soft); font-size: 1.05rem; max-width: 62ch; }
+  .faves { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
+  .faves span { background: var(--paper); border: 2.5px solid var(--ink); border-radius: 999px; padding: 6px 14px; font-weight: 800; font-size: .92rem; }
+  .faves span b { color: var(--teal-ink); font-family: var(--display); font-weight: 600; margin-right: 4px; }
+  @media (max-width: 860px) { .meet .wrap { grid-template-columns: 1fr; } .frame { max-width: 420px; margin-inline: auto; } }
+
+  /* ---------- follow + book ---------- */
+  .follow-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 22px; margin-top: 36px; }
+  .panel { border: 3px solid var(--ink); border-radius: var(--radius); padding: 30px 28px; box-shadow: 6px 6px 0 var(--ink); }
+  .panel.book { background: var(--yellow); }
+  .panel.social { background: var(--paper); }
+  .panel h3 { font-size: 1.7rem; }
+  .panel p { color: var(--ink-soft); margin-top: 8px; font-weight: 700; }
+  .contact-list { list-style: none; margin: 20px 0 0; padding: 0; display: grid; gap: 12px; }
+  .contact-list a { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--ink); font-family: var(--display); font-weight: 600; font-size: 1.15rem; }
+  .contact-list .ico { width: 42px; height: 42px; border-radius: 12px; border: 2.5px solid var(--ink); background: var(--paper); display: grid; place-items: center; flex: none; }
+  .contact-list .ico svg { width: 22px; height: 22px; }
+  .social-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 20px; }
+  .follow-grid > * { min-width: 0; }
+  .contact-list a { min-width: 0; overflow-wrap: anywhere; }
+  @media (max-width: 800px) { .follow-grid { grid-template-columns: 1fr; } .contact-list a { font-size: 1.02rem; } }
+
+  /* ---------- footer ---------- */
+  footer { border-top: 3px solid var(--ink); padding-block: 34px; }
+  footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px; color: var(--ink-soft); font-size: .95rem; font-weight: 700; }
+  footer nav { display: flex; flex-wrap: wrap; gap: 4px 16px; }
+  footer nav a { color: var(--ink); text-decoration: none; }
+  footer nav a:hover { text-decoration: underline; }
+
+  /* ---------- wave dividers ---------- */
+  .wave { display: block; width: 100%; height: 48px; }
+  .wave.to-ink { background: var(--ground); }
+  .wave.from-ink { background: var(--ground); transform: scaleY(-1); }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .bus, .wheel, .sparkle, .marquee .track { animation: none !important; }
+    .btn, .ticket { transition: none; }
+  }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Miss Dee and Friends, The Magic Hair Bus">
+      <span class="badge" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#241E4E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M8.5 7.5 20 19M8.5 16.5 20 5"/></svg>
+      </span>
+      <span>Miss Dee &amp; Friends<small>The Magic Hair Bus</small></span>
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="nav" aria-label="Open menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#241E4E" stroke-width="2.6" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#events">Where's the bus?</a>
+      <a href="#how">First visit</a>
+      <a href="#meet">Meet Miss Dee</a>
+      <a class="btn btn-yellow btn-sm" href="tel:+18327869854">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.9.6 2.8.7a2 2 0 0 1 1.8 2z"/></svg>
+        Book now
+      </a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <p class="presents">Miss Dee and Friends presents…</p>
+        <h1>The <span class="pop">Magic</span> Hair&nbsp;Bus!</h1>
+        <p class="lede">A kids' hair salon on wheels, rolling through the Houston area. Baby's first cut, big-kid cuts, sensory-friendly cuts and party glam, all in a space built to make your child feel at home.</p>
+        <div class="cta">
+          <a class="btn btn-yellow" href="tel:+18327869854">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.9.6 2.8.7a2 2 0 0 1 1.8 2z"/></svg>
+            Call to book: (832) 786-9854
+          </a>
+          <a class="btn" href="#events">See where the bus is next</a>
+        </div>
+        <div class="stickers" aria-label="Highlights">
+          <span class="sticker">Sensory friendly</span>
+          <span class="sticker">Comes to you</span>
+          <span class="sticker">Ages 0 to 17</span>
+          <span class="sticker">Toy at the end</span>
+        </div>
+      </div>
+
+      <div class="bus-stage" aria-hidden="true">
+        <svg viewBox="0 0 560 360" role="img" aria-label="Illustration of the yellow Magic Hair Bus">
+          <defs>
+            <clipPath id="win"><rect x="0" y="0" width="560" height="360"/></clipPath>
+          </defs>
+          <!-- sparkles -->
+          <g fill="#FF7BAC">
+            <path class="sparkle" d="M70 60 l6 14 14 6 -14 6 -6 14 -6 -14 -14 -6 14 -6z"/>
+            <path class="sparkle" d="M500 40 l5 12 12 5 -12 5 -5 12 -5 -12 -12 -5 12 -5z" fill="#2FC9BC"/>
+            <path class="sparkle" d="M520 150 l4 10 10 4 -10 4 -4 10 -4 -10 -10 -4 10 -4z" fill="#FFD814"/>
+          </g>
+          <!-- clouds -->
+          <g fill="#FFFFFF" stroke="#241E4E" stroke-width="3">
+            <path d="M120 110c-14 0-24-10-22-22 2-10 12-16 22-14 4-14 20-22 34-16 12 4 18 16 16 28h6c8 0 14 6 14 12 0 7-6 12-14 12H120z"/>
+            <path d="M420 92c-10 0-18-8-16-16 1-8 9-12 16-10 3-10 15-16 25-12 9 3 13 12 12 21h4c6 0 10 4 10 9s-4 8-10 8H420z"/>
+          </g>
+          <!-- road -->
+          <rect x="0" y="318" width="560" height="42" fill="#241E4E"/>
+          <g stroke="#FFD814" stroke-width="5" stroke-dasharray="30 22"><path d="M0 340h560"/></g>
+
+          <g class="bus">
+            <!-- shadow -->
+            <ellipse cx="290" cy="318" rx="230" ry="10" fill="rgba(36,30,78,.25)"/>
+            <!-- body -->
+            <rect x="60" y="130" width="440" height="170" rx="36" fill="#FFD814" stroke="#241E4E" stroke-width="5"/>
+            <!-- roof sign -->
+            <rect x="200" y="98" width="180" height="44" rx="14" fill="#2FC9BC" stroke="#241E4E" stroke-width="5"/>
+            <text x="290" y="128" text-anchor="middle" font-family="Fredoka, Nunito, Arial, sans-serif" font-weight="700" font-size="22" fill="#241E4E">MAGIC HAIR BUS</text>
+            <!-- stripe -->
+            <rect x="60" y="236" width="440" height="14" fill="#241E4E"/>
+            <rect x="60" y="250" width="440" height="8" fill="#FF7BAC"/>
+            <!-- windows -->
+            <g fill="#DFF7FF" stroke="#241E4E" stroke-width="5">
+              <rect x="88" y="156" width="66" height="60" rx="14"/>
+              <rect x="170" y="156" width="66" height="60" rx="14"/>
+              <rect x="252" y="156" width="66" height="60" rx="14"/>
+              <rect x="334" y="156" width="66" height="60" rx="14"/>
+              <path d="M418 156h44a24 24 0 0 1 24 24v36h-68z"/>
+            </g>
+            <!-- little faces in windows -->
+            <g fill="#241E4E">
+              <circle cx="112" cy="196" r="9"/><circle cx="130" cy="196" r="9"/>
+              <circle cx="196" cy="196" r="9"/><circle cx="214" cy="196" r="9"/>
+              <circle cx="278" cy="196" r="9"/><circle cx="296" cy="196" r="9"/>
+              <circle cx="360" cy="196" r="9"/><circle cx="378" cy="196" r="9"/>
+            </g>
+            <g fill="none" stroke="#241E4E" stroke-width="3" stroke-linecap="round">
+              <path d="M112 200q9 10 18 0M196 200q9 10 18 0M278 200q9 10 18 0M360 200q9 10 18 0"/>
+            </g>
+            <!-- hearts + balloons on side -->
+            <path d="M104 272c-8-8-20 2-10 12l10 10 10-10c10-10-2-20-10-12z" fill="#FF7BAC" stroke="#241E4E" stroke-width="3"/>
+            <g stroke="#241E4E" stroke-width="3">
+              <circle cx="150" cy="276" r="10" fill="#2FC9BC"/><circle cx="176" cy="270" r="10" fill="#E6E6FA"/>
+              <path d="M150 286v14M176 280v20" fill="none"/>
+            </g>
+            <!-- scissors -->
+            <g fill="none" stroke="#241E4E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="416" cy="266" r="8" fill="#FFFFFF"/><circle cx="416" cy="292" r="8" fill="#FFFFFF"/>
+              <path d="M423 270 460 292M423 288 460 266"/>
+            </g>
+            <!-- door -->
+            <rect x="452" y="222" width="28" height="78" rx="8" fill="#FFFFFF" stroke="#241E4E" stroke-width="4"/>
+            <!-- lights -->
+            <rect x="484" y="262" width="18" height="22" rx="6" fill="#FFFFFF" stroke="#241E4E" stroke-width="4"/>
+            <rect x="60" y="262" width="18" height="22" rx="6" fill="#FF7BAC" stroke="#241E4E" stroke-width="4"/>
+          </g>
+          <!-- wheels -->
+          <g class="wheel">
+            <circle cx="150" cy="302" r="30" fill="#241E4E"/><circle cx="150" cy="302" r="14" fill="#FFFFFF" stroke="#241E4E" stroke-width="4"/>
+            <path d="M150 288v28M136 302h28" stroke="#241E4E" stroke-width="4" stroke-linecap="round"/>
+          </g>
+          <g class="wheel">
+            <circle cx="410" cy="302" r="30" fill="#241E4E"/><circle cx="410" cy="302" r="14" fill="#FFFFFF" stroke="#241E4E" stroke-width="4"/>
+            <path d="M410 288v28M396 302h28" stroke="#241E4E" stroke-width="4" stroke-linecap="round"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== MARQUEE ===================== -->
+  <div class="marquee" aria-hidden="true">
+    <div class="track">
+      <span>Baby's first cut</span><span>Kids' cuts</span><span>Sensory-friendly cuts</span><span>Birthday parties</span><span>Carnivals &amp; events</span><span>Home visits</span><span>Neighborhood pop-ups</span><span>Braids, tinsel &amp; glitter</span>
+      <span>Baby's first cut</span><span>Kids' cuts</span><span>Sensory-friendly cuts</span><span>Birthday parties</span><span>Carnivals &amp; events</span><span>Home visits</span><span>Neighborhood pop-ups</span><span>Braids, tinsel &amp; glitter</span>
+    </div>
+  </div>
+
+  <!-- ===================== SERVICES ===================== -->
+  <section id="services">
+    <div class="wrap">
+      <span class="eyebrow">What happens on the bus</span>
+      <h2 class="h2">Haircuts, but make them fun</h2>
+      <p class="lede">Every visit is personalized to your child. Wiggly toddlers, cautious first-timers and kids who need a little extra care are all regulars here.</p>
+
+      <div class="services-grid">
+        <article class="ticket">
+          <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#241E4E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="5"/><path d="M12 4V2M8 16c-3 1-5 3-5 6h18c0-3-2-5-5-6"/><path d="M9.5 9.5c.5.5 1.5 1 2.5 1s2-.5 2.5-1"/></svg></span>
+          <h3>Baby's first cut</h3>
+          <p>Gentle, quick and celebrated. We go at baby's pace and you leave with a certificate-worthy moment.</p>
+        </article>
+        <article class="ticket">
+          <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#241E4E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M8.5 7.5 20 19M8.5 16.5 20 5"/></svg></span>
+          <h3>Kids' cuts &amp; styles</h3>
+          <p>Trims, fades, bangs, braids and fresh looks for big kids and teens. Cartoons on, snacks optional.</p>
+        </article>
+        <article class="ticket">
+          <span class="tag">Our specialty</span>
+          <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#241E4E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14v-3a8 8 0 0 1 16 0v3"/><rect x="2" y="13" width="5" height="7" rx="2"/><rect x="17" y="13" width="5" height="7" rx="2"/></svg></span>
+          <h3>Sensory-friendly cuts</h3>
+          <p>Low lights, low noise, no rush. Built for kids with autism, Down syndrome and sensory sensitivities, one step at a time.</p>
+        </article>
+        <article class="ticket">
+          <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#241E4E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="9" cy="8" rx="5" ry="6"/><ellipse cx="16.5" cy="10" rx="4" ry="5"/><path d="M9 14v7M16.5 15v6M8 21h3"/></svg></span>
+          <h3>Parties &amp; carnivals</h3>
+          <p>Book the bus for birthdays, school carnivals and festivals. Glitter braids, spray color, hair tinsel and lots of photos.</p>
+        </article>
+        <article class="ticket">
+          <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#241E4E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11 12 3l9 8"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg></span>
+          <h3>Home &amp; neighborhood visits</h3>
+          <p>The bus parks at your curb or your cul-de-sac. Gather a few neighbors and make it a block-party haircut day.</p>
+        </article>
+        <article class="ticket">
+          <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#241E4E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.4 4.9 5.4.8-3.9 3.8.9 5.4L12 15.3 7.2 17.9l.9-5.4L4.2 8.7l5.4-.8z"/></svg></span>
+          <h3>Pop-ups near you</h3>
+          <p>We roll into parks, markets and community events around Houston. Check the board below to catch us.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EVENTS BOARD ===================== -->
+  <svg class="wave to-ink" viewBox="0 0 1440 48" preserveAspectRatio="none" aria-hidden="true"><path d="M0 24c120 24 240 24 360 0s240-24 360 0 240 24 360 0 240-24 360 0v24H0z" fill="#241E4E"/></svg>
+  <section id="events" class="events">
+    <div class="wrap">
+      <div class="events-head">
+        <div>
+          <span class="eyebrow">Upcoming events</span>
+          <h2 class="h2">Where's Bertha next?</h2>
+          <p class="lede">Yes, the bus has a name. Pop-ups, parties, carnivals and neighborhood visits, posted here as Miss Dee books them.</p>
+        </div>
+        <a class="btn btn-teal btn-sm" href="https://www.instagram.com/missdeeandfriends/" target="_blank" rel="noopener">Follow for last-minute stops</a>
+      </div>
+
+      <div class="board" id="board" aria-live="polite"></div>
+
+      <div class="board-foot">
+        <span id="boardCount"></span>
+        <label><input type="checkbox" id="showPast"> Show past events</label>
+      </div>
+
+      <div class="book-bus">
+        <div>
+          <h3>Want the bus at your event?</h3>
+          <p>Birthdays, school carnivals, church festivals, neighborhood block parties. We bring the salon and the fun.</p>
+        </div>
+        <a class="btn" href="mailto:missdeeandfriendz@gmail.com?subject=Book%20the%20Magic%20Hair%20Bus">Book a party</a>
+      </div>
+    </div>
+  </section>
+  <svg class="wave from-ink" viewBox="0 0 1440 48" preserveAspectRatio="none" aria-hidden="true"><path d="M0 24c120 24 240 24 360 0s240-24 360 0 240 24 360 0 240-24 360 0v24H0z" fill="#241E4E"/></svg>
+
+  <!-- ===================== HOW A VISIT GOES ===================== -->
+  <section id="how">
+    <div class="wrap">
+      <span class="eyebrow">First time?</span>
+      <h2 class="h2">How a visit goes</h2>
+      <p class="lede">No surprises. Here's the whole ride from booking to the toy at the end.</p>
+      <div class="steps">
+        <article class="step">
+          <h3>Book a time</h3>
+          <p>Call or text, or catch a pop-up. Tell us anything that helps: favorite show, sound sensitivities, a style photo.</p>
+        </article>
+        <article class="step">
+          <h3>Hop on the bus</h3>
+          <p>Kids get a tour first. They pick a seat, pick a cartoon and get comfy before a single snip. Parents ride along.</p>
+        </article>
+        <article class="step">
+          <h3>Pick a toy</h3>
+          <p>Every brave rider gets to grab something from the bus store. It's a tradition, and the kids do not let Miss Dee forget it.</p>
+        </article>
+      </div>
+      <p class="lede" style="margin-top:26px">Want the fine print? Read <a href="https://www.missdeeandfriends.com/uploads/b/86317690-8af2-11ee-b2f0-8785420409a5/The%20Magic%20Hair%20Bus%20Policies%20and%20Procedures.pdf" target="_blank" rel="noopener">the salon's policies and procedures</a> before your first visit.</p>
+    </div>
+  </section>
+
+  <!-- ===================== MEET MISS DEE ===================== -->
+  <section id="meet" class="meet">
+    <div class="wrap">
+      <div class="frame">
+        <div class="photo" id="deePhoto">
+          <img src="https://da9b5e3b46445247bd5f.cdn6.editmysite.com/uploads/b/da9b5e3b46445247bd5f1a72d7c6bba747fb161bd2a6a3c28ee727d840fcb708/D0A8060B-DF6E-40CA-9674-998A4F825B9B%20%281%29_1710379480.jpg?width=900" alt="Miss Dee smiling on the Magic Hair Bus" onerror="document.getElementById('deePhoto').classList.add('no-img')">
+          <div class="fallback">
+            <svg viewBox="0 0 120 120" aria-hidden="true">
+              <circle cx="60" cy="60" r="56" fill="#FFD814" stroke="#241E4E" stroke-width="4"/>
+              <circle cx="60" cy="50" r="20" fill="#FFFFFF" stroke="#241E4E" stroke-width="4"/>
+              <path d="M28 104c4-20 18-30 32-30s28 10 32 30" fill="#FFFFFF" stroke="#241E4E" stroke-width="4"/>
+              <path d="M40 46c2-14 12-22 22-22s18 8 20 22" fill="#241E4E"/>
+              <circle cx="53" cy="52" r="2.5" fill="#241E4E"/><circle cx="67" cy="52" r="2.5" fill="#241E4E"/>
+              <path d="M53 60q7 6 14 0" fill="none" stroke="#241E4E" stroke-width="3" stroke-linecap="round"/>
+            </svg>
+            Photo of Miss Dee goes here
+          </div>
+        </div>
+        <span class="caption">Hi, I'm Miss Dee!</span>
+      </div>
+      <div class="copy">
+        <span class="eyebrow">Meet Miss Dee</span>
+        <h2 class="h2">The friend behind the bus</h2>
+        <p style="margin-top:16px">Miss Dee grew up in Springfield, Missouri, and made Texas home after graduation to be close to family. In 2017, at 27, she noticed her town outside Houston had no children's salon at all, so she opened one. A few years later she put the whole thing on wheels.</p>
+        <p>Off the bus she's a dance therapist and yoga therapist, so movement and patience are baked into every visit. She knows how to meet a kid where they are, whether that means a dance break mid-cut or sitting quietly until they're ready.</p>
+        <p>Her favorite days end with a mommy-daughter date, and her favorite clients are the ones who walk up the bus steps nervous and walk down grinning.</p>
+        <div class="faves" aria-label="Miss Dee's favorite things">
+          <span><b>Ice cream:</b> pistachio almond</span>
+          <span><b>Drink:</b> boba tea</span>
+          <span><b>Dance partner:</b> her daughter</span>
+          <span><b>Ride:</b> Bertha the bus</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOLLOW + BOOK ===================== -->
+  <section id="book">
+    <div class="wrap">
+      <span class="eyebrow">Let's ride</span>
+      <h2 class="h2">Book a seat on the bus</h2>
+      <div class="follow-grid">
+        <div class="panel book">
+          <h3>Ready when you are</h3>
+          <p>Calls and texts are the fastest way to grab a spot. Parties and events, send an email with your date and we'll get back to you.</p>
+          <ul class="contact-list">
+            <li><a href="tel:+18327869854"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#241E4E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.9.6 2.8.7a2 2 0 0 1 1.8 2z"/></svg></span>(832) 786-9854</a></li>
+            <li><a href="mailto:missdeeandfriendz@gmail.com"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#241E4E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m3 7 9 6 9-6"/></svg></span>missdeeandfriendz@gmail.com</a></li>
+            <li><a href="https://www.vagaro.com/missdeeandfriends" target="_blank" rel="noopener"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#241E4E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></span>Book online</a></li>
+          </ul>
+        </div>
+        <div class="panel social">
+          <h3>See the bus in action</h3>
+          <p>Before-and-afters, bus tours and a lot of happy dances. Come say hi.</p>
+          <div class="social-row">
+            <a class="btn btn-sm btn-pink" href="https://www.instagram.com/missdeeandfriends/" target="_blank" rel="noopener">Instagram</a>
+            <a class="btn btn-sm btn-teal" href="https://www.tiktok.com/@missdeeandfriends" target="_blank" rel="noopener">TikTok</a>
+            <a class="btn btn-sm" href="https://www.facebook.com/missdeeandfriends1/" target="_blank" rel="noopener">Facebook</a>
+            <a class="btn btn-sm" href="https://www.youtube.com/@Missdeeandfriends" target="_blank" rel="noopener">YouTube</a>
+          </div>
+          <p style="margin-top:22px">Read what other parents say on our <a href="https://www.missdeeandfriends.com/reviews">reviews page</a>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="year">2026</span> Miss Dee and Friends · The Magic Hair Bus · Houston, TX</span>
+    <nav aria-label="Footer">
+      <a href="#services">Services</a>
+      <a href="#events">Events</a>
+      <a href="#meet">Meet Miss Dee</a>
+      <a href="#book">Book</a>
+      <a href="https://www.missdeeandfriends.com/reviews">Reviews</a>
+    </nav>
+  </div>
+</footer>
+
+<!-- The events board reads from events.js. Edit that file to add or change events. -->
+<script src="events.js"></script>
+<script>
+(function () {
+  // ---- menu ----
+  var menuBtn = document.getElementById('menuBtn');
+  var nav = document.getElementById('nav');
+  menuBtn.addEventListener('click', function () {
+    var open = nav.classList.toggle('open');
+    menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  nav.addEventListener('click', function (e) {
+    if (e.target.tagName === 'A') { nav.classList.remove('open'); menuBtn.setAttribute('aria-expanded', 'false'); }
+  });
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // ---- events board ----
+  var settings = Object.assign({ showPastEvents: false, emptyMessage: 'Nothing on the board right now.' }, window.MISS_DEE_EVENTS_SETTINGS || {});
+  var raw = Array.isArray(window.MISS_DEE_EVENTS) ? window.MISS_DEE_EVENTS : [];
+  var board = document.getElementById('board');
+  var count = document.getElementById('boardCount');
+  var showPast = document.getElementById('showPast');
+  showPast.checked = !!settings.showPastEvents;
+
+  var DOW = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+  var MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+  function parseDate(s) {
+    var m = /^(\d{4})-(\d{1,2})-(\d{1,2})$/.exec(String(s || '').trim());
+    if (!m) return null;
+    return new Date(+m[1], +m[2] - 1, +m[3]);
+  }
+  function parseTime(t) { // "10:00 AM" -> {h, m} or null
+    var m = /^(\d{1,2})(?::(\d{2}))?\s*([AaPp][Mm])?$/.exec(String(t || '').trim());
+    if (!m) return null;
+    var h = +m[1], mi = +(m[2] || 0), ap = (m[3] || '').toUpperCase();
+    if (ap === 'PM' && h < 12) h += 12;
+    if (ap === 'AM' && h === 12) h = 0;
+    return { h: h, m: mi };
+  }
+  function pad(n) { return (n < 10 ? '0' : '') + n; }
+  function stamp(d, t) {
+    var s = '' + d.getFullYear() + pad(d.getMonth() + 1) + pad(d.getDate());
+    return t ? s + 'T' + pad(t.h) + pad(t.m) + '00' : s;
+  }
+  function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
+
+  function calendarLink(ev, d) {
+    var st = parseTime(ev.startTime), en = parseTime(ev.endTime);
+    var dates;
+    if (st) {
+      var endStamp = en ? stamp(d, en) : stamp(d, { h: st.h + 2, m: st.m });
+      dates = stamp(d, st) + '/' + endStamp;
+    } else {
+      var next = new Date(d); next.setDate(next.getDate() + 1);
+      dates = stamp(d) + '/' + stamp(next);
+    }
+    var where = [ev.place, ev.address].filter(Boolean).join(', ');
+    return 'https://calendar.google.com/calendar/render?action=TEMPLATE'
+      + '&text=' + encodeURIComponent((ev.title || 'Magic Hair Bus') + ' with the Magic Hair Bus')
+      + '&dates=' + dates
+      + '&location=' + encodeURIComponent(where)
+      + '&details=' + encodeURIComponent((ev.note || '') + '\n\nMiss Dee and Friends: (832) 786-9854');
+  }
+  function mapLink(ev) {
+    var q = [ev.place, ev.address].filter(Boolean).join(', ');
+    return q ? 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(q) : '';
+  }
+
+  var pinIcon = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>';
+  var clockIcon = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>';
+
+  function render() {
+    var today = new Date(); today.setHours(0, 0, 0, 0);
+    var list = raw.map(function (ev) { return { ev: ev, d: parseDate(ev.date) }; })
+      .filter(function (x) { return x.d; })
+      .sort(function (a, b) { return a.d - b.d; });
+    var upcoming = list.filter(function (x) { return x.d >= today; });
+    var past = list.filter(function (x) { return x.d < today; }).reverse();
+    var shown = showPast.checked ? upcoming.concat(past) : upcoming;
+
+    board.innerHTML = '';
+    if (!shown.length) {
+      board.innerHTML = '<div class="board-empty">' + esc(settings.emptyMessage) + '</div>';
+    }
+    shown.forEach(function (x) {
+      var ev = x.ev, d = x.d;
+      var isPast = d < today, isToday = d.getTime() === today.getTime();
+      var pills = '';
+      if (ev.type) pills += '<span class="pill">' + esc(ev.type) + '</span>';
+      if (isToday) pills += '<span class="pill today">Today!</span>';
+      if (ev.sample) pills += '<span class="pill sample">Example</span>';
+      var time = ev.startTime ? esc(ev.startTime) + (ev.endTime ? ' to ' + esc(ev.endTime) : '') : '';
+      var meta = '';
+      if (time) meta += '<span>' + clockIcon + time + '</span>';
+      if (ev.place) meta += '<span>' + pinIcon + esc(ev.place) + (ev.address ? ' · ' + esc(ev.address) : '') + '</span>';
+      var actions = '';
+      var map = mapLink(ev);
+      if (map) actions += '<a class="btn btn-sm btn-teal" href="' + map + '" target="_blank" rel="noopener">Directions</a>';
+      if (!isPast) actions += '<a class="btn btn-sm btn-yellow" href="' + calendarLink(ev, d) + '" target="_blank" rel="noopener">Add to calendar</a>';
+      if (ev.link) actions += '<a class="btn btn-sm" href="' + esc(ev.link) + '" target="_blank" rel="noopener">Details</a>';
+
+      var el = document.createElement('article');
+      el.className = 'event' + (isPast ? ' past' : '') + (isToday ? ' is-today' : '');
+      el.innerHTML =
+        '<div class="date"><div class="dow">' + DOW[d.getDay()] + '</div><div class="day">' + d.getDate() + '</div><div class="mon">' + MON[d.getMonth()] + '</div></div>' +
+        '<div><div class="pills">' + pills + '</div><h3 class="title">' + esc(ev.title || 'Magic Hair Bus stop') + '</h3>' +
+        (meta ? '<div class="meta">' + meta + '</div>' : '') +
+        (ev.note ? '<p class="note">' + esc(ev.note) + '</p>' : '') + '</div>' +
+        '<div class="actions">' + actions + '</div>';
+      board.appendChild(el);
+    });
+
+    count.textContent = upcoming.length
+      ? upcoming.length + ' upcoming ' + (upcoming.length === 1 ? 'stop' : 'stops') + (past.length ? ' · ' + past.length + ' past' : '')
+      : (past.length ? past.length + ' past ' + (past.length === 1 ? 'stop' : 'stops') : '');
+  }
+  showPast.addEventListener('change', render);
+  render();
+})();
+</script>
+</body>
+</html>
