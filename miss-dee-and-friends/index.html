@@ -291,6 +291,30 @@
   .faves span b { color: var(--teal-ink); font-family: var(--display); font-weight: 600; margin-right: 4px; }
   @media (max-width: 860px) { .meet .wrap { grid-template-columns: 1fr; } .frame { max-width: 420px; margin-inline: auto; } }
 
+  /* ---------- reviews ---------- */
+  .reviews { background: var(--lavender); border-block: 3px solid var(--ink); }
+  .quote-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 26px 22px; margin-top: 40px; }
+  .bubble { position: relative; background: var(--paper); border: 3px solid var(--ink); border-radius: 26px; padding: 30px 28px 26px; box-shadow: 6px 6px 0 var(--ink); }
+  .bubble::after { content: ""; position: absolute; left: 40px; bottom: -18px; width: 26px; height: 26px; background: var(--paper); border-right: 3px solid var(--ink); border-bottom: 3px solid var(--ink); transform: skewX(20deg) rotate(45deg); }
+  .bubble:nth-child(1) { transform: rotate(-1deg); }
+  .bubble:nth-child(2) { transform: rotate(1.2deg); box-shadow: 6px 6px 0 var(--teal); }
+  .bubble:nth-child(3) { transform: rotate(.8deg); box-shadow: 6px 6px 0 var(--pink); }
+  .bubble:nth-child(4) { transform: rotate(-1.2deg); box-shadow: 6px 6px 0 var(--yellow); }
+  .bubble .mark { position: absolute; top: -22px; left: 22px; width: 44px; height: 44px; border-radius: 50%; border: 3px solid var(--ink); background: var(--yellow); display: grid; place-items: center; font-family: var(--display); font-weight: 700; font-size: 1.9rem; line-height: 1; padding-top: 8px; }
+  .bubble:nth-child(2) .mark { background: var(--teal); }
+  .bubble:nth-child(3) .mark { background: var(--pink); }
+  .bubble:nth-child(4) .mark { background: var(--lavender); }
+  .bubble blockquote { margin: 0; font-family: var(--display); font-weight: 500; font-size: 1.25rem; line-height: 1.4; color: var(--ink); text-wrap: pretty; }
+  .bubble figcaption { margin-top: 14px; font-weight: 800; color: var(--ink-soft); font-size: .95rem; }
+  .bubble figcaption::before { content: "— "; }
+  .dee-quote { margin-top: 48px; display: grid; grid-template-columns: auto 1fr; gap: 20px; align-items: center; background: var(--ink); color: var(--paper); border: 3px solid var(--ink); border-radius: var(--radius); padding: 24px 28px; }
+  .dee-quote .avatar { width: 72px; height: 72px; border-radius: 50%; border: 3px solid var(--yellow); overflow: hidden; background: var(--teal); }
+  .dee-quote .avatar img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 30%; }
+  .dee-quote blockquote { margin: 0; font-family: var(--display); font-weight: 500; font-size: clamp(1.15rem, 2.2vw, 1.5rem); line-height: 1.35; }
+  .dee-quote cite { display: block; margin-top: 8px; font-style: normal; font-weight: 800; color: var(--yellow); font-size: .95rem; }
+  .reviews-cta { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin-top: 28px; color: var(--ink-soft); font-weight: 700; }
+  @media (max-width: 760px) { .quote-grid { grid-template-columns: 1fr; gap: 30px; } .dee-quote { grid-template-columns: 1fr; } }
+
   /* ---------- follow + book ---------- */
   .follow-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 22px; margin-top: 36px; }
   .panel { border: 3px solid var(--ink); border-radius: var(--radius); padding: 30px 28px; box-shadow: 6px 6px 0 var(--ink); }
@@ -344,6 +368,7 @@
       <a href="#events">Where's the bus?</a>
       <a href="#how">First visit</a>
       <a href="#meet">Meet Miss Dee</a>
+      <a href="#reviews">Reviews</a>
       <a class="btn btn-yellow btn-sm" href="tel:+18327869854">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.9.6 2.8.7a2 2 0 0 1 1.8 2z"/></svg>
         Book now
@@ -622,6 +647,49 @@
     </div>
   </section>
 
+  <!-- ===================== REVIEWS ===================== -->
+  <section id="reviews" class="reviews">
+    <div class="wrap">
+      <span class="eyebrow">Kind words</span>
+      <h2 class="h2">What parents say after the ride</h2>
+      <p class="lede">Straight from the families who climb aboard, in their own words.</p>
+
+      <div class="quote-grid">
+        <figure class="bubble">
+          <span class="mark" aria-hidden="true">“</span>
+          <blockquote>Miss Dee was so sweet, gentle, and patient. What a blessing to have found her and we look forward to many more haircuts with her.</blockquote>
+          <figcaption>Parent of a toddler</figcaption>
+        </figure>
+        <figure class="bubble">
+          <span class="mark" aria-hidden="true">“</span>
+          <blockquote>You are the very best! Thank you for not giving up my little guy.</blockquote>
+          <figcaption>Parent of a child in the sensory tolerance program</figcaption>
+        </figure>
+        <figure class="bubble">
+          <span class="mark" aria-hidden="true">“</span>
+          <blockquote>Miss Dee has treated me and my kids like family since the day I met her. She's the only person I trust to cut their hair, and more importantly, the only person they will let cut their hair! She cares about them and it shows!</blockquote>
+          <figcaption>Parent of a toddler</figcaption>
+        </figure>
+        <figure class="bubble">
+          <span class="mark" aria-hidden="true">“</span>
+          <blockquote>Thank you for the amazing job that you do!</blockquote>
+          <figcaption>Parent of a child with sensory needs</figcaption>
+        </figure>
+      </div>
+
+      <div class="dee-quote">
+        <div class="avatar" aria-hidden="true"><img src="images/miss-dee.webp" alt=""></div>
+        <blockquote>I am grateful that my clients choose me to go through this journey with them.<cite>Miss Dee</cite></blockquote>
+      </div>
+
+      <div class="reviews-cta">
+        <span>Had a great ride?</span>
+        <a class="btn btn-sm btn-pink" href="https://www.facebook.com/missdeeandfriends1/" target="_blank" rel="noopener">Leave a review on Facebook</a>
+        <a class="btn btn-sm" href="mailto:missdeeandfriendz@gmail.com?subject=A%20note%20for%20Miss%20Dee">Send Miss Dee a note</a>
+      </div>
+    </div>
+  </section>
+
   <!-- ===================== FOLLOW + BOOK ===================== -->
   <section id="book">
     <div class="wrap">
@@ -646,7 +714,7 @@
             <a class="btn btn-sm" href="https://www.facebook.com/missdeeandfriends1/" target="_blank" rel="noopener">Facebook</a>
             <a class="btn btn-sm" href="https://www.youtube.com/@Missdeeandfriends" target="_blank" rel="noopener">YouTube</a>
           </div>
-          <p style="margin-top:22px">Read what other parents say on our <a href="https://www.missdeeandfriends.com/reviews">reviews page</a>.</p>
+          <p style="margin-top:22px">Read what other parents say in <a href="#reviews">kind words</a>.</p>
         </div>
       </div>
     </div>
@@ -661,7 +729,7 @@
       <a href="#events">Events</a>
       <a href="#meet">Meet Miss Dee</a>
       <a href="#book">Book</a>
-      <a href="https://www.missdeeandfriends.com/reviews">Reviews</a>
+      <a href="#reviews">Reviews</a>
       <a href="add-event.html" title="For Miss Dee: add or change events">Update events</a>
     </nav>
   </div>
