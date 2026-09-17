@@ -7,10 +7,22 @@ A fun, playful redesign of missdeeandfriends.com with an events board Miss Dee c
 | File | What it is | Who touches it |
 | --- | --- | --- |
 | `index.html` | The whole web page (design, copy, layout) | Designer/developer |
-| `events.js` | The events board. Plain list of upcoming stops | **Miss Dee** |
+| `add-event.html` | A form that writes `events.js` for you. Open it in a browser. | **Miss Dee** |
+| `events.js` | The events board. Plain list of upcoming stops | **Miss Dee** (through the form, or by hand) |
 | `README.md` | This file | Everyone |
 
-## Updating events (the 60-second version)
+## Updating events with the form (easiest)
+
+1. Open `add-event.html` in your browser (double-click it, or visit it on the site).
+2. Fill in the event and click **Add to the list**. Edit, duplicate or delete anything already there.
+3. Click **Download events.js**.
+4. Upload that file where the website lives, replacing the old `events.js`.
+
+The form remembers your work in the browser between visits, and **Start over from the
+file on the site** throws away the draft if you need a clean slate. The first time you
+open it you'll see three example events; click **Remove the example events**.
+
+## Updating events by hand (the 60-second version)
 
 Think of `events.js` as the chalkboard sign outside the bus. The web page reads the
 chalkboard every time someone visits, so whatever is written there is what shows up

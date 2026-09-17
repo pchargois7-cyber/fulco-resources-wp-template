@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Magic Hair Bus Event Editor</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap">
+<style>
+  :root {
+    --yellow: #FFD814; --teal: #2FC9BC; --teal-ink: #0E7C74; --teal-soft: #D7F6F2; --lavender: #E6E6FA;
+    --ground: #F7F5FF; --paper: #FFFFFF; --ink: #241E4E; --ink-soft: #5B5680; --pink: #FF7BAC; --pink-soft: #FFE1EC;
+    --line: #DCD8F0; --red: #D64545; --radius: 18px;
+    --display: "Fredoka", "Nunito", "Segoe UI Rounded", system-ui, sans-serif;
+    --body: "Nunito", "Segoe UI", system-ui, -apple-system, sans-serif;
+    color-scheme: light;
+  }
+  * { box-sizing: border-box; }
+  [hidden] { display: none !important; }
+  body { margin: 0; font-family: var(--body); font-size: 16px; line-height: 1.55; color: var(--ink); background: var(--ground); }
+  h1, h2, h3 { font-family: var(--display); font-weight: 700; margin: 0; line-height: 1.1; text-wrap: balance; }
+  p { margin: 0; }
+  a { color: var(--teal-ink); }
+  :focus-visible { outline: 3px solid var(--teal-ink); outline-offset: 2px; border-radius: 6px; }
+  .wrap { width: min(1180px, 100%); margin-inline: auto; padding-inline: 20px; }
+
+  .topbar { background: var(--yellow); border-bottom: 3px solid var(--ink); }
+  .topbar .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 66px; flex-wrap: wrap; padding-block: 10px; }
+  .topbar h1 { font-size: 1.35rem; }
+  .topbar h1 small { display: block; font-family: var(--body); font-weight: 800; font-size: .72rem; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-soft); }
+  .topbar a { color: var(--ink); font-weight: 800; text-decoration: none; }
+
+  .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-block: 26px; counter-reset: s; }
+  .steps div { background: var(--paper); border: 3px solid var(--ink); border-radius: var(--radius); padding: 14px 16px 14px 60px; position: relative; font-weight: 700; color: var(--ink-soft); }
+  .steps div b { color: var(--ink); font-family: var(--display); font-weight: 600; font-size: 1.1rem; display: block; }
+  .steps div::before { counter-increment: s; content: counter(s); position: absolute; left: 14px; top: 14px; width: 34px; height: 34px; border-radius: 50%; border: 3px solid var(--ink); background: var(--teal); font-family: var(--display); font-weight: 700; display: grid; place-items: center; color: var(--ink); }
+
+  .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: start; padding-bottom: 60px; }
+  .card { background: var(--paper); border: 3px solid var(--ink); border-radius: var(--radius); padding: 24px; box-shadow: 6px 6px 0 var(--ink); }
+  .card h2 { font-size: 1.5rem; margin-bottom: 6px; }
+  .card .sub { color: var(--ink-soft); font-weight: 700; margin-bottom: 18px; }
+
+  .form { display: grid; grid-template-columns: 1fr 1fr; gap: 14px 16px; }
+  .field { display: flex; flex-direction: column; gap: 6px; }
+  .field.full { grid-column: 1 / -1; }
+  label { font-family: var(--display); font-weight: 600; font-size: .95rem; }
+  label .opt { font-family: var(--body); font-weight: 700; color: var(--ink-soft); font-size: .8rem; margin-left: 6px; }
+  input, select, textarea { font: inherit; color: var(--ink); background: var(--paper); border: 2.5px solid var(--ink); border-radius: 12px; padding: 10px 12px; width: 100%; }
+  textarea { min-height: 80px; resize: vertical; }
+  input:focus, select:focus, textarea:focus { outline: 3px solid var(--teal); outline-offset: 0; }
+  .field.error input { border-color: var(--red); }
+  .err { color: var(--red); font-size: .85rem; font-weight: 700; display: none; }
+  .field.error .err { display: block; }
+  .hint { color: var(--ink-soft); font-size: .85rem; font-weight: 700; }
+
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; font-family: var(--display); font-weight: 600; font-size: 1rem; padding: 12px 20px; border-radius: 999px; border: 3px solid var(--ink); color: var(--ink); background: var(--paper); box-shadow: 0 4px 0 var(--ink); cursor: pointer; text-decoration: none; line-height: 1; }
+  .btn:hover { transform: translateY(1px); box-shadow: 0 3px 0 var(--ink); }
+  .btn:active { transform: translateY(4px); box-shadow: 0 0 0 var(--ink); }
+  .btn-yellow { background: var(--yellow); } .btn-teal { background: var(--teal); } .btn-pink { background: var(--pink); }
+  .btn-sm { padding: 8px 14px; font-size: .9rem; border-width: 2px; box-shadow: 0 3px 0 var(--ink); }
+  .btn-ghost { background: transparent; border-color: transparent; box-shadow: none; color: var(--ink-soft); text-decoration: underline; }
+  .btn-ghost:hover, .btn-ghost:active { transform: none; box-shadow: none; }
+  .actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; align-items: center; }
+
+  .preview { margin-top: 22px; }
+  .preview > h3 { font-size: 1rem; color: var(--ink-soft); text-transform: uppercase; letter-spacing: .06em; margin-bottom: 10px; }
+  .event { display: grid; grid-template-columns: 78px 1fr; gap: 16px; align-items: center; background: var(--paper); border: 3px solid var(--ink); border-radius: var(--radius); padding: 16px; box-shadow: 5px 5px 0 var(--teal); }
+  .event .date { text-align: center; border: 3px solid var(--ink); border-radius: 14px; background: var(--yellow); padding: 8px 4px; font-family: var(--display); line-height: 1; }
+  .event .dow { font-size: .7rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; }
+  .event .day { font-size: 1.9rem; font-weight: 700; margin: 3px 0; }
+  .event .mon { font-size: .8rem; font-weight: 600; text-transform: uppercase; letter-spacing: .06em; }
+  .event .title { font-size: 1.2rem; }
+  .event .meta { color: var(--ink-soft); font-weight: 700; font-size: .9rem; margin-top: 4px; }
+  .event .note { color: var(--ink-soft); font-size: .92rem; margin-top: 4px; }
+  .pill { display: inline-block; font-family: var(--display); font-weight: 600; font-size: .72rem; letter-spacing: .04em; text-transform: uppercase; padding: 3px 9px; border-radius: 999px; border: 2px solid var(--ink); background: var(--teal-soft); margin-bottom: 6px; margin-right: 6px; }
+  .pill.sample { background: var(--pink-soft); border-style: dashed; }
+  .pill.past { background: var(--lavender); }
+
+  .list { display: grid; gap: 10px; margin-top: 6px; }
+  .row { display: grid; grid-template-columns: 1fr auto; gap: 12px; align-items: center; border: 2.5px solid var(--ink); border-radius: 14px; padding: 12px 14px; background: var(--paper); }
+  .row.past { opacity: .6; }
+  .row.editing { background: var(--teal-soft); box-shadow: inset 0 0 0 2px var(--teal); }
+  .row .t { font-family: var(--display); font-weight: 600; font-size: 1.05rem; }
+  .row .d { color: var(--ink-soft); font-weight: 700; font-size: .9rem; }
+  .row .btns { display: flex; gap: 6px; flex-wrap: wrap; justify-content: end; }
+  .row .btns button { font-family: var(--display); font-weight: 600; font-size: .85rem; border: 2px solid var(--ink); background: var(--paper); border-radius: 999px; padding: 6px 12px; cursor: pointer; color: var(--ink); }
+  .row .btns button.del { background: var(--pink-soft); }
+  .empty { border: 3px dashed var(--yellow); border-radius: var(--radius); padding: 24px; text-align: center; font-family: var(--display); font-weight: 600; color: var(--ink-soft); }
+  .list-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; margin-bottom: 8px; }
+
+  .settings { display: grid; gap: 12px; margin-top: 8px; }
+  .check { display: flex; align-items: center; gap: 10px; font-weight: 700; }
+  .check input { width: 20px; height: 20px; accent-color: var(--teal-ink); }
+
+  .out { margin-top: 24px; }
+  .out .bar { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-bottom: 12px; }
+  .toast { font-weight: 800; color: var(--teal-ink); font-size: .95rem; min-height: 1.4em; }
+  pre { margin: 0; background: var(--ink); color: #EDEBFF; border-radius: 14px; padding: 16px; font: 12.5px/1.5 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; overflow: auto; max-height: 360px; white-space: pre; }
+  details summary { cursor: pointer; font-family: var(--display); font-weight: 600; color: var(--ink-soft); margin-bottom: 10px; }
+  .sticky { position: sticky; top: 16px; }
+  @media (max-width: 900px) { .cols { grid-template-columns: 1fr; } .steps { grid-template-columns: 1fr; } .sticky { position: static; } }
+  @media (max-width: 560px) { .form { grid-template-columns: 1fr; } .card { padding: 18px; } .row { grid-template-columns: 1fr; } .row .btns { justify-content: start; } }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <h1>Event Editor<small>Miss Dee's Magic Hair Bus</small></h1>
+    <a href="index.html">← Back to the website</a>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="steps" aria-label="How this works">
+    <div><b>Add or edit events</b>Fill in the form. The list on the right is what visitors will see.</div>
+    <div><b>Download events.js</b>Click the yellow button. It saves a fresh events.js file.</div>
+    <div><b>Replace the old file</b>Upload it where the website lives, over the old events.js. Done.</div>
+  </div>
+
+  <div class="cols">
+    <!-- ================= FORM ================= -->
+    <section class="card">
+      <h2 id="formTitle">Add an event</h2>
+      <p class="sub">Only the title and the date are required.</p>
+      <form id="form" class="form" novalidate>
+        <input type="hidden" id="editIndex" value="">
+        <div class="field full">
+          <label for="title">Event name</label>
+          <input id="title" name="title" placeholder="Saturday Pop-Up Cuts" autocomplete="off" required>
+          <span class="err">Give the event a name.</span>
+        </div>
+        <div class="field">
+          <label for="date">Date</label>
+          <input id="date" name="date" type="date" required>
+          <span class="err">Pick a date.</span>
+        </div>
+        <div class="field">
+          <label for="type">Type</label>
+          <select id="type" name="type">
+            <option>Pop-Up</option>
+            <option>Party</option>
+            <option>Carnival</option>
+            <option>Neighborhood Visit</option>
+            <option>Festival</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="startTime">Starts<span class="opt">optional</span></label>
+          <input id="startTime" name="startTime" type="time" step="300">
+        </div>
+        <div class="field">
+          <label for="endTime">Ends<span class="opt">optional</span></label>
+          <input id="endTime" name="endTime" type="time" step="300">
+        </div>
+        <div class="field full">
+          <label for="place">Place<span class="opt">optional</span></label>
+          <input id="place" name="place" placeholder="Neighborhood Park Pavilion" autocomplete="off">
+        </div>
+        <div class="field full">
+          <label for="address">Address<span class="opt">optional, powers the Directions button</span></label>
+          <input id="address" name="address" placeholder="123 Main St, Houston, TX" autocomplete="off">
+        </div>
+        <div class="field full">
+          <label for="note">Note to parents<span class="opt">optional</span></label>
+          <textarea id="note" name="note" placeholder="Walk-ups welcome. First-timers get a bus tour before their cut."></textarea>
+        </div>
+        <div class="field full">
+          <label for="link">Link<span class="opt">optional, a Facebook event or ticket page</span></label>
+          <input id="link" name="link" type="url" placeholder="https://" autocomplete="off">
+        </div>
+      </form>
+      <div class="actions">
+        <button type="button" class="btn btn-teal" id="saveBtn">Add to the list</button>
+        <button type="button" class="btn btn-ghost" id="cancelBtn" hidden>Cancel editing</button>
+      </div>
+
+      <div class="preview">
+        <h3>Preview</h3>
+        <div id="preview"></div>
+      </div>
+    </section>
+
+    <!-- ================= LIST + OUTPUT ================= -->
+    <div class="sticky">
+      <section class="card">
+        <div class="list-head">
+          <div>
+            <h2>Events on the site</h2>
+            <p class="sub" id="listCount"></p>
+          </div>
+          <button type="button" class="btn btn-sm btn-ghost" id="clearSamples" hidden>Remove the example events</button>
+        </div>
+        <div class="list" id="list"></div>
+
+        <details style="margin-top:18px">
+          <summary>Board settings</summary>
+          <div class="settings">
+            <label class="check"><input type="checkbox" id="showPast"> Show past events on the website too</label>
+            <div class="field">
+              <label for="emptyMessage">Message when nothing is scheduled</label>
+              <input id="emptyMessage">
+            </div>
+          </div>
+        </details>
+
+        <div class="out">
+          <div class="bar">
+            <button type="button" class="btn btn-yellow" id="downloadBtn">Download events.js</button>
+            <button type="button" class="btn" id="copyBtn">Copy the code instead</button>
+            <span class="toast" id="toast"></span>
+          </div>
+          <details>
+            <summary>Show the file that will be saved</summary>
+            <pre id="code"></pre>
+          </details>
+          <p class="hint" style="margin-top:12px">Your work is saved in this browser as you go. <button type="button" class="btn btn-ghost btn-sm" id="resetBtn">Start over from the file on the site</button></p>
+        </div>
+      </section>
+    </div>
+  </div>
+</main>
+
+<script src="events.js"></script>
+<script>
+(function () {
+  var $ = function (id) { return document.getElementById(id); };
+  var DOW = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+  var MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  var STORE = 'missdee-events-draft-v1';
+  var fields = ['title', 'date', 'type', 'startTime', 'endTime', 'place', 'address', 'note', 'link'];
+
+  // ---------- helpers ----------
+  function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
+  function pad(n) { return (n < 10 ? '0' : '') + n; }
+  function parseDate(s) { var m = /^(\d{4})-(\d{1,2})-(\d{1,2})$/.exec(String(s || '').trim()); return m ? new Date(+m[1], +m[2] - 1, +m[3]) : null; }
+  // "10:00 AM" -> "10:00" (for the time input); "" stays ""
+  function to24(t) {
+    var m = /^(\d{1,2})(?::(\d{2}))?\s*([AaPp][Mm])?$/.exec(String(t || '').trim());
+    if (!m) return '';
+    var h = +m[1], mi = +(m[2] || 0), ap = (m[3] || '').toUpperCase();
+    if (ap === 'PM' && h < 12) h += 12;
+    if (ap === 'AM' && h === 12) h = 0;
+    return pad(h) + ':' + pad(mi);
+  }
+  // "14:30" -> "2:30 PM" (the format the website file uses)
+  function to12(t) {
+    var m = /^(\d{1,2}):(\d{2})$/.exec(String(t || '').trim());
+    if (!m) return '';
+    var h = +m[1], mi = m[2], ap = h >= 12 ? 'PM' : 'AM';
+    h = h % 12; if (h === 0) h = 12;
+    return h + ':' + mi + ' ' + ap;
+  }
+  function today() { var d = new Date(); d.setHours(0, 0, 0, 0); return d; }
+
+  // ---------- state ----------
+  var fromFile = {
+    events: (Array.isArray(window.MISS_DEE_EVENTS) ? window.MISS_DEE_EVENTS : []).map(function (e) { return Object.assign({}, e); }),
+    settings: Object.assign({ showPastEvents: false, emptyMessage: 'Nothing on the board right now. Follow us on Instagram to catch the next pop-up!' }, window.MISS_DEE_EVENTS_SETTINGS || {})
+  };
+  var state = load() || JSON.parse(JSON.stringify(fromFile));
+
+  function load() {
+    try { var s = localStorage.getItem(STORE); return s ? JSON.parse(s) : null; } catch (e) { return null; }
+  }
+  function save() {
+    try { localStorage.setItem(STORE, JSON.stringify(state)); } catch (e) { /* private window, fine */ }
+  }
+
+  // ---------- form ----------
+  function readForm() {
+    var ev = {};
+    fields.forEach(function (f) { ev[f] = $(f).value.trim(); });
+    ev.startTime = to12(ev.startTime);
+    ev.endTime = to12(ev.endTime);
+    return ev;
+  }
+  function fillForm(ev) {
+    fields.forEach(function (f) { $(f).value = ev && ev[f] != null ? ev[f] : ''; });
+    if (ev) { $('startTime').value = to24(ev.startTime); $('endTime').value = to24(ev.endTime); }
+    if (!ev) $('type').value = 'Pop-Up';
+  }
+  function validate() {
+    var ok = true;
+    ['title', 'date'].forEach(function (f) {
+      var bad = !$(f).value.trim();
+      $(f).parentNode.classList.toggle('error', bad);
+      if (bad) ok = false;
+    });
+    return ok;
+  }
+  function setEditing(i) {
+    $('editIndex').value = i == null ? '' : i;
+    $('formTitle').textContent = i == null ? 'Add an event' : 'Edit event';
+    $('saveBtn').textContent = i == null ? 'Add to the list' : 'Save changes';
+    $('cancelBtn').hidden = i == null;
+    renderList();
+  }
+
+  $('saveBtn').addEventListener('click', function () {
+    if (!validate()) { $('title').value.trim() ? $('date').focus() : $('title').focus(); return; }
+    var ev = readForm();
+    var i = $('editIndex').value;
+    if (i === '') state.events.push(ev); else state.events[+i] = ev;
+    fillForm(null); setEditing(null); save(); renderAll();
+    toast(i === '' ? 'Added. Download the file when you are done.' : 'Saved.');
+  });
+  $('cancelBtn').addEventListener('click', function () { fillForm(null); setEditing(null); renderPreview(); });
+  fields.forEach(function (f) { $(f).addEventListener('input', renderPreview); $(f).addEventListener('change', renderPreview); });
+
+  // ---------- preview ----------
+  function eventCard(ev, opts) {
+    opts = opts || {};
+    var d = parseDate(ev.date);
+    var isPast = d && d < today();
+    var time = ev.startTime ? esc(ev.startTime) + (ev.endTime ? ' to ' + esc(ev.endTime) : '') : '';
+    var where = [ev.place, ev.address].filter(Boolean).map(esc).join(' · ');
+    return '<article class="event">' +
+      '<div class="date"><div class="dow">' + (d ? DOW[d.getDay()] : '—') + '</div><div class="day">' + (d ? d.getDate() : '?') + '</div><div class="mon">' + (d ? MON[d.getMonth()] : 'date') + '</div></div>' +
+      '<div>' + (ev.type ? '<span class="pill">' + esc(ev.type) + '</span>' : '') + (ev.sample ? '<span class="pill sample">Example</span>' : '') + (isPast ? '<span class="pill past">Past, hidden</span>' : '') +
+      '<h3 class="title">' + (esc(ev.title) || '<span style="color:var(--ink-soft)">Your event name</span>') + '</h3>' +
+      (time || where ? '<div class="meta">' + [time, where].filter(Boolean).join(' · ') + '</div>' : '') +
+      (ev.note ? '<p class="note">' + esc(ev.note) + '</p>' : '') + '</div></article>';
+  }
+  function renderPreview() { $('preview').innerHTML = eventCard(readForm()); }
+
+  // ---------- list ----------
+  function sorted() {
+    return state.events.map(function (ev, i) { return { ev: ev, i: i, d: parseDate(ev.date) }; })
+      .sort(function (a, b) { return (a.d || 0) - (b.d || 0); });
+  }
+  function renderList() {
+    var rows = sorted();
+    var editing = $('editIndex').value;
+    var t = today();
+    var samples = state.events.filter(function (e) { return e.sample; }).length;
+    $('clearSamples').hidden = !samples;
+    $('listCount').textContent = rows.length ? rows.length + (rows.length === 1 ? ' event' : ' events') + (samples ? ', ' + samples + ' of them examples' : '') : 'No events yet. Add one on the left.';
+    if (!rows.length) { $('list').innerHTML = '<div class="empty">The board is empty. Visitors will see your "nothing scheduled" message.</div>'; return; }
+    $('list').innerHTML = rows.map(function (r) {
+      var isPast = r.d && r.d < t;
+      var when = r.d ? DOW[r.d.getDay()] + ', ' + MON[r.d.getMonth()] + ' ' + r.d.getDate() + ' ' + r.d.getFullYear() : 'No date';
+      if (r.ev.startTime) when += ' · ' + r.ev.startTime;
+      return '<div class="row' + (isPast ? ' past' : '') + (String(r.i) === editing ? ' editing' : '') + '">' +
+        '<div><div class="t">' + esc(r.ev.title || 'Untitled') + (r.ev.sample ? ' <span class="pill sample">Example</span>' : '') + '</div>' +
+        '<div class="d">' + esc(when) + (r.ev.place ? ' · ' + esc(r.ev.place) : '') + (isPast ? ' · past' : '') + '</div></div>' +
+        '<div class="btns"><button type="button" data-edit="' + r.i + '">Edit</button><button type="button" data-copy="' + r.i + '">Duplicate</button><button type="button" class="del" data-del="' + r.i + '">Delete</button></div></div>';
+    }).join('');
+  }
+  $('list').addEventListener('click', function (e) {
+    var b = e.target.closest('button'); if (!b) return;
+    if (b.hasAttribute('data-edit')) {
+      var ev = state.events[+b.getAttribute('data-edit')];
+      var copy = Object.assign({}, ev); delete copy.sample;
+      fillForm(copy); setEditing(+b.getAttribute('data-edit')); renderPreview();
+      $('title').focus(); window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else if (b.hasAttribute('data-copy')) {
+      var src = Object.assign({}, state.events[+b.getAttribute('data-copy')]); delete src.sample;
+      fillForm(src); $('date').value = ''; setEditing(null); renderPreview();
+      $('date').focus(); window.scrollTo({ top: 0, behavior: 'smooth' });
+      toast('Copied into the form. Pick a new date and add it.');
+    } else if (b.hasAttribute('data-del')) {
+      var i = +b.getAttribute('data-del');
+      if (!confirm('Delete "' + (state.events[i].title || 'this event') + '"?')) return;
+      state.events.splice(i, 1);
+      if ($('editIndex').value !== '' && +$('editIndex').value === i) { fillForm(null); setEditing(null); }
+      save(); renderAll(); toast('Deleted.');
+    }
+  });
+  $('clearSamples').addEventListener('click', function () {
+    state.events = state.events.filter(function (e) { return !e.sample; });
+    save(); renderAll(); toast('Example events removed.');
+  });
+
+  // ---------- settings ----------
+  $('showPast').addEventListener('change', function () { state.settings.showPastEvents = this.checked; save(); renderCode(); });
+  $('emptyMessage').addEventListener('input', function () { state.settings.emptyMessage = this.value; save(); renderCode(); });
+
+  // ---------- output ----------
+  function q(s) { return JSON.stringify(String(s == null ? '' : s)); }
+  function buildFile() {
+    var head = [
+      '/* ==========================================================================',
+      '   MISS DEE\'S EVENTS BOARD  —  this is the only file the website reads for events',
+      '   ==========================================================================',
+      '',
+      '   Easiest way to change this file: open add-event.html in your browser,',
+      '   use the form, and click "Download events.js". Then replace this file',
+      '   with the one you downloaded.',
+      '',
+      '   Or edit by hand. Rules of thumb:',
+      '   - Keep the quotes " " around every value',
+      '   - Keep the comma after every line and after every }',
+      '   - date must look like "2026-10-18"  (year-month-day)',
+      '   - Past events hide automatically unless showPastEvents is true',
+      '',
+      '   Last saved from the editor: ' + new Date().toLocaleString(),
+      '   ========================================================================== */',
+      '',
+      'window.MISS_DEE_EVENTS_SETTINGS = {',
+      '  showPastEvents: ' + (state.settings.showPastEvents ? 'true' : 'false') + ',',
+      '  emptyMessage: ' + q(state.settings.emptyMessage),
+      '};',
+      '',
+      'window.MISS_DEE_EVENTS = ['
+    ];
+    var body = sorted().map(function (r) {
+      var e = r.ev;
+      var lines = [
+        '  {',
+        '    title: ' + q(e.title) + ',',
+        '    date: ' + q(e.date) + ',',
+        '    startTime: ' + q(e.startTime) + ',',
+        '    endTime: ' + q(e.endTime) + ',',
+        '    type: ' + q(e.type) + ',',
+        '    place: ' + q(e.place) + ',',
+        '    address: ' + q(e.address) + ',',
+        '    note: ' + q(e.note) + ',',
+        '    link: ' + q(e.link) + (e.sample ? ',' : '')
+      ];
+      if (e.sample) lines.push('    sample: true');
+      lines.push('  }');
+      return lines.join('\n');
+    }).join(',\n\n');
+    return head.join('\n') + '\n' + (body ? '\n' + body + '\n' : '') + '\n];\n';
+  }
+  function renderCode() { $('code').textContent = buildFile(); }
+
+  $('downloadBtn').addEventListener('click', function () {
+    var blob = new Blob([buildFile()], { type: 'text/javascript' });
+    var a = document.createElement('a');
+    a.href = URL.createObjectURL(blob); a.download = 'events.js';
+    document.body.appendChild(a); a.click(); document.body.removeChild(a);
+    setTimeout(function () { URL.revokeObjectURL(a.href); }, 2000);
+    toast('Downloaded events.js. Upload it over the old one.');
+  });
+  $('copyBtn').addEventListener('click', function () {
+    var text = buildFile();
+    var done = function () { toast('Copied. Paste it into events.js and save.'); };
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(text).then(done, fallback); else fallback();
+    function fallback() {
+      var ta = document.createElement('textarea'); ta.value = text; document.body.appendChild(ta); ta.select();
+      try { document.execCommand('copy'); done(); } catch (e) { toast('Could not copy. Open "Show the file" below and copy it by hand.'); }
+      document.body.removeChild(ta);
+    }
+  });
+  $('resetBtn').addEventListener('click', function () {
+    if (!confirm('Throw away your changes here and reload the events from the file on the site?')) return;
+    state = JSON.parse(JSON.stringify(fromFile));
+    try { localStorage.removeItem(STORE); } catch (e) {}
+    fillForm(null); setEditing(null); renderAll(); toast('Reloaded from the file.');
+  });
+
+  var toastTimer;
+  function toast(msg) { $('toast').textContent = msg; clearTimeout(toastTimer); toastTimer = setTimeout(function () { $('toast').textContent = ''; }, 5000); }
+
+  function renderAll() {
+    $('showPast').checked = !!state.settings.showPastEvents;
+    $('emptyMessage').value = state.settings.emptyMessage || '';
+    renderList(); renderPreview(); renderCode();
+  }
+  fillForm(null);
+  renderAll();
+})();
+</script>
+</body>
+</html>
