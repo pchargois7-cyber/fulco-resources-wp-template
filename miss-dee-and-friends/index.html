@@ -170,7 +170,7 @@
   .events .eyebrow { background: rgba(255,255,255,.12); color: var(--yellow); }
   .events .lede { color: rgba(255,255,255,.78); }
   .events-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 20px; }
-  .board { margin-top: 36px; display: grid; gap: 16px; }
+  .board { margin-top: 16px; display: grid; gap: 16px; }
   .event {
     display: grid; grid-template-columns: 96px 1fr auto; gap: 22px; align-items: center;
     background: var(--paper); color: var(--ink); border: 3px solid var(--ink); border-radius: var(--radius);
@@ -195,6 +195,56 @@
   .pill.sample { background: var(--pink-soft); border-style: dashed; }
   .event .actions { display: flex; flex-direction: column; gap: 10px; align-items: stretch; }
   .event.past { opacity: .6; box-shadow: 6px 6px 0 var(--line); }
+  /* ---------- month calendar ---------- */
+  .cal { margin-top: 36px; background: var(--paper); color: var(--ink); border: 3px solid var(--ink); border-radius: var(--radius); box-shadow: 6px 6px 0 var(--pink); overflow: hidden; }
+  .cal-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 16px 18px; border-bottom: 3px solid var(--ink); background: var(--yellow); flex-wrap: wrap; }
+  .cal-head h3 { font-size: 1.5rem; min-width: 12ch; }
+  .cal-nav { display: flex; align-items: center; gap: 8px; }
+  .cal-nav button { font-family: var(--display); font-weight: 600; font-size: 1rem; border: 2.5px solid var(--ink); background: var(--paper); color: var(--ink); border-radius: 999px; padding: 8px 14px; cursor: pointer; box-shadow: 0 3px 0 var(--ink); line-height: 1; }
+  .cal-nav button:hover { transform: translateY(1px); box-shadow: 0 2px 0 var(--ink); }
+  .cal-nav button.icon { width: 40px; height: 40px; padding: 0; display: grid; place-items: center; }
+  .cal-nav button.icon svg { width: 20px; height: 20px; }
+  .cal-dow { display: grid; grid-template-columns: repeat(7, 1fr); background: var(--lavender); border-bottom: 2px solid var(--ink); }
+  .cal-dow span { text-align: center; font-family: var(--display); font-weight: 600; font-size: .82rem; letter-spacing: .08em; text-transform: uppercase; padding: 8px 0; color: var(--ink-soft); }
+  .cal-grid { display: grid; grid-template-columns: repeat(7, 1fr); }
+  .cal-day { min-height: 96px; border: 0; border-right: 2px solid var(--line); border-bottom: 2px solid var(--line); padding: 6px; display: flex; flex-direction: column; gap: 4px; background: var(--paper); text-align: left; font: inherit; color: inherit; cursor: default; position: relative; }
+  .cal-day:nth-child(7n) { border-right: 0; }
+  .cal-day.other { background: var(--ground); color: var(--ink-soft); }
+  .cal-day.other .num { opacity: .45; }
+  .cal-day .num { font-family: var(--display); font-weight: 600; font-size: .95rem; width: 28px; height: 28px; display: grid; place-items: center; border-radius: 50%; font-variant-numeric: tabular-nums; }
+  .cal-day.today .num { background: var(--yellow); border: 2px solid var(--ink); }
+  .cal-day.has { cursor: pointer; }
+  .cal-day.has:hover { background: var(--teal-soft); }
+  .cal-day.selected { background: var(--teal-soft); box-shadow: inset 0 0 0 3px var(--ink); }
+  .cal-day:focus-visible { outline: 3px solid var(--teal-ink); outline-offset: -3px; }
+  .chip { display: block; font-family: var(--display); font-weight: 600; font-size: .74rem; line-height: 1.2; padding: 3px 7px; border-radius: 8px; border: 2px solid var(--ink); background: var(--teal); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .chip.t-party { background: var(--pink); }
+  .chip.t-carnival, .chip.t-festival { background: var(--yellow); }
+  .chip.t-neighborhood-visit { background: var(--lavender); }
+  .chip.t-other { background: var(--paper); }
+  .chip.past { opacity: .5; }
+  .dots { display: none; flex-wrap: wrap; gap: 4px; }
+  .dots i { width: 9px; height: 9px; border-radius: 50%; border: 2px solid var(--ink); background: var(--teal); }
+  .dots i.t-party { background: var(--pink); }
+  .dots i.t-carnival, .dots i.t-festival { background: var(--yellow); }
+  .dots i.t-neighborhood-visit { background: var(--lavender); }
+  .dots i.t-other { background: var(--paper); }
+  .cal-legend { display: flex; flex-wrap: wrap; gap: 8px 16px; padding: 12px 18px; border-top: 2px solid var(--line); font-size: .85rem; font-weight: 700; color: var(--ink-soft); }
+  .cal-legend span { display: inline-flex; align-items: center; gap: 6px; }
+  .cal-legend i { width: 12px; height: 12px; border-radius: 4px; border: 2px solid var(--ink); background: var(--teal); }
+  .filter-note { display: none; margin-top: 20px; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; background: var(--teal); color: var(--ink); border: 3px solid var(--ink); border-radius: 999px; padding: 10px 12px 10px 20px; font-family: var(--display); font-weight: 600; }
+  .filter-note.on { display: flex; }
+  .filter-note button { font-family: var(--display); font-weight: 600; font-size: .95rem; border: 2.5px solid var(--ink); background: var(--paper); color: var(--ink); border-radius: 999px; padding: 8px 14px; cursor: pointer; box-shadow: 0 3px 0 var(--ink); line-height: 1; }
+  .board-title { margin-top: 36px; display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+  .board-title h3 { font-size: 1.5rem; color: var(--paper); }
+  .board-title span { color: rgba(255,255,255,.7); font-weight: 700; font-size: .95rem; }
+  @media (max-width: 640px) {
+    .cal-day { min-height: 58px; padding: 4px; }
+    .cal-day .num { width: 24px; height: 24px; font-size: .85rem; }
+    .chip { display: none; }
+    .dots { display: flex; }
+    .cal-head h3 { font-size: 1.25rem; }
+  }
   .board-empty { background: var(--paper); color: var(--ink); border: 3px dashed var(--yellow); border-radius: var(--radius); padding: 36px 28px; text-align: center; font-family: var(--display); font-size: 1.3rem; font-weight: 600; }
   .board-empty a { color: var(--teal-ink); }
   .board-foot { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 14px; margin-top: 24px; color: rgba(255,255,255,.7); font-size: .95rem; }
@@ -470,10 +520,34 @@
         <a class="btn btn-teal btn-sm" href="https://www.instagram.com/missdeeandfriends/" target="_blank" rel="noopener">Follow for last-minute stops</a>
       </div>
 
+      <div class="cal" id="cal">
+        <div class="cal-head">
+          <h3 id="calTitle">Month</h3>
+          <div class="cal-nav">
+            <button type="button" id="calToday">Today</button>
+            <button type="button" class="icon" id="calPrev" aria-label="Previous month"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m15 5-7 7 7 7"/></svg></button>
+            <button type="button" class="icon" id="calNext" aria-label="Next month"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m9 5 7 7-7 7"/></svg></button>
+          </div>
+        </div>
+        <div class="cal-dow" aria-hidden="true"><span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span></div>
+        <div class="cal-grid" id="calGrid" role="grid" aria-label="Events calendar"></div>
+        <div class="cal-legend" aria-hidden="true">
+          <span><i></i> Pop-Up</span>
+          <span><i style="background:var(--pink)"></i> Party</span>
+          <span><i style="background:var(--yellow)"></i> Carnival / Festival</span>
+          <span><i style="background:var(--lavender)"></i> Neighborhood Visit</span>
+          <span>Tap a day to see its stops</span>
+        </div>
+      </div>
+
+      <div class="filter-note" id="filterNote"><span id="filterText"></span><button type="button" id="filterClear">Show all stops</button></div>
+
+      <div class="board-title"><h3>All upcoming stops</h3><span id="boardCount"></span></div>
       <div class="board" id="board" aria-live="polite"></div>
 
+
       <div class="board-foot">
-        <span id="boardCount"></span>
+        <span></span>
         <label><input type="checkbox" id="showPast"> Show past events</label>
       </div>
 
@@ -664,14 +738,75 @@
   var pinIcon = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>';
   var clockIcon = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>';
 
+  function key(d) { return d.getFullYear() + '-' + pad(d.getMonth() + 1) + '-' + pad(d.getDate()); }
+  function typeClass(t) { return 't-' + String(t || 'other').toLowerCase().replace(/[^a-z]+/g, '-'); }
+
+  var today = new Date(); today.setHours(0, 0, 0, 0);
+  var list = raw.map(function (ev) { return { ev: ev, d: parseDate(ev.date) }; })
+    .filter(function (x) { return x.d; })
+    .sort(function (a, b) { return a.d - b.d; });
+  var byDay = {};
+  list.forEach(function (x) { var k = key(x.d); (byDay[k] = byDay[k] || []).push(x); });
+
+  var selected = null; // 'YYYY-MM-DD' or null
+  var view = { y: today.getFullYear(), m: today.getMonth() };
+  var firstUpcoming = list.filter(function (x) { return x.d >= today; })[0];
+  if (firstUpcoming && !Object.keys(byDay).some(function (k) { return k.slice(0, 7) === key(today).slice(0, 7); })) {
+    view = { y: firstUpcoming.d.getFullYear(), m: firstUpcoming.d.getMonth() };
+  }
+
+  var calTitle = document.getElementById('calTitle');
+  var calGrid = document.getElementById('calGrid');
+  var filterNote = document.getElementById('filterNote');
+  var filterText = document.getElementById('filterText');
+  var MONTH_LONG = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
+  function renderCalendar() {
+    calTitle.textContent = MONTH_LONG[view.m] + ' ' + view.y;
+    var first = new Date(view.y, view.m, 1);
+    var start = new Date(first); start.setDate(1 - first.getDay());
+    var html = '';
+    for (var i = 0; i < 42; i++) {
+      var d = new Date(start); d.setDate(start.getDate() + i);
+      if (i === 35 && d.getMonth() !== view.m) break; // skip an all-other-month sixth row
+      var k = key(d), evs = byDay[k] || [];
+      var cls = 'cal-day' + (d.getMonth() !== view.m ? ' other' : '') + (k === key(today) ? ' today' : '') + (evs.length ? ' has' : '') + (k === selected ? ' selected' : '');
+      var isPast = d < today;
+      var chips = evs.map(function (x) { return '<span class="chip ' + typeClass(x.ev.type) + (isPast ? ' past' : '') + '" title="' + esc(x.ev.title) + '">' + esc(x.ev.title || 'Bus stop') + '</span>'; }).join('');
+      var dots = evs.length ? '<span class="dots">' + evs.map(function (x) { return '<i class="' + typeClass(x.ev.type) + '"></i>'; }).join('') + '</span>' : '';
+      var label = DOW[d.getDay()] + ' ' + MON[d.getMonth()] + ' ' + d.getDate() + (evs.length ? ', ' + evs.length + (evs.length === 1 ? ' stop' : ' stops') : '');
+      html += evs.length
+        ? '<button type="button" class="' + cls + '" data-day="' + k + '" aria-label="' + label + '" aria-pressed="' + (k === selected) + '"><span class="num">' + d.getDate() + '</span>' + chips + dots + '</button>'
+        : '<div class="' + cls + '" aria-label="' + label + '"><span class="num">' + d.getDate() + '</span></div>';
+    }
+    calGrid.innerHTML = html;
+  }
+
+  calGrid.addEventListener('click', function (e) {
+    var btn = e.target.closest('[data-day]');
+    if (!btn) return;
+    selected = selected === btn.getAttribute('data-day') ? null : btn.getAttribute('data-day');
+    renderCalendar(); render();
+    if (selected) document.getElementById('filterNote').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  });
+  document.getElementById('calPrev').addEventListener('click', function () { view.m--; if (view.m < 0) { view.m = 11; view.y--; } renderCalendar(); });
+  document.getElementById('calNext').addEventListener('click', function () { view.m++; if (view.m > 11) { view.m = 0; view.y++; } renderCalendar(); });
+  document.getElementById('calToday').addEventListener('click', function () { view = { y: today.getFullYear(), m: today.getMonth() }; renderCalendar(); });
+  document.getElementById('filterClear').addEventListener('click', function () { selected = null; renderCalendar(); render(); });
+
   function render() {
-    var today = new Date(); today.setHours(0, 0, 0, 0);
-    var list = raw.map(function (ev) { return { ev: ev, d: parseDate(ev.date) }; })
-      .filter(function (x) { return x.d; })
-      .sort(function (a, b) { return a.d - b.d; });
     var upcoming = list.filter(function (x) { return x.d >= today; });
     var past = list.filter(function (x) { return x.d < today; }).reverse();
-    var shown = showPast.checked ? upcoming.concat(past) : upcoming;
+    var shown;
+    if (selected) {
+      shown = byDay[selected] || [];
+      var sd = parseDate(selected);
+      filterText.textContent = 'Showing ' + DOW[sd.getDay()] + ', ' + MON[sd.getMonth()] + ' ' + sd.getDate();
+      filterNote.classList.add('on');
+    } else {
+      shown = showPast.checked ? upcoming.concat(past) : upcoming;
+      filterNote.classList.remove('on');
+    }
 
     board.innerHTML = '';
     if (!shown.length) {
@@ -710,6 +845,7 @@
       : (past.length ? past.length + ' past ' + (past.length === 1 ? 'stop' : 'stops') : '');
   }
   showPast.addEventListener('change', render);
+  renderCalendar();
   render();
 })();
 </script>

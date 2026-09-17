@@ -41,6 +41,9 @@ An event looks like this:
 
 Things the page does for you automatically:
 
+- Draws the month calendar and the list from the same file. One edit updates both.
+- Colors each calendar chip by its `type` (Pop-Up teal, Party pink, Carnival/Festival yellow, Neighborhood Visit lavender).
+
 - Sorts events by date, soonest first.
 - Hides events once their date has passed (visitors can tick "Show past events" if they want).
 - Adds a **Directions** button (Google Maps) from `place` + `address`.
