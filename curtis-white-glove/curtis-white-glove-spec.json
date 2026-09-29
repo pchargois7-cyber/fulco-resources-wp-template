@@ -1,0 +1,241 @@
+{
+  "meta": {
+    "title": "White Glove Moving — Curtis Specialized Moving & Storage, Dallas TX",
+    "slug": "white-glove-moving-dallas",
+    "canvas": false,
+    "seo_title": "White Glove Movers in Dallas, TX | Curtis Specialized Moving",
+    "seo_description": "Family-owned white glove movers in Dallas since 2003. Fine art, antiques, chandeliers, custom crating and climate-controlled storage across DFW. 4.7★ on Google.",
+    "primary_keyword": "white glove movers dallas",
+    "business": {
+      "name": "Curtis Specialized Moving & Storage",
+      "city": "Dallas, TX",
+      "phone": "(214) 634-0304",
+      "url": "https://curtisms.com"
+    }
+  },
+  "brand": {
+    "primary": "#B53C07",
+    "accent": "#A8894F",
+    "dark": "#2B2118",
+    "dark_alt": "#463A2D",
+    "light": "#FDFBF8",
+    "surface": "#F5F1EA",
+    "muted": "#5C564F",
+    "body_font": "Inter",
+    "display_font": "Cormorant Garamond",
+    "radius": 4,
+    "max_width": 1140,
+    "section_padding": 120
+  },
+  "options": {
+    "pro": false,
+    "animations": true,
+    "parallax": false,
+    "faq_style": "accordion",
+    "seed": 2003
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "id": "hero",
+      "eyebrow": "White Glove Movers · Dallas–Fort Worth",
+      "headline": "White glove moving in Dallas for the things that can't be replaced",
+      "sub": "Fine art, antiques, chandeliers and heirloom furniture — packed, crated, moved and placed by the same Dallas crew, then hung, installed or stored in climate control until you're ready.",
+      "image": "https://curtisms.com/wp-content/uploads/2024/08/Chandelier-Paul-4.jpg",
+      "overlay_opacity": 0.66,
+      "min_height": 88,
+      "ctas": [
+        { "text": "Request a Private Consultation", "url": "#contact", "style": "primary", "icon": "fas fa-arrow-right" },
+        { "text": "Call (214) 634-0304", "url": "tel:2146340304", "style": "ghost" }
+      ],
+      "trust": "Family-owned · Serving Dallas since 2003 · 4.7★ from 87 Google reviews"
+    },
+    {
+      "type": "trust_bar",
+      "items": [
+        { "value": "2003", "label": "Moving Dallas since" },
+        { "value": "4.7★", "label": "87 Google reviews" },
+        { "value": "20+ yrs", "label": "Trusted by Dallas designers" },
+        { "value": "Climate", "label": "Controlled, catalogued storage" }
+      ]
+    },
+    {
+      "type": "features",
+      "eyebrow": "What white glove should mean",
+      "headline": "\"White glove\" isn't a regulated term. Here's what it means at Curtis.",
+      "sub": "Any mover can put the phrase on a truck. The difference shows up in who packs the art, who hangs the chandelier, and what happens to the pieces that aren't ready to go into the new house yet.",
+      "items": [
+        {
+          "icon": "fas fa-box-open",
+          "title": "Packed by people who know antiques",
+          "text": "Crews are matched to the job. Collections, antiques and art get packers who handle them every week — with custom crating for the pieces that shouldn't ride in a box."
+        },
+        {
+          "icon": "fas fa-lightbulb",
+          "title": "We finish the room, not just the move",
+          "text": "Art and mirrors hung, chandeliers installed, furniture placed where it belongs, boxes unpacked and taken away. The move ends when the room is finished."
+        },
+        {
+          "icon": "fas fa-warehouse",
+          "title": "Storage that's catalogued, not stacked",
+          "text": "Between houses or during a renovation, pieces go into climate-controlled storage and are individually catalogued, so what comes back out is exactly what went in."
+        }
+      ]
+    },
+    {
+      "type": "services",
+      "on_dark": true,
+      "eyebrow": "White glove services",
+      "headline": "Everything a careful move involves, under one Dallas company",
+      "items": [
+        {
+          "title": "Fine art & antiques",
+          "text": "Paintings, sculpture, figurines and antique furniture wrapped, crated and moved with the care their value demands.",
+          "image": "https://curtisms.com/wp-content/uploads/2024/08/Angel-Install-5.jpg",
+          "link": "https://curtisms.com/services2/art-mirror-statuary-tapestry-and-chandelier-installation-hanging/",
+          "link_text": "Art & installation"
+        },
+        {
+          "title": "Chandelier & art installation",
+          "text": "Chandeliers, mirrors, statuary and tapestries hung and installed — and crystal chandeliers cleaned back to sparkling.",
+          "image": "https://curtisms.com/wp-content/uploads/2024/08/IMG_6042-copy-768x1024.jpg",
+          "link": "https://curtisms.com/services2/art-mirror-statuary-tapestry-and-chandelier-installation-hanging/",
+          "link_text": "See installation"
+        },
+        {
+          "title": "Luxury residential moves",
+          "text": "Local moves across Highland Park, University Park and Preston Hollow, plus long-distance and interstate relocations door to door.",
+          "image": "https://curtisms.com/wp-content/uploads/2024/09/residential-movers-1.jpg",
+          "link": "https://curtisms.com/services/residential-relocation/",
+          "link_text": "Residential relocation"
+        },
+        {
+          "title": "Designer & showroom delivery",
+          "text": "Receiving, storage, delivery and installation for Dallas interior designers and showrooms, from first item to final placement.",
+          "image": "https://curtisms.com/wp-content/uploads/2024/08/Beacon-Hill-Showroom-Pics-004-1-scaled.jpg",
+          "link": "https://curtisms.com/services/showroom-services/",
+          "link_text": "Designer services"
+        },
+        {
+          "title": "Climate-controlled storage",
+          "text": "Secure storage for furniture, art and valuables, individually catalogued and inspected, held until the house is ready.",
+          "image": "https://curtisms.com/wp-content/uploads/2024/08/men-in-storage.jpg",
+          "link": "https://curtisms.com/services/climate-controlled-storage/",
+          "link_text": "Storage details"
+        },
+        {
+          "title": "Packing, unpacking & setup",
+          "text": "Premium materials matched to each item, then unpacking, box removal and picture hanging so you're living in the house, not around boxes.",
+          "image": "https://curtisms.com/wp-content/uploads/2024/10/IMG_6131-scaled.jpeg",
+          "link": "#contact",
+          "link_text": "Plan your move"
+        }
+      ]
+    },
+    {
+      "type": "split",
+      "eyebrow": "Who calls us",
+      "headline": "Dallas designers have trusted Curtis with their clients' homes for 20 years",
+      "image": "https://curtisms.com/wp-content/uploads/2024/11/2024-11-06-171117.jpg",
+      "paragraphs": [
+        "Interior designers, antique dealers, professional organizers and move concierges send their clients to Curtis because a single scratched piece reflects on them. That's the standard a white glove move has to meet — and it's the one we've been held to since 2003.",
+        "The same crew leads, the same care, whether it's one antique desk or two truckloads of furniture, artwork and figurines."
+      ],
+      "bullets": [
+        "Designer receiving, storage and installation",
+        "Custom crating for fragile and high-value pieces",
+        "Art, mirror, statuary and chandelier hanging",
+        "Climate-controlled, individually catalogued storage"
+      ],
+      "cta": { "text": "Request a Consultation", "url": "#contact" }
+    },
+    {
+      "type": "process",
+      "on_dark": true,
+      "eyebrow": "How a Curtis move works",
+      "headline": "From walkthrough to a finished room",
+      "items": [
+        { "title": "Private consultation", "text": "We walk the home, note the pieces that need special handling, and give you the time, cost and crew plan up front." },
+        { "title": "Packing & crating", "text": "Packers experienced with antiques and collections wrap each item; fragile and high-value pieces get custom crates." },
+        { "title": "Move & placement", "text": "Your crew moves, unwraps and places every piece where it belongs — in Dallas, across Texas or out of state." },
+        { "title": "Finish or store", "text": "Art hung, chandeliers installed, boxes removed. Anything not ready goes into climate-controlled, catalogued storage." }
+      ]
+    },
+    {
+      "type": "testimonials",
+      "eyebrow": "From Google reviews",
+      "headline": "In our clients' words",
+      "items": [
+        {
+          "quote": "We have worked with Curtis for over 10 years. As an interior design, antique and furniture business we demand the best care of our products and Curtis has always provided us with that trust and care.",
+          "name": "Jan Showers",
+          "role": "Interior design & antiques, Dallas"
+        },
+        {
+          "quote": "It's a complete white glove service and they take really good care of you. They even hung pictures for me and helped organize some things. Having moved about 4 times in the last 4 years — this was by far the best one!",
+          "name": "Mary Feagin",
+          "role": "Residential move"
+        },
+        {
+          "quote": "He assembled a great team of packers familiar with antiques and collections who were extremely careful… a complicated move was accomplished with much less stress, and breakage.",
+          "name": "Harriett Gibbs",
+          "role": "Antiques & collections move"
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "eyebrow": "Straight answers",
+      "headline": "White glove moving questions",
+      "items": [
+        {
+          "q": "What is white glove moving?",
+          "a": "White glove moving is full-service moving for high-value and fragile belongings. At Curtis Specialized Moving & Storage in Dallas, that means expert packing and custom crating, careful transport, placement in the new home, and finishing work like hanging art and installing chandeliers, plus climate-controlled storage if needed."
+        },
+        {
+          "q": "How is white glove moving different from a regular move?",
+          "a": "A regular move ends when the boxes are inside. A white glove move with Curtis in Dallas continues until the room is finished: furniture placed, boxes unpacked and removed, art and mirrors hung, and chandeliers installed. Fragile, antique and high-value pieces are packed and crated individually."
+        },
+        {
+          "q": "Do you move and install fine art and chandeliers?",
+          "a": "Yes. Curtis Specialized Moving & Storage moves fine art, antiques, statuary and tapestries, and hangs and installs art, mirrors and chandeliers in Dallas–Fort Worth homes. Fragile and high-value pieces receive custom crating, and crystal chandeliers can be cleaned during installation."
+        },
+        {
+          "q": "Can you store my furniture and art between homes?",
+          "a": "Yes. Curtis offers climate-controlled storage in Dallas for furniture, fine art and valuables. Each item is individually catalogued and inspected, so pieces can be held safely during a renovation or between closings and delivered when the new home is ready."
+        },
+        {
+          "q": "What areas do your white glove movers serve?",
+          "a": "Curtis Specialized Moving & Storage is based at 460 W Mockingbird Lane in Dallas and serves the Dallas–Fort Worth area, including Highland Park, University Park, Preston Hollow, Plano, Frisco, Southlake, Arlington and Fort Worth. Long-distance, interstate and international moves are also available."
+        },
+        {
+          "q": "How much does white glove moving cost in Dallas?",
+          "a": "White glove moving costs depend on the size of the home, how many pieces need crating or installation, and whether storage is needed. Curtis provides the time, cost and services up front after a private consultation, and published rates are on the curtisms.com pricing page."
+        }
+      ]
+    },
+    {
+      "type": "cta_band",
+      "headline": "Tell us what needs the most care",
+      "sub": "A private consultation, a clear plan and cost up front — before anything is packed.",
+      "ctas": [
+        { "text": "Request a Consultation", "url": "#contact", "style": "light" },
+        { "text": "Call (214) 634-0304", "url": "tel:2146340304", "style": "ghost" }
+      ]
+    },
+    {
+      "type": "contact",
+      "id": "contact",
+      "eyebrow": "Private consultation",
+      "headline": "Start with a walkthrough",
+      "sub": "Tell us about the move and the pieces that matter most. A member of our Dallas team will reach out to schedule your consultation.",
+      "bullets": [
+        "Family-owned, serving Dallas since 2003",
+        "Office hours Monday–Friday, 8am–5pm",
+        "Appointments for in-home consultations"
+      ],
+      "phone": "(214) 634-0304",
+      "embed": ""
+    }
+  ]
+}
