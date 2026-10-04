@@ -142,7 +142,7 @@
               "id": "a92ac5c",
               "elType": "widget",
               "settings": {
-                "title": "White glove moving in Dallas for the things that can't be replaced",
+                "title": "White glove movers in Dallas for the things that can't be replaced",
                 "header_size": "h1",
                 "align": "center",
                 "title_color": "#FDFBF8",
@@ -184,7 +184,7 @@
               "id": "eb20bea",
               "elType": "widget",
               "settings": {
-                "editor": "<p>Fine art, antiques, chandeliers and heirloom furniture — packed, crated, moved and placed by the same Dallas crew, then hung, installed or stored in climate control until you're ready.</p>",
+                "editor": "<p>Fine art, antiques, chandeliers and heirloom furniture — packed, crated, moved and placed by Curtis employees, never subcontractors. Then hung, installed, or held in climate-controlled storage until you're ready.</p>",
                 "align": "center",
                 "text_color": "#D6DCEA",
                 "typography_typography": "custom",
@@ -753,7 +753,7 @@
                   "id": "fed998e",
                   "elType": "widget",
                   "settings": {
-                    "editor": "<p>Trusted by Dallas designers</p>",
+                    "editor": "<p>Repeat Dallas clients</p>",
                     "align": "center",
                     "text_color": "#9AA4BC",
                     "typography_typography": "custom",
@@ -809,7 +809,7 @@
                   "id": "abc01b4",
                   "elType": "widget",
                   "settings": {
-                    "title": "Climate",
+                    "title": "100%",
                     "header_size": "h3",
                     "align": "center",
                     "title_color": "#A8894F",
@@ -851,7 +851,7 @@
                   "id": "a18e5d0",
                   "elType": "widget",
                   "settings": {
-                    "editor": "<p>Controlled, catalogued storage</p>",
+                    "editor": "<p>Employee crews, no subcontractors</p>",
                     "align": "center",
                     "text_color": "#9AA4BC",
                     "typography_typography": "custom",
@@ -1168,11 +1168,11 @@
                   "elType": "widget",
                   "settings": {
                     "selected_icon": {
-                      "value": "fas fa-box-open",
+                      "value": "fas fa-user-shield",
                       "library": "fa-solid"
                     },
-                    "title_text": "Packed by people who know antiques",
-                    "description_text": "Crews are matched to the job. Collections, antiques and art get packers who handle them every week — with custom crating for the pieces that shouldn't ride in a box.",
+                    "title_text": "Curtis employees, never subcontractors",
+                    "description_text": "Every packer, driver and installer on your move works for Curtis. Crews experienced with antiques and collections, and custom crating for the pieces that shouldn't ride in a box.",
                     "position": "top",
                     "title_size": "h3",
                     "primary_color": "#B53C07",
@@ -2803,7 +2803,7 @@
                   "id": "32df720",
                   "elType": "widget",
                   "settings": {
-                    "title": "Dallas designers have trusted Curtis with their clients' homes for 20 years",
+                    "title": "Why Dallas designers and longtime clients keep calling Curtis",
                     "header_size": "h2",
                     "align": "left",
                     "title_color": "#2B2118",
@@ -2876,7 +2876,7 @@
                   "id": "1e2a183",
                   "elType": "widget",
                   "settings": {
-                    "editor": "<p>The same crew leads, the same care, whether it's one antique desk or two truckloads of furniture, artwork and figurines.</p>",
+                    "editor": "<p>The same standard on every job, whether it's one antique desk or two truckloads of furniture, artwork and figurines — and the same employee crews who did it last time.</p>",
                     "align": "left",
                     "text_color": "#5C564F",
                     "typography_typography": "custom",
@@ -3964,7 +3964,7 @@
       "isInner": false
     },
     {
-      "id": "d4a2b8d",
+      "id": "5f3b87f",
       "elType": "container",
       "settings": {
         "content_width": "full",
@@ -3992,7 +3992,7 @@
       },
       "elements": [
         {
-          "id": "15723b1",
+          "id": "051afe7",
           "elType": "container",
           "settings": {
             "content_width": "boxed",
@@ -4096,12 +4096,59 @@
               },
               "elements": [],
               "widgetType": "heading"
+            },
+            {
+              "id": "15723b1",
+              "elType": "widget",
+              "settings": {
+                "editor": "<p>Real reviews, lightly trimmed. <a href=\"https://maps.google.com/maps?cid=17056811098054460691\" target=\"_blank\" rel=\"noopener\" style=\"color:#93300A;font-weight:600\">Read all 87 reviews on Google →</a></p>",
+                "align": "center",
+                "text_color": "#5C564F",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 18,
+                  "sizes": []
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 16,
+                  "sizes": []
+                },
+                "typography_font_weight": "400",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.7,
+                  "sizes": []
+                },
+                "_element_width": "initial",
+                "_element_custom_width": {
+                  "unit": "px",
+                  "size": 760,
+                  "sizes": []
+                },
+                "_element_custom_width_tablet": {
+                  "unit": "%",
+                  "size": 100,
+                  "sizes": []
+                },
+                "_element_custom_width_mobile": {
+                  "unit": "%",
+                  "size": 100,
+                  "sizes": []
+                },
+                "_animation": "fadeInUp",
+                "_animation_delay": 140
+              },
+              "elements": [],
+              "widgetType": "text-editor"
             }
           ],
           "isInner": true
         },
         {
-          "id": "051afe7",
+          "id": "9ae3a35",
           "elType": "widget",
           "settings": {
             "space": {
@@ -4114,7 +4161,7 @@
           "widgetType": "spacer"
         },
         {
-          "id": "9ae3a35",
+          "id": "d4a2b8d",
           "elType": "container",
           "settings": {
             "content_width": "boxed",
@@ -4400,7 +4447,79 @@
       "isInner": false
     },
     {
-      "id": "fcda661",
+      "id": "357db69",
+      "elType": "container",
+      "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "flex_align_items": "center",
+        "flex_justify_content": "center",
+        "padding": {
+          "unit": "px",
+          "top": "56",
+          "right": "24",
+          "bottom": "56",
+          "left": "24",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "64",
+          "right": "20",
+          "bottom": "64",
+          "left": "20",
+          "isLinked": false
+        },
+        "_element_id": "areas",
+        "element_id": "areas",
+        "background_background": "classic",
+        "background_color": "#2B2118"
+      },
+      "elements": [
+        {
+          "id": "9fa0e05",
+          "elType": "container",
+          "settings": {
+            "content_width": "boxed",
+            "boxed_width": {
+              "unit": "px",
+              "size": 1140,
+              "sizes": []
+            },
+            "width": {
+              "unit": "%",
+              "size": 100,
+              "sizes": []
+            },
+            "flex_direction": "column",
+            "flex_align_items": "center",
+            "flex_justify_content": "center",
+            "flex_gap": {
+              "unit": "px",
+              "size": 20,
+              "column": "20",
+              "row": "20",
+              "isLinked": true
+            }
+          },
+          "elements": [
+            {
+              "id": "0350044",
+              "elType": "widget",
+              "settings": {
+                "html": "<div style=\"text-align:center;font-family:Inter,sans-serif;color:#F5F1EA\">\n<p style=\"font-size:13px;letter-spacing:2.5px;text-transform:uppercase;color:#A8894F;font-weight:600;margin:0 0 14px\">White glove moving across Dallas–Fort Worth</p>\n<p style=\"font-family:'Cormorant Garamond',serif;font-size:30px;line-height:1.3;margin:0 auto;max-width:900px\">Highland Park · University Park · Preston Hollow · Uptown · Lakewood · Plano · Frisco · Southlake · Fort Worth</p>\n<p style=\"font-size:16px;color:#D8D2C8;margin:16px 0 0\">Based at 460 W Mockingbird Lane, Dallas. Long-distance, interstate and international moves available.</p></div>"
+              },
+              "elements": [],
+              "widgetType": "html"
+            }
+          ],
+          "isInner": true
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "a33058d",
       "elType": "container",
       "settings": {
         "content_width": "full",
@@ -4428,7 +4547,7 @@
       },
       "elements": [
         {
-          "id": "9fa0e05",
+          "id": "3a2d7e3",
           "elType": "container",
           "settings": {
             "content_width": "boxed",
@@ -4455,7 +4574,7 @@
           },
           "elements": [
             {
-              "id": "5f3b87f",
+              "id": "1cd7205",
               "elType": "widget",
               "settings": {
                 "title": "Straight answers",
@@ -4492,7 +4611,7 @@
               "widgetType": "heading"
             },
             {
-              "id": "0350044",
+              "id": "f440065",
               "elType": "widget",
               "settings": {
                 "title": "White glove moving questions",
@@ -4537,7 +4656,7 @@
           "isInner": true
         },
         {
-          "id": "7adf9fa",
+          "id": "5765d81",
           "elType": "widget",
           "settings": {
             "space": {
@@ -4550,7 +4669,7 @@
           "widgetType": "spacer"
         },
         {
-          "id": "501d0c5",
+          "id": "538cd38",
           "elType": "container",
           "settings": {
             "content_width": "boxed",
@@ -4577,39 +4696,49 @@
           },
           "elements": [
             {
-              "id": "a7ee2fb",
+              "id": "45c7013",
               "elType": "widget",
               "settings": {
                 "tabs": [
                   {
                     "tab_title": "What is white glove moving?",
                     "tab_content": "<p>White glove moving is full-service moving for high-value and fragile belongings. At Curtis Specialized Moving & Storage in Dallas, that means expert packing and custom crating, careful transport, placement in the new home, and finishing work like hanging art and installing chandeliers, plus climate-controlled storage if needed.</p>",
-                    "_id": "357db69"
+                    "_id": "e2cd429"
                   },
                   {
                     "tab_title": "How is white glove moving different from a regular move?",
                     "tab_content": "<p>A regular move ends when the boxes are inside. A white glove move with Curtis in Dallas continues until the room is finished: furniture placed, boxes unpacked and removed, art and mirrors hung, and chandeliers installed. Fragile, antique and high-value pieces are packed and crated individually.</p>",
-                    "_id": "1cd7205"
+                    "_id": "269f0e7"
                   },
                   {
                     "tab_title": "Do you move and install fine art and chandeliers?",
                     "tab_content": "<p>Yes. Curtis Specialized Moving & Storage moves fine art, antiques, statuary and tapestries, and hangs and installs art, mirrors and chandeliers in Dallas–Fort Worth homes. Fragile and high-value pieces receive custom crating, and crystal chandeliers can be cleaned during installation.</p>",
-                    "_id": "f440065"
+                    "_id": "a7ee2fb"
                   },
                   {
                     "tab_title": "Can you store my furniture and art between homes?",
                     "tab_content": "<p>Yes. Curtis offers climate-controlled storage in Dallas for furniture, fine art and valuables. Each item is individually catalogued and inspected, so pieces can be held safely during a renovation or between closings and delivered when the new home is ready.</p>",
-                    "_id": "3a2d7e3"
+                    "_id": "501d0c5"
+                  },
+                  {
+                    "tab_title": "Are my belongings insured during a white glove move?",
+                    "tab_content": "<p>Yes. Curtis Specialized Moving & Storage offers insurance and valuation coverage on white glove moves in Dallas. The coverage for your move is defined in your client agreement before any work begins, so you know how fine art, antiques, chandeliers and other high-value pieces are protected.</p>",
+                    "_id": "7adf9fa"
+                  },
+                  {
+                    "tab_title": "Does Curtis use subcontractors?",
+                    "tab_content": "<p>No. Every crew member on a Curtis Specialized Moving & Storage job in Dallas is a Curtis employee — packers, drivers and installers alike. The people who wrap your antiques are the same company that answers for them.</p>",
+                    "_id": "fcda661"
                   },
                   {
                     "tab_title": "What areas do your white glove movers serve?",
                     "tab_content": "<p>Curtis Specialized Moving & Storage is based at 460 W Mockingbird Lane in Dallas and serves the Dallas–Fort Worth area, including Highland Park, University Park, Preston Hollow, Plano, Frisco, Southlake, Arlington and Fort Worth. Long-distance, interstate and international moves are also available.</p>",
-                    "_id": "e2cd429"
+                    "_id": "5fe0fb9"
                   },
                   {
                     "tab_title": "How much does white glove moving cost in Dallas?",
-                    "tab_content": "<p>White glove moving costs depend on the size of the home, how many pieces need crating or installation, and whether storage is needed. Curtis provides the time, cost and services up front after a private consultation, and published rates are on the curtisms.com pricing page.</p>",
-                    "_id": "269f0e7"
+                    "tab_content": "<p>Curtis publishes its Dallas rates: delivery and installation is $160 per hour for two installers and a truck (one-hour minimum), art and mirror installation $180 per hour, chandelier installation $200 per hour, statuary installation $240 per hour, and custom packing $80 per hour per specialist. Full moves are quoted after a private consultation.</p>",
+                    "_id": "ce73896"
                   }
                 ],
                 "title_color": "#2B2118",
@@ -4647,7 +4776,7 @@
       "isInner": false
     },
     {
-      "id": "0b6e902",
+      "id": "f5a8ee8",
       "elType": "container",
       "settings": {
         "content_width": "full",
@@ -4682,7 +4811,7 @@
       },
       "elements": [
         {
-          "id": "a33058d",
+          "id": "96a085a",
           "elType": "container",
           "settings": {
             "content_width": "boxed",
@@ -4709,7 +4838,7 @@
           },
           "elements": [
             {
-              "id": "5fe0fb9",
+              "id": "0b6e902",
               "elType": "widget",
               "settings": {
                 "title": "Tell us what needs the most care",
@@ -4751,7 +4880,7 @@
               "widgetType": "heading"
             },
             {
-              "id": "ce73896",
+              "id": "245586d",
               "elType": "widget",
               "settings": {
                 "editor": "<p>A private consultation, a clear plan and cost up front — before anything is packed.</p>",
@@ -4798,7 +4927,7 @@
               "widgetType": "text-editor"
             },
             {
-              "id": "5765d81",
+              "id": "459ec1c",
               "elType": "container",
               "settings": {
                 "content_width": "full",
@@ -4823,7 +4952,7 @@
               },
               "elements": [
                 {
-                  "id": "45c7013",
+                  "id": "712be89",
                   "elType": "widget",
                   "settings": {
                     "text": "Request a Consultation",
@@ -4875,7 +5004,7 @@
                   "widgetType": "button"
                 },
                 {
-                  "id": "538cd38",
+                  "id": "28997e9",
                   "elType": "widget",
                   "settings": {
                     "text": "Call (214) 634-0304",
@@ -4946,7 +5075,7 @@
       "isInner": false
     },
     {
-      "id": "1e42349",
+      "id": "67c7477",
       "elType": "container",
       "settings": {
         "content_width": "full",
@@ -4976,7 +5105,7 @@
       },
       "elements": [
         {
-          "id": "a7fd4f7",
+          "id": "2bc3434",
           "elType": "container",
           "settings": {
             "content_width": "boxed",
@@ -5005,7 +5134,7 @@
           },
           "elements": [
             {
-              "id": "4139f15",
+              "id": "61b8da0",
               "elType": "container",
               "settings": {
                 "content_width": "full",
@@ -5044,7 +5173,7 @@
               },
               "elements": [
                 {
-                  "id": "245586d",
+                  "id": "d2545d2",
                   "elType": "widget",
                   "settings": {
                     "title": "Private consultation",
@@ -5081,7 +5210,7 @@
                   "widgetType": "heading"
                 },
                 {
-                  "id": "712be89",
+                  "id": "3fe8969",
                   "elType": "widget",
                   "settings": {
                     "title": "Start with a walkthrough",
@@ -5123,7 +5252,7 @@
                   "widgetType": "heading"
                 },
                 {
-                  "id": "28997e9",
+                  "id": "4139f15",
                   "elType": "widget",
                   "settings": {
                     "editor": "<p>Tell us about the move and the pieces that matter most. A member of our Dallas team will reach out to schedule your consultation.</p>",
@@ -5164,7 +5293,7 @@
                   "widgetType": "text-editor"
                 },
                 {
-                  "id": "459ec1c",
+                  "id": "b72a4cb",
                   "elType": "widget",
                   "settings": {
                     "editor": "<p style=\"margin:0\"><strong style=\"color:#A8894F\">&#10003;</strong>&nbsp;Family-owned, serving Dallas since 2003</p>",
@@ -5195,10 +5324,10 @@
                   "widgetType": "text-editor"
                 },
                 {
-                  "id": "96a085a",
+                  "id": "a7fd4f7",
                   "elType": "widget",
                   "settings": {
-                    "editor": "<p style=\"margin:0\"><strong style=\"color:#A8894F\">&#10003;</strong>&nbsp;Office hours Monday–Friday, 8am–5pm</p>",
+                    "editor": "<p style=\"margin:0\"><strong style=\"color:#A8894F\">&#10003;</strong>&nbsp;Every crew member a Curtis employee</p>",
                     "align": "left",
                     "text_color": "#C3CADB",
                     "typography_typography": "custom",
@@ -5226,10 +5355,10 @@
                   "widgetType": "text-editor"
                 },
                 {
-                  "id": "f5a8ee8",
+                  "id": "1e42349",
                   "elType": "widget",
                   "settings": {
-                    "editor": "<p style=\"margin:0\"><strong style=\"color:#A8894F\">&#10003;</strong>&nbsp;Appointments for in-home consultations</p>",
+                    "editor": "<p style=\"margin:0\"><strong style=\"color:#A8894F\">&#10003;</strong>&nbsp;Insurance & valuation coverage defined in your agreement</p>",
                     "align": "left",
                     "text_color": "#C3CADB",
                     "typography_typography": "custom",
@@ -5257,7 +5386,38 @@
                   "widgetType": "text-editor"
                 },
                 {
-                  "id": "d2545d2",
+                  "id": "f2deb86",
+                  "elType": "widget",
+                  "settings": {
+                    "editor": "<p style=\"margin:0\"><strong style=\"color:#A8894F\">&#10003;</strong>&nbsp;Office hours Monday–Friday, 8am–5pm</p>",
+                    "align": "left",
+                    "text_color": "#C3CADB",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Inter",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 16,
+                      "sizes": []
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 15,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "400",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.7,
+                      "sizes": []
+                    },
+                    "_animation": "fadeInUp",
+                    "_animation_delay": 330
+                  },
+                  "elements": [],
+                  "widgetType": "text-editor"
+                },
+                {
+                  "id": "8c60433",
                   "elType": "widget",
                   "settings": {
                     "title": "(214) 634-0304",
@@ -5302,7 +5462,7 @@
               "isInner": true
             },
             {
-              "id": "b72a4cb",
+              "id": "e577746",
               "elType": "container",
               "settings": {
                 "content_width": "full",
@@ -5342,7 +5502,7 @@
               },
               "elements": [
                 {
-                  "id": "3fe8969",
+                  "id": "b1018d0",
                   "elType": "widget",
                   "settings": {
                     "html": "<!-- TMC: paste the GoHighLevel form embed here. GHL > Sites > Forms > Integrate > Embed Code. -->\n<div style=\"padding:28px;border:1px dashed #8A93AB;border-radius:10px;color:#8A93AB;font-family:sans-serif;text-align:center;\">GHL form embed goes here</div>",
