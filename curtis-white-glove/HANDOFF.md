@@ -290,7 +290,7 @@ No star-rating markup: Google doesn't show review stars that a business marks up
 
 The site's existing markup, seen on `/pricing/`, has three business entries that should be merged into one:
 - **LocalBusiness** `#business`: this one is correct. Keep it, and change its type to `MovingCompany`.
-- **A second MovingCompany block** with typos: "Tuseday," the phone written as "1+2146340304," the state written as "Texas," and hours written as "8:00 - 5:00." Delete it.
+- **A second MovingCompany block** that repeats the business details in a different format: the phone written as "1+2146340304," the state written as "Texas," and hours written as "8:00 - 5:00." Delete it. (The "Tuseday" typo was fixed on Oct 4.)
 - **An Organization block** with the same malformed phone number. Delete it, or point it at `#business`.
 
 Duplicate, conflicting business entries confuse both Google and AI assistants about which details are correct.
