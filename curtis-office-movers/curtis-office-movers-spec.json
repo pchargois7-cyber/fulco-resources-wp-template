@@ -1,0 +1,298 @@
+{
+  "meta": {
+    "title": "Office Movers — Curtis Specialized Moving & Storage, Dallas TX",
+    "slug": "services/corporate-and-office-relocation",
+    "canvas": false,
+    "seo_title": "Office Movers in Dallas, TX | Curtis Corporate Relocation",
+    "seo_description": "Dallas office movers since 2003. Employee crews, a project manager on larger moves, furniture installation and climate-controlled storage. From $160/hr.",
+    "primary_keyword": "office movers dallas",
+    "business": {
+      "name": "Curtis Specialized Moving & Storage",
+      "city": "Dallas, TX",
+      "phone": "(214) 634-0304",
+      "url": "https://curtisms.com"
+    }
+  },
+  "brand": {
+    "primary": "#B53C07",
+    "accent": "#A8894F",
+    "dark": "#2B2118",
+    "dark_alt": "#463A2D",
+    "light": "#FDFBF8",
+    "surface": "#F5F1EA",
+    "muted": "#5C564F",
+    "body_font": "Inter",
+    "display_font": "Cormorant Garamond",
+    "radius": 4,
+    "max_width": 1140,
+    "section_padding": 120
+  },
+  "options": {
+    "pro": false,
+    "animations": true,
+    "parallax": false,
+    "faq_style": "accordion",
+    "seed": 2004
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "id": "hero",
+      "eyebrow": "Office & Corporate Relocation · Dallas–Fort Worth",
+      "headline": "Office movers in Dallas for companies that can't afford a bad Monday",
+      "sub": "Planned by a project manager, moved by Curtis employees — never subcontractors — and set up so your team walks into a finished office: furniture installed, art and boardroom pieces hung, nothing left in boxes.",
+      "image": "https://curtisms.com/wp-content/uploads/2024/08/Beacon-Hill-Showroom-Pics-004-1-scaled.jpg",
+      "overlay_opacity": 0.7,
+      "min_height": 88,
+      "ctas": [
+        {
+          "text": "Plan Your Office Move",
+          "url": "#contact",
+          "style": "primary",
+          "icon": "fas fa-arrow-right"
+        },
+        {
+          "text": "Call (214) 634-0304",
+          "url": "tel:2146340304",
+          "style": "ghost"
+        }
+      ],
+      "trust": "Family-owned · Serving Dallas businesses since 2003 · 4.7★ from 87 Google reviews"
+    },
+    {
+      "type": "trust_bar",
+      "items": [
+        {
+          "value": "2003",
+          "label": "Moving Dallas since"
+        },
+        {
+          "value": "100%",
+          "label": "Employee crews, no subcontractors"
+        },
+        {
+          "value": "4+",
+          "label": "Movers? A project manager is included"
+        },
+        {
+          "value": "$160/hr",
+          "label": "Delivery & installation, 2 installers + truck"
+        }
+      ]
+    },
+    {
+      "type": "features",
+      "eyebrow": "Why companies switch to Curtis",
+      "headline": "An office move fails in the handoffs. We remove them.",
+      "sub": "Most office moves go wrong between the people who quoted the job, the crew that shows up, and whoever is supposed to put the furniture back together. At Curtis it's one company, start to finish.",
+      "items": [
+        {
+          "icon": "fas fa-clipboard-list",
+          "title": "One project manager, start to finish",
+          "text": "On moves with four or more movers, a Curtis project manager plans the move with you, checks in throughout, and is the one person you call."
+        },
+        {
+          "icon": "fas fa-user-shield",
+          "title": "Curtis employees, never subcontractors",
+          "text": "Every packer, driver and installer is on the Curtis payroll. The crew leads who plan the load are the ones who unload it."
+        },
+        {
+          "icon": "fas fa-warehouse",
+          "title": "Receive, inspect, store, then install",
+          "text": "New furniture can be received at our Dallas warehouse, inspected for damage, and held in climate-controlled storage until the new space is ready."
+        }
+      ]
+    },
+    {
+      "type": "services",
+      "on_dark": true,
+      "eyebrow": "Office moving services",
+      "headline": "Everything an office move involves, under one Dallas company",
+      "items": [
+        {
+          "title": "Office relocation",
+          "text": "Planning, packing, moving and setup for Dallas–Fort Worth offices, led by a project manager on larger moves.",
+          "image": "https://curtisms.com/wp-content/uploads/2024/09/download-1.jpeg",
+          "link": "#contact",
+          "link_text": "Plan your move"
+        },
+        {
+          "title": "Executive suites & boardrooms",
+          "text": "Executive furniture, boardroom tables and fine art moved with the same white glove care Curtis brings to luxury homes.",
+          "image": "https://curtisms.com/wp-content/uploads/2024/08/Angel-Install-5.jpg",
+          "link": "https://curtisms.com/services/white-glove-moving/",
+          "link_text": "White glove moving"
+        },
+        {
+          "title": "Furniture delivery & installation",
+          "text": "New office furniture delivered, assembled and placed — the service Dallas interior design firms have relied on Curtis for for years.",
+          "image": "https://curtisms.com/wp-content/uploads/2024/08/UTjAHO3Q-1-1024x768.jpeg",
+          "link": "https://curtisms.com/services/delivery-and-installation/",
+          "link_text": "Delivery & installation"
+        },
+        {
+          "title": "Receiving, inspection & crating",
+          "text": "Shipments received on your behalf, inspected for damage, documented, and crated for anything that needs to travel again.",
+          "image": "https://curtisms.com/wp-content/uploads/2024/08/men-in-storage.jpg",
+          "link": "https://curtisms.com/services/receiving-inspection-crating-and-shipping/",
+          "link_text": "Receiving services"
+        },
+        {
+          "title": "Art & mirror installation",
+          "text": "Lobby art, mirrors and statement pieces hung and installed so the new office looks finished on day one.",
+          "image": "https://curtisms.com/wp-content/uploads/2024/08/Chandelier-Paul-4.jpg",
+          "link": "https://curtisms.com/services2/art-mirror-statuary-tapestry-and-chandelier-installation-hanging/",
+          "link_text": "Art installation"
+        },
+        {
+          "title": "Climate-controlled storage",
+          "text": "Furniture, files and fixtures held securely between spaces, individually catalogued, and delivered when you're ready.",
+          "image": "https://curtisms.com/wp-content/uploads/2024/11/3577593251549950599.jpeg",
+          "link": "https://curtisms.com/services/climate-controlled-storage/",
+          "link_text": "Storage details"
+        }
+      ]
+    },
+    {
+      "type": "split",
+      "eyebrow": "Who calls us",
+      "headline": "Dallas design firms trust Curtis with their clients' offices",
+      "image": "https://curtisms.com/wp-content/uploads/2024/11/2024-11-06-171117.jpg",
+      "paragraphs": [
+        "Commercial interior designers, showrooms and businesses across Dallas use Curtis to receive, store, deliver and install furniture — because when a client's new office opens, it has to be right.",
+        "The same planning and the same employee crews handle a single executive suite or a full office relocation."
+      ],
+      "bullets": [
+        "Project manager on moves with 4+ movers",
+        "Receiving, inspection and damage documentation",
+        "Furniture assembly, placement and art hanging",
+        "Insurance & valuation coverage defined in your agreement"
+      ],
+      "cta": {
+        "text": "Plan Your Office Move",
+        "url": "#contact"
+      }
+    },
+    {
+      "type": "process",
+      "on_dark": true,
+      "eyebrow": "How a Curtis office move works",
+      "headline": "From walkthrough to a working office",
+      "items": [
+        {
+          "title": "Walkthrough & plan",
+          "text": "We walk both spaces, inventory what's moving, and build the timeline, crew plan and cost with you."
+        },
+        {
+          "title": "Pack, crate & label",
+          "text": "Packing specialists wrap furniture, files and fragile pieces; anything high-value gets custom crating."
+        },
+        {
+          "title": "Move & install",
+          "text": "Your crew leads move, unwrap, assemble and place everything to the floor plan, with your project manager on site for larger moves."
+        },
+        {
+          "title": "Finish or store",
+          "text": "Art hung, boxes removed, punch list closed. Anything not needed yet goes into climate-controlled storage."
+        }
+      ]
+    },
+    {
+      "type": "testimonials",
+      "eyebrow": "From Google reviews",
+      "headline": "What Dallas businesses say",
+      "sub": "Real reviews, lightly trimmed. <a href=\"https://maps.google.com/maps?cid=17056811098054460691\" target=\"_blank\" rel=\"noopener\" style=\"color:#93300A;font-weight:600\">Read all 87 reviews on Google →</a>",
+      "items": [
+        {
+          "quote": "Starting with Martinez, who planned the move with our client and constantly checked in on the progress… Our two leads, Sinclair and Emilio spearheaded the packing, loading and delivery with care and precision. We have used Curtis SM&S many times and will continue to do so.",
+          "name": "Terry Caskey",
+          "role": "Repeat client"
+        },
+        {
+          "quote": "Our design firm loves working with the Curtis Moving team! They are professional on deliveries and installations, are quick to respond to emails and phone calls, and are on top of ensuring that the product they receive on our behalf is thoroughly inspected for damages and stored safely until we are ready for installation.",
+          "name": "Sarah Harkin",
+          "role": "Interior design firm"
+        },
+        {
+          "quote": "Literally for many years I have used Curtis Delivery for All my Commercial & Residential Interior Design projects… My Client's ALWAYS speak highly of them and are so appreciative of their attention to details!!!",
+          "name": "Kenneth Jorns",
+          "role": "Commercial & residential interior design"
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "id": "areas",
+      "bg": "#2B2118",
+      "pad": 56,
+      "html": "<div style=\"text-align:center;font-family:Inter,sans-serif;color:#F5F1EA\">\n<p style=\"font-size:13px;letter-spacing:2.5px;text-transform:uppercase;color:#A8894F;font-weight:600;margin:0 0 14px\">Office moves across Dallas–Fort Worth</p>\n<p style=\"font-family:'Cormorant Garamond',serif;font-size:30px;line-height:1.3;margin:0 auto;max-width:900px\">Downtown Dallas · Uptown · Design District · Las Colinas · Addison · Plano · Frisco · Irving · Fort Worth</p>\n<p style=\"font-size:16px;color:#D8D2C8;margin:16px 0 0\">Based at 460 W Mockingbird Lane, minutes from the Dallas Design District.</p></div>"
+    },
+    {
+      "type": "faq",
+      "eyebrow": "Straight answers",
+      "headline": "Office moving questions",
+      "items": [
+        {
+          "q": "How much do office movers cost in Dallas?",
+          "a": "Curtis Specialized Moving & Storage publishes its Dallas rates: delivery and installation is $160 per hour for two installers and a truck (one-hour minimum), custom packing is $80 per hour per specialist, and a project manager is $90 per hour on moves with four or more movers. Full office moves are quoted after a walkthrough."
+        },
+        {
+          "q": "Do you assign a project manager to office moves?",
+          "a": "Yes. On Dallas office moves with four or more movers or installers, Curtis assigns a project manager who plans the move with you, checks in on progress, and coordinates the crew leads from packing through final placement."
+        },
+        {
+          "q": "Does Curtis use subcontractors for office moves?",
+          "a": "No. Every crew member on a Curtis Specialized Moving & Storage office move in Dallas is a Curtis employee — packers, drivers, installers and crew leads alike."
+        },
+        {
+          "q": "Can you install office furniture and hang art?",
+          "a": "Yes. Curtis delivers, assembles and places office furniture and hangs art and mirrors as part of Dallas office moves. Interior design firms and showrooms use the same delivery and installation service for their commercial clients."
+        },
+        {
+          "q": "Can you store our furniture between offices?",
+          "a": "Yes. Curtis receives, inspects and stores office furniture and fixtures in climate-controlled storage in Dallas, with each item catalogued, then delivers and installs everything when the new space is ready."
+        },
+        {
+          "q": "Are our furniture and equipment insured during the move?",
+          "a": "Yes. Curtis Specialized Moving & Storage offers insurance and valuation coverage on office moves in Dallas, and the coverage for your move is defined in your client agreement before any work begins."
+        },
+        {
+          "q": "What areas do your office movers serve?",
+          "a": "Curtis is based at 460 W Mockingbird Lane in Dallas and moves offices across Dallas–Fort Worth, including Downtown Dallas, Uptown, the Design District, Las Colinas, Addison, Plano, Frisco, Irving and Fort Worth. Long-distance and interstate relocations are also available."
+        }
+      ]
+    },
+    {
+      "type": "cta_band",
+      "headline": "Tell us when you need to be up and running",
+      "sub": "A walkthrough of both spaces, a clear plan and cost up front — before anything is packed.",
+      "ctas": [
+        {
+          "text": "Plan Your Office Move",
+          "url": "#contact",
+          "style": "light"
+        },
+        {
+          "text": "Call (214) 634-0304",
+          "url": "tel:2146340304",
+          "style": "ghost"
+        }
+      ]
+    },
+    {
+      "type": "contact",
+      "id": "contact",
+      "eyebrow": "Office move consultation",
+      "headline": "Start with a walkthrough",
+      "sub": "Tell us where you're moving from and to, roughly when, and anything that needs special handling. A member of our Dallas team will reach out to schedule a walkthrough.",
+      "bullets": [
+        "Family-owned, serving Dallas since 2003",
+        "Every crew member a Curtis employee",
+        "Project manager on moves with 4+ movers",
+        "Office hours Monday–Friday, 8am–5pm"
+      ],
+      "phone": "(214) 634-0304",
+      "embed": ""
+    }
+  ]
+}

@@ -1,0 +1,5527 @@
+{
+  "content": [
+    {
+      "id": "cdedd06",
+      "elType": "container",
+      "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "flex_align_items": "center",
+        "flex_justify_content": "center",
+        "padding": {
+          "unit": "px",
+          "top": "120",
+          "right": "24",
+          "bottom": "120",
+          "left": "24",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "64",
+          "right": "20",
+          "bottom": "64",
+          "left": "20",
+          "isLinked": false
+        },
+        "_element_id": "hero",
+        "element_id": "hero",
+        "min_height": {
+          "unit": "vh",
+          "size": 88,
+          "sizes": []
+        },
+        "min_height_mobile": {
+          "unit": "vh",
+          "size": 68,
+          "sizes": []
+        },
+        "background_background": "classic",
+        "background_color": "#2B2118",
+        "background_image": {
+          "url": "https://curtisms.com/wp-content/uploads/2024/08/Beacon-Hill-Showroom-Pics-004-1-scaled.jpg",
+          "id": "",
+          "size": "",
+          "alt": "",
+          "source": "url"
+        },
+        "background_position": "center center",
+        "background_repeat": "no-repeat",
+        "background_size": "cover",
+        "background_overlay_background": "gradient",
+        "background_overlay_color": "#000000",
+        "background_overlay_color_b": "#2B2118",
+        "background_overlay_color_stop": {
+          "unit": "px",
+          "size": 0,
+          "sizes": []
+        },
+        "background_overlay_color_b_stop": {
+          "unit": "px",
+          "size": 100,
+          "sizes": []
+        },
+        "background_overlay_gradient_type": "linear",
+        "background_overlay_gradient_angle": {
+          "unit": "deg",
+          "size": 180,
+          "sizes": []
+        },
+        "background_overlay_opacity": {
+          "unit": "px",
+          "size": 0.7,
+          "sizes": []
+        }
+      },
+      "elements": [
+        {
+          "id": "ea3f8c6",
+          "elType": "container",
+          "settings": {
+            "content_width": "boxed",
+            "boxed_width": {
+              "unit": "px",
+              "size": 1140,
+              "sizes": []
+            },
+            "width": {
+              "unit": "%",
+              "size": 100,
+              "sizes": []
+            },
+            "flex_direction": "column",
+            "flex_align_items": "center",
+            "flex_justify_content": "center",
+            "flex_gap": {
+              "unit": "px",
+              "size": 18,
+              "column": "18",
+              "row": "18",
+              "isLinked": true
+            }
+          },
+          "elements": [
+            {
+              "id": "06b34e5",
+              "elType": "widget",
+              "settings": {
+                "title": "Office & Corporate Relocation · Dallas–Fort Worth",
+                "header_size": "div",
+                "align": "center",
+                "title_color": "#A8894F",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 13,
+                  "sizes": []
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 12,
+                  "sizes": []
+                },
+                "typography_font_weight": "700",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.4,
+                  "sizes": []
+                },
+                "typography_letter_spacing": {
+                  "unit": "px",
+                  "size": 2.4,
+                  "sizes": []
+                },
+                "typography_text_transform": "uppercase",
+                "_animation": "fadeInUp"
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "41cbd5a",
+              "elType": "widget",
+              "settings": {
+                "title": "Office movers in Dallas for companies that can't afford a bad Monday",
+                "header_size": "h1",
+                "align": "center",
+                "title_color": "#FDFBF8",
+                "typography_typography": "custom",
+                "typography_font_family": "Cormorant Garamond",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 66,
+                  "sizes": []
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 36,
+                  "sizes": []
+                },
+                "typography_font_weight": "800",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.1,
+                  "sizes": []
+                },
+                "typography_line_height_mobile": {
+                  "unit": "em",
+                  "size": 1.18,
+                  "sizes": []
+                },
+                "typography_letter_spacing": {
+                  "unit": "px",
+                  "size": -0.5,
+                  "sizes": []
+                },
+                "_animation": "fadeInUp",
+                "_animation_delay": 100
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "19e3bc3",
+              "elType": "widget",
+              "settings": {
+                "editor": "<p>Planned by a project manager, moved by Curtis employees — never subcontractors — and set up so your team walks into a finished office: furniture installed, art and boardroom pieces hung, nothing left in boxes.</p>",
+                "align": "center",
+                "text_color": "#D6DCEA",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 20,
+                  "sizes": []
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 18,
+                  "sizes": []
+                },
+                "typography_font_weight": "400",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.7,
+                  "sizes": []
+                },
+                "_element_width": "initial",
+                "_element_custom_width": {
+                  "unit": "px",
+                  "size": 720,
+                  "sizes": []
+                },
+                "_element_custom_width_tablet": {
+                  "unit": "%",
+                  "size": 100,
+                  "sizes": []
+                },
+                "_element_custom_width_mobile": {
+                  "unit": "%",
+                  "size": 100,
+                  "sizes": []
+                },
+                "_animation": "fadeInUp",
+                "_animation_delay": 200
+              },
+              "elements": [],
+              "widgetType": "text-editor"
+            },
+            {
+              "id": "39f2b1e",
+              "elType": "container",
+              "settings": {
+                "content_width": "full",
+                "flex_direction": "row",
+                "flex_justify_content": "center",
+                "flex_align_items": "center",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 16,
+                  "column": "16",
+                  "row": "16",
+                  "isLinked": true
+                },
+                "flex_wrap": "wrap",
+                "padding": {
+                  "unit": "px",
+                  "top": "12",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": false
+                }
+              },
+              "elements": [
+                {
+                  "id": "263518a",
+                  "elType": "widget",
+                  "settings": {
+                    "text": "Plan Your Office Move",
+                    "link": {
+                      "url": "#contact",
+                      "is_external": "",
+                      "nofollow": "",
+                      "custom_attributes": ""
+                    },
+                    "align": "center",
+                    "size": "lg",
+                    "background_color": "#B53C07",
+                    "button_text_color": "#FDFBF8",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "4",
+                      "right": "4",
+                      "bottom": "4",
+                      "left": "4",
+                      "isLinked": false
+                    },
+                    "text_padding": {
+                      "unit": "px",
+                      "top": "18",
+                      "right": "36",
+                      "bottom": "18",
+                      "left": "36",
+                      "isLinked": false
+                    },
+                    "hover_animation": "grow",
+                    "_element_width": "initial",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Inter",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 16,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "700",
+                    "typography_letter_spacing": {
+                      "unit": "px",
+                      "size": 0.2,
+                      "sizes": []
+                    },
+                    "selected_icon": {
+                      "value": "fas fa-arrow-right",
+                      "library": "fa-solid"
+                    },
+                    "icon_align": "right",
+                    "icon_indent": {
+                      "unit": "px",
+                      "size": 10,
+                      "sizes": []
+                    },
+                    "_animation": "fadeInUp",
+                    "_animation_delay": 280
+                  },
+                  "elements": [],
+                  "widgetType": "button"
+                },
+                {
+                  "id": "19d2a69",
+                  "elType": "widget",
+                  "settings": {
+                    "text": "Call (214) 634-0304",
+                    "link": {
+                      "url": "tel:2146340304",
+                      "is_external": "",
+                      "nofollow": "",
+                      "custom_attributes": ""
+                    },
+                    "align": "center",
+                    "size": "lg",
+                    "background_color": "#00000000",
+                    "button_text_color": "#FDFBF8",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "4",
+                      "right": "4",
+                      "bottom": "4",
+                      "left": "4",
+                      "isLinked": false
+                    },
+                    "text_padding": {
+                      "unit": "px",
+                      "top": "18",
+                      "right": "36",
+                      "bottom": "18",
+                      "left": "36",
+                      "isLinked": false
+                    },
+                    "hover_animation": "grow",
+                    "_element_width": "initial",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Inter",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 16,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "700",
+                    "typography_letter_spacing": {
+                      "unit": "px",
+                      "size": 0.2,
+                      "sizes": []
+                    },
+                    "border_border": "solid",
+                    "border_width": {
+                      "unit": "px",
+                      "top": "2",
+                      "right": "2",
+                      "bottom": "2",
+                      "left": "2",
+                      "isLinked": false
+                    },
+                    "border_color": "#FDFBF8",
+                    "_animation": "fadeInUp",
+                    "_animation_delay": 360
+                  },
+                  "elements": [],
+                  "widgetType": "button"
+                }
+              ],
+              "isInner": true
+            },
+            {
+              "id": "28e6fe9",
+              "elType": "widget",
+              "settings": {
+                "editor": "<p>Family-owned · Serving Dallas businesses since 2003 · 4.7★ from 87 Google reviews</p>",
+                "align": "center",
+                "text_color": "#9AA4BC",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 14,
+                  "sizes": []
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 15,
+                  "sizes": []
+                },
+                "typography_font_weight": "400",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.7,
+                  "sizes": []
+                },
+                "_element_width": "initial",
+                "_element_custom_width": {
+                  "unit": "px",
+                  "size": 680,
+                  "sizes": []
+                },
+                "_element_custom_width_tablet": {
+                  "unit": "%",
+                  "size": 100,
+                  "sizes": []
+                },
+                "_element_custom_width_mobile": {
+                  "unit": "%",
+                  "size": 100,
+                  "sizes": []
+                },
+                "_animation": "fadeInUp",
+                "_animation_delay": 420
+              },
+              "elements": [],
+              "widgetType": "text-editor"
+            }
+          ],
+          "isInner": true
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "a1cdec8",
+      "elType": "container",
+      "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "flex_align_items": "center",
+        "flex_justify_content": "center",
+        "padding": {
+          "unit": "px",
+          "top": "44",
+          "right": "24",
+          "bottom": "44",
+          "left": "24",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "64",
+          "right": "20",
+          "bottom": "64",
+          "left": "20",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#463A2D"
+      },
+      "elements": [
+        {
+          "id": "1bce770",
+          "elType": "container",
+          "settings": {
+            "content_width": "boxed",
+            "boxed_width": {
+              "unit": "px",
+              "size": 1140,
+              "sizes": []
+            },
+            "width": {
+              "unit": "%",
+              "size": 100,
+              "sizes": []
+            },
+            "flex_direction": "row",
+            "flex_align_items": "center",
+            "flex_justify_content": "center",
+            "flex_gap": {
+              "unit": "px",
+              "size": 24,
+              "column": "24",
+              "row": "24",
+              "isLinked": true
+            },
+            "flex_wrap": "wrap",
+            "flex_direction_mobile": "column"
+          },
+          "elements": [
+            {
+              "id": "3f739ee",
+              "elType": "container",
+              "settings": {
+                "content_width": "full",
+                "flex_direction": "column",
+                "flex_align_items": "center",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 4,
+                  "column": "4",
+                  "row": "4",
+                  "isLinked": true
+                },
+                "flex_grow": 1,
+                "flex_basis": {
+                  "unit": "px",
+                  "size": 180,
+                  "sizes": []
+                }
+              },
+              "elements": [
+                {
+                  "id": "ab25d22",
+                  "elType": "widget",
+                  "settings": {
+                    "title": "2003",
+                    "header_size": "h3",
+                    "align": "center",
+                    "title_color": "#A8894F",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Cormorant Garamond",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 38,
+                      "sizes": []
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 30,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "800",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.1,
+                      "sizes": []
+                    },
+                    "typography_line_height_mobile": {
+                      "unit": "em",
+                      "size": 1.18,
+                      "sizes": []
+                    },
+                    "typography_letter_spacing": {
+                      "unit": "px",
+                      "size": -0.5,
+                      "sizes": []
+                    },
+                    "_animation": "fadeInUp"
+                  },
+                  "elements": [],
+                  "widgetType": "heading"
+                },
+                {
+                  "id": "44c7376",
+                  "elType": "widget",
+                  "settings": {
+                    "editor": "<p>Moving Dallas since</p>",
+                    "align": "center",
+                    "text_color": "#9AA4BC",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Inter",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 14,
+                      "sizes": []
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 15,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "400",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.7,
+                      "sizes": []
+                    },
+                    "_animation": "fadeInUp",
+                    "_animation_delay": 40
+                  },
+                  "elements": [],
+                  "widgetType": "text-editor"
+                }
+              ],
+              "isInner": true
+            },
+            {
+              "id": "6d7afcc",
+              "elType": "container",
+              "settings": {
+                "content_width": "full",
+                "flex_direction": "column",
+                "flex_align_items": "center",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 4,
+                  "column": "4",
+                  "row": "4",
+                  "isLinked": true
+                },
+                "flex_grow": 1,
+                "flex_basis": {
+                  "unit": "px",
+                  "size": 180,
+                  "sizes": []
+                }
+              },
+              "elements": [
+                {
+                  "id": "9ecc592",
+                  "elType": "widget",
+                  "settings": {
+                    "title": "100%",
+                    "header_size": "h3",
+                    "align": "center",
+                    "title_color": "#A8894F",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Cormorant Garamond",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 38,
+                      "sizes": []
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 30,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "800",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.1,
+                      "sizes": []
+                    },
+                    "typography_line_height_mobile": {
+                      "unit": "em",
+                      "size": 1.18,
+                      "sizes": []
+                    },
+                    "typography_letter_spacing": {
+                      "unit": "px",
+                      "size": -0.5,
+                      "sizes": []
+                    },
+                    "_animation": "fadeInUp",
+                    "_animation_delay": 70
+                  },
+                  "elements": [],
+                  "widgetType": "heading"
+                },
+                {
+                  "id": "0572386",
+                  "elType": "widget",
+                  "settings": {
+                    "editor": "<p>Employee crews, no subcontractors</p>",
+                    "align": "center",
+                    "text_color": "#9AA4BC",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Inter",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 14,
+                      "sizes": []
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 15,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "400",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.7,
+                      "sizes": []
+                    },
+                    "_animation": "fadeInUp",
+                    "_animation_delay": 110
+                  },
+                  "elements": [],
+                  "widgetType": "text-editor"
+                }
+              ],
+              "isInner": true
+            },
+            {
+              "id": "55660f4",
+              "elType": "container",
+              "settings": {
+                "content_width": "full",
+                "flex_direction": "column",
+                "flex_align_items": "center",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 4,
+                  "column": "4",
+                  "row": "4",
+                  "isLinked": true
+                },
+                "flex_grow": 1,
+                "flex_basis": {
+                  "unit": "px",
+                  "size": 180,
+                  "sizes": []
+                }
+              },
+              "elements": [
+                {
+                  "id": "af58133",
+                  "elType": "widget",
+                  "settings": {
+                    "title": "4+",
+                    "header_size": "h3",
+                    "align": "center",
+                    "title_color": "#A8894F",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Cormorant Garamond",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 38,
+                      "sizes": []
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 30,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "800",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.1,
+                      "sizes": []
+                    },
+                    "typography_line_height_mobile": {
+                      "unit": "em",
+                      "size": 1.18,
+                      "sizes": []
+                    },
+                    "typography_letter_spacing": {
+                      "unit": "px",
+                      "size": -0.5,
+                      "sizes": []
+                    },
+                    "_animation": "fadeInUp",
+                    "_animation_delay": 140
+                  },
+                  "elements": [],
+                  "widgetType": "heading"
+                },
+                {
+                  "id": "0aae60e",
+                  "elType": "widget",
+                  "settings": {
+                    "editor": "<p>Movers? A project manager is included</p>",
+                    "align": "center",
+                    "text_color": "#9AA4BC",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Inter",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 14,
+                      "sizes": []
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 15,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "400",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.7,
+                      "sizes": []
+                    },
+                    "_animation": "fadeInUp",
+                    "_animation_delay": 180
+                  },
+                  "elements": [],
+                  "widgetType": "text-editor"
+                }
+              ],
+              "isInner": true
+            },
+            {
+              "id": "84a1dde",
+              "elType": "container",
+              "settings": {
+                "content_width": "full",
+                "flex_direction": "column",
+                "flex_align_items": "center",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 4,
+                  "column": "4",
+                  "row": "4",
+                  "isLinked": true
+                },
+                "flex_grow": 1,
+                "flex_basis": {
+                  "unit": "px",
+                  "size": 180,
+                  "sizes": []
+                }
+              },
+              "elements": [
+                {
+                  "id": "fd8b5ad",
+                  "elType": "widget",
+                  "settings": {
+                    "title": "$160/hr",
+                    "header_size": "h3",
+                    "align": "center",
+                    "title_color": "#A8894F",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Cormorant Garamond",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 38,
+                      "sizes": []
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 30,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "800",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.1,
+                      "sizes": []
+                    },
+                    "typography_line_height_mobile": {
+                      "unit": "em",
+                      "size": 1.18,
+                      "sizes": []
+                    },
+                    "typography_letter_spacing": {
+                      "unit": "px",
+                      "size": -0.5,
+                      "sizes": []
+                    },
+                    "_animation": "fadeInUp",
+                    "_animation_delay": 210
+                  },
+                  "elements": [],
+                  "widgetType": "heading"
+                },
+                {
+                  "id": "7555093",
+                  "elType": "widget",
+                  "settings": {
+                    "editor": "<p>Delivery & installation, 2 installers + truck</p>",
+                    "align": "center",
+                    "text_color": "#9AA4BC",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Inter",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 14,
+                      "sizes": []
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 15,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "400",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.7,
+                      "sizes": []
+                    },
+                    "_animation": "fadeInUp",
+                    "_animation_delay": 250
+                  },
+                  "elements": [],
+                  "widgetType": "text-editor"
+                }
+              ],
+              "isInner": true
+            }
+          ],
+          "isInner": true
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "379df61",
+      "elType": "container",
+      "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "flex_align_items": "center",
+        "flex_justify_content": "center",
+        "padding": {
+          "unit": "px",
+          "top": "120",
+          "right": "24",
+          "bottom": "120",
+          "left": "24",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "64",
+          "right": "20",
+          "bottom": "64",
+          "left": "20",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#FDFBF8"
+      },
+      "elements": [
+        {
+          "id": "41171e5",
+          "elType": "container",
+          "settings": {
+            "content_width": "boxed",
+            "boxed_width": {
+              "unit": "px",
+              "size": 1140,
+              "sizes": []
+            },
+            "width": {
+              "unit": "%",
+              "size": 100,
+              "sizes": []
+            },
+            "flex_direction": "column",
+            "flex_align_items": "center",
+            "flex_justify_content": "center",
+            "flex_gap": {
+              "unit": "px",
+              "size": 14,
+              "column": "14",
+              "row": "14",
+              "isLinked": true
+            }
+          },
+          "elements": [
+            {
+              "id": "239e516",
+              "elType": "widget",
+              "settings": {
+                "title": "Why companies switch to Curtis",
+                "header_size": "div",
+                "align": "center",
+                "title_color": "#A8894F",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 13,
+                  "sizes": []
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 12,
+                  "sizes": []
+                },
+                "typography_font_weight": "700",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.4,
+                  "sizes": []
+                },
+                "typography_letter_spacing": {
+                  "unit": "px",
+                  "size": 2.4,
+                  "sizes": []
+                },
+                "typography_text_transform": "uppercase",
+                "_animation": "fadeInUp"
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "d57dff6",
+              "elType": "widget",
+              "settings": {
+                "title": "An office move fails in the handoffs. We remove them.",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#2B2118",
+                "typography_typography": "custom",
+                "typography_font_family": "Cormorant Garamond",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 44,
+                  "sizes": []
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 30,
+                  "sizes": []
+                },
+                "typography_font_weight": "800",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.1,
+                  "sizes": []
+                },
+                "typography_line_height_mobile": {
+                  "unit": "em",
+                  "size": 1.18,
+                  "sizes": []
+                },
+                "typography_letter_spacing": {
+                  "unit": "px",
+                  "size": -0.5,
+                  "sizes": []
+                },
+                "_animation": "fadeInUp",
+                "_animation_delay": 80
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "6b85f1a",
+              "elType": "widget",
+              "settings": {
+                "editor": "<p>Most office moves go wrong between the people who quoted the job, the crew that shows up, and whoever is supposed to put the furniture back together. At Curtis it's one company, start to finish.</p>",
+                "align": "center",
+                "text_color": "#5C564F",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 18,
+                  "sizes": []
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 16,
+                  "sizes": []
+                },
+                "typography_font_weight": "400",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.7,
+                  "sizes": []
+                },
+                "_element_width": "initial",
+                "_element_custom_width": {
+                  "unit": "px",
+                  "size": 760,
+                  "sizes": []
+                },
+                "_element_custom_width_tablet": {
+                  "unit": "%",
+                  "size": 100,
+                  "sizes": []
+                },
+                "_element_custom_width_mobile": {
+                  "unit": "%",
+                  "size": 100,
+                  "sizes": []
+                },
+                "_animation": "fadeInUp",
+                "_animation_delay": 140
+              },
+              "elements": [],
+              "widgetType": "text-editor"
+            }
+          ],
+          "isInner": true
+        },
+        {
+          "id": "f282f10",
+          "elType": "widget",
+          "settings": {
+            "space": {
+              "unit": "px",
+              "size": 24,
+              "sizes": []
+            }
+          },
+          "elements": [],
+          "widgetType": "spacer"
+        },
+        {
+          "id": "7c68f73",
+          "elType": "container",
+          "settings": {
+            "content_width": "boxed",
+            "boxed_width": {
+              "unit": "px",
+              "size": 1140,
+              "sizes": []
+            },
+            "width": {
+              "unit": "%",
+              "size": 100,
+              "sizes": []
+            },
+            "flex_direction": "row",
+            "flex_align_items": "stretch",
+            "flex_justify_content": "center",
+            "flex_gap": {
+              "unit": "px",
+              "size": 24,
+              "column": "24",
+              "row": "24",
+              "isLinked": true
+            },
+            "flex_wrap": "wrap",
+            "flex_direction_mobile": "column"
+          },
+          "elements": [
+            {
+              "id": "cd72ac7",
+              "elType": "container",
+              "settings": {
+                "content_width": "full",
+                "flex_direction": "column",
+                "flex_align_items": "flex-start",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 12,
+                  "column": "12",
+                  "row": "12",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "32",
+                  "right": "32",
+                  "bottom": "32",
+                  "left": "32",
+                  "isLinked": false
+                },
+                "border_radius": {
+                  "unit": "px",
+                  "top": "4",
+                  "right": "4",
+                  "bottom": "4",
+                  "left": "4",
+                  "isLinked": false
+                },
+                "flex_grow": 1,
+                "flex_basis": {
+                  "unit": "px",
+                  "size": 280,
+                  "sizes": []
+                },
+                "background_background": "classic",
+                "background_color": "#FDFBF8",
+                "border_border": "solid",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": false
+                },
+                "border_color": "#E6E9F2"
+              },
+              "elements": [
+                {
+                  "id": "db803ec",
+                  "elType": "widget",
+                  "settings": {
+                    "selected_icon": {
+                      "value": "fas fa-clipboard-list",
+                      "library": "fa-solid"
+                    },
+                    "title_text": "One project manager, start to finish",
+                    "description_text": "On moves with four or more movers, a Curtis project manager plans the move with you, checks in throughout, and is the one person you call.",
+                    "position": "top",
+                    "title_size": "h3",
+                    "primary_color": "#B53C07",
+                    "title_color": "#2B2118",
+                    "description_color": "#5C564F",
+                    "text_align": "left",
+                    "icon_space": {
+                      "unit": "px",
+                      "size": 16,
+                      "sizes": []
+                    },
+                    "icon_size": {
+                      "unit": "px",
+                      "size": 32,
+                      "sizes": []
+                    },
+                    "title_typography_typography": "custom",
+                    "title_typography_font_family": "Cormorant Garamond",
+                    "title_typography_font_size": {
+                      "unit": "px",
+                      "size": 21,
+                      "sizes": []
+                    },
+                    "title_typography_font_weight": "700",
+                    "title_typography_line_height": {
+                      "unit": "em",
+                      "size": 1.3,
+                      "sizes": []
+                    },
+                    "description_typography_typography": "custom",
+                    "description_typography_font_family": "Inter",
+                    "description_typography_font_size": {
+                      "unit": "px",
+                      "size": 16,
+                      "sizes": []
+                    },
+                    "description_typography_font_weight": "400",
+                    "description_typography_line_height": {
+                      "unit": "em",
+                      "size": 1.7,
+                      "sizes": []
+                    },
+                    "_animation": "fadeInUp"
+                  },
+                  "elements": [],
+                  "widgetType": "icon-box"
+                }
+              ],
+              "isInner": true
+            },
+            {
+              "id": "f25aa63",
+              "elType": "container",
+              "settings": {
+                "content_width": "full",
+                "flex_direction": "column",
+                "flex_align_items": "flex-start",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 12,
+                  "column": "12",
+                  "row": "12",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "32",
+                  "right": "32",
+                  "bottom": "32",
+                  "left": "32",
+                  "isLinked": false
+                },
+                "border_radius": {
+                  "unit": "px",
+                  "top": "4",
+                  "right": "4",
+                  "bottom": "4",
+                  "left": "4",
+                  "isLinked": false
+                },
+                "flex_grow": 1,
+                "flex_basis": {
+                  "unit": "px",
+                  "size": 280,
+                  "sizes": []
+                },
+                "background_background": "classic",
+                "background_color": "#FDFBF8",
+                "border_border": "solid",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": false
+                },
+                "border_color": "#E6E9F2"
+              },
+              "elements": [
+                {
+                  "id": "c220b5e",
+                  "elType": "widget",
+                  "settings": {
+                    "selected_icon": {
+                      "value": "fas fa-user-shield",
+                      "library": "fa-solid"
+                    },
+                    "title_text": "Curtis employees, never subcontractors",
+                    "description_text": "Every packer, driver and installer is on the Curtis payroll. The crew leads who plan the load are the ones who unload it.",
+                    "position": "top",
+                    "title_size": "h3",
+                    "primary_color": "#B53C07",
+                    "title_color": "#2B2118",
+                    "description_color": "#5C564F",
+                    "text_align": "left",
+                    "icon_space": {
+                      "unit": "px",
+                      "size": 16,
+                      "sizes": []
+                    },
+                    "icon_size": {
+                      "unit": "px",
+                      "size": 32,
+                      "sizes": []
+                    },
+                    "title_typography_typography": "custom",
+                    "title_typography_font_family": "Cormorant Garamond",
+                    "title_typography_font_size": {
+                      "unit": "px",
+                      "size": 21,
+                      "sizes": []
+                    },
+                    "title_typography_font_weight": "700",
+                    "title_typography_line_height": {
+                      "unit": "em",
+                      "size": 1.3,
+                      "sizes": []
+                    },
+                    "description_typography_typography": "custom",
+                    "description_typography_font_family": "Inter",
+                    "description_typography_font_size": {
+                      "unit": "px",
+                      "size": 16,
+                      "sizes": []
+                    },
+                    "description_typography_font_weight": "400",
+                    "description_typography_line_height": {
+                      "unit": "em",
+                      "size": 1.7,
+                      "sizes": []
+                    },
+                    "_animation": "fadeInUp",
+                    "_animation_delay": 90
+                  },
+                  "elements": [],
+                  "widgetType": "icon-box"
+                }
+              ],
+              "isInner": true
+            },
+            {
+              "id": "ddfe86c",
+              "elType": "container",
+              "settings": {
+                "content_width": "full",
+                "flex_direction": "column",
+                "flex_align_items": "flex-start",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 12,
+                  "column": "12",
+                  "row": "12",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "32",
+                  "right": "32",
+                  "bottom": "32",
+                  "left": "32",
+                  "isLinked": false
+                },
+                "border_radius": {
+                  "unit": "px",
+                  "top": "4",
+                  "right": "4",
+                  "bottom": "4",
+                  "left": "4",
+                  "isLinked": false
+                },
+                "flex_grow": 1,
+                "flex_basis": {
+                  "unit": "px",
+                  "size": 280,
+                  "sizes": []
+                },
+                "background_background": "classic",
+                "background_color": "#FDFBF8",
+                "border_border": "solid",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": false
+                },
+                "border_color": "#E6E9F2"
+              },
+              "elements": [
+                {
+                  "id": "7341d65",
+                  "elType": "widget",
+                  "settings": {
+                    "selected_icon": {
+                      "value": "fas fa-warehouse",
+                      "library": "fa-solid"
+                    },
+                    "title_text": "Receive, inspect, store, then install",
+                    "description_text": "New furniture can be received at our Dallas warehouse, inspected for damage, and held in climate-controlled storage until the new space is ready.",
+                    "position": "top",
+                    "title_size": "h3",
+                    "primary_color": "#B53C07",
+                    "title_color": "#2B2118",
+                    "description_color": "#5C564F",
+                    "text_align": "left",
+                    "icon_space": {
+                      "unit": "px",
+                      "size": 16,
+                      "sizes": []
+                    },
+                    "icon_size": {
+                      "unit": "px",
+                      "size": 32,
+                      "sizes": []
+                    },
+                    "title_typography_typography": "custom",
+                    "title_typography_font_family": "Cormorant Garamond",
+                    "title_typography_font_size": {
+                      "unit": "px",
+                      "size": 21,
+                      "sizes": []
+                    },
+                    "title_typography_font_weight": "700",
+                    "title_typography_line_height": {
+                      "unit": "em",
+                      "size": 1.3,
+                      "sizes": []
+                    },
+                    "description_typography_typography": "custom",
+                    "description_typography_font_family": "Inter",
+                    "description_typography_font_size": {
+                      "unit": "px",
+                      "size": 16,
+                      "sizes": []
+                    },
+                    "description_typography_font_weight": "400",
+                    "description_typography_line_height": {
+                      "unit": "em",
+                      "size": 1.7,
+                      "sizes": []
+                    },
+                    "_animation": "fadeInUp",
+                    "_animation_delay": 180
+                  },
+                  "elements": [],
+                  "widgetType": "icon-box"
+                }
+              ],
+              "isInner": true
+            }
+          ],
+          "isInner": true
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "c55986a",
+      "elType": "container",
+      "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "flex_align_items": "center",
+        "flex_justify_content": "center",
+        "padding": {
+          "unit": "px",
+          "top": "120",
+          "right": "24",
+          "bottom": "120",
+          "left": "24",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "64",
+          "right": "20",
+          "bottom": "64",
+          "left": "20",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#2B2118"
+      },
+      "elements": [
+        {
+          "id": "dceea5f",
+          "elType": "container",
+          "settings": {
+            "content_width": "boxed",
+            "boxed_width": {
+              "unit": "px",
+              "size": 1140,
+              "sizes": []
+            },
+            "width": {
+              "unit": "%",
+              "size": 100,
+              "sizes": []
+            },
+            "flex_direction": "column",
+            "flex_align_items": "center",
+            "flex_justify_content": "center",
+            "flex_gap": {
+              "unit": "px",
+              "size": 14,
+              "column": "14",
+              "row": "14",
+              "isLinked": true
+            }
+          },
+          "elements": [
+            {
+              "id": "c1a5b53",
+              "elType": "widget",
+              "settings": {
+                "title": "Office moving services",
+                "header_size": "div",
+                "align": "center",
+                "title_color": "#A8894F",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 13,
+                  "sizes": []
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 12,
+                  "sizes": []
+                },
+                "typography_font_weight": "700",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.4,
+                  "sizes": []
+                },
+                "typography_letter_spacing": {
+                  "unit": "px",
+                  "size": 2.4,
+                  "sizes": []
+                },
+                "typography_text_transform": "uppercase",
+                "_animation": "fadeInUp"
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "0809185",
+              "elType": "widget",
+              "settings": {
+                "title": "Everything an office move involves, under one Dallas company",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#FDFBF8",
+                "typography_typography": "custom",
+                "typography_font_family": "Cormorant Garamond",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 44,
+                  "sizes": []
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 30,
+                  "sizes": []
+                },
+                "typography_font_weight": "800",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.1,
+                  "sizes": []
+                },
+                "typography_line_height_mobile": {
+                  "unit": "em",
+                  "size": 1.18,
+                  "sizes": []
+                },
+                "typography_letter_spacing": {
+                  "unit": "px",
+                  "size": -0.5,
+                  "sizes": []
+                },
+                "_animation": "fadeInUp",
+                "_animation_delay": 80
+              },
+              "elements": [],
+              "widgetType": "heading"
+            }
+          ],
+          "isInner": true
+        },
+        {
+          "id": "a7232c7",
+          "elType": "widget",
+          "settings": {
+            "space": {
+              "unit": "px",
+              "size": 24,
+              "sizes": []
+            }
+          },
+          "elements": [],
+          "widgetType": "spacer"
+        },
+        {
+          "id": "d6c4d7e",
+          "elType": "container",
+          "settings": {
+            "content_width": "boxed",
+            "boxed_width": {
+              "unit": "px",
+              "size": 1140,
+              "sizes": []
+            },
+            "width": {
+              "unit": "%",
+              "size": 100,
+              "sizes": []
+            },
+            "flex_direction": "row",
+            "flex_align_items": "stretch",
+            "flex_justify_content": "center",
+            "flex_gap": {
+              "unit": "px",
+              "size": 24,
+              "column": "24",
+              "row": "24",
+              "isLinked": true
+            },
+            "flex_wrap": "wrap",
+            "flex_direction_mobile": "column"
+          },
+          "elements": [
+            {
+              "id": "b32f4c3",
+              "elType": "container",
+              "settings": {
+                "content_width": "full",
+                "flex_direction": "column",
+                "flex_align_items": "flex-start",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 12,
+                  "column": "12",
+                  "row": "12",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "32",
+                  "right": "32",
+                  "bottom": "32",
+                  "left": "32",
+                  "isLinked": false
+                },
+                "border_radius": {
+                  "unit": "px",
+                  "top": "4",
+                  "right": "4",
+                  "bottom": "4",
+                  "left": "4",
+                  "isLinked": false
+                },
+                "flex_grow": 1,
+                "flex_basis": {
+                  "unit": "px",
+                  "size": 280,
+                  "sizes": []
+                },
+                "background_background": "classic",
+                "background_color": "#463A2D"
+              },
+              "elements": [
+                {
+                  "id": "e31e1e4",
+                  "elType": "widget",
+                  "settings": {
+                    "image": {
+                      "url": "https://curtisms.com/wp-content/uploads/2024/09/download-1.jpeg",
+                      "id": "",
+                      "source": "url"
+                    },
+                    "image_size": "full",
+                    "align": "left",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "2",
+                      "right": "2",
+                      "bottom": "2",
+                      "left": "2",
+                      "isLinked": false
+                    },
+                    "_animation": "fadeIn"
+                  },
+                  "elements": [],
+                  "widgetType": "image"
+                },
+                {
+                  "id": "1e15cab",
+                  "elType": "widget",
+                  "settings": {
+                    "title": "Office relocation",
+                    "header_size": "h3",
+                    "align": "left",
+                    "title_color": "#FDFBF8",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Cormorant Garamond",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 22,
+                      "sizes": []
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 20,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "800",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.1,
+                      "sizes": []
+                    },
+                    "typography_line_height_mobile": {
+                      "unit": "em",
+                      "size": 1.18,
+                      "sizes": []
+                    },
+                    "typography_letter_spacing": {
+                      "unit": "px",
+                      "size": -0.5,
+                      "sizes": []
+                    },
+                    "_animation": "fadeInUp"
+                  },
+                  "elements": [],
+                  "widgetType": "heading"
+                },
+                {
+                  "id": "29374dc",
+                  "elType": "widget",
+                  "settings": {
+                    "editor": "<p>Planning, packing, moving and setup for Dallas–Fort Worth offices, led by a project manager on larger moves.</p>",
+                    "align": "left",
+                    "text_color": "#5C564F",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Inter",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 16,
+                      "sizes": []
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 15,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "400",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.7,
+                      "sizes": []
+                    },
+                    "_animation": "fadeInUp",
+                    "_animation_delay": 40
+                  },
+                  "elements": [],
+                  "widgetType": "text-editor"
+                },
+                {
+                  "id": "656dd49",
+                  "elType": "widget",
+                  "settings": {
+                    "editor": "<p><a href=\"#contact\" style=\"color:#B53C07;font-weight:700;text-decoration:none;\">Plan your move &rarr;</a></p>",
+                    "align": "left",
+                    "text_color": "#B53C07",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Inter",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 15,
+                      "sizes": []
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 15,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "400",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.7,
+                      "sizes": []
+                    },
+                    "_animation": "fadeInUp",
+                    "_animation_delay": 80
+                  },
+                  "elements": [],
+                  "widgetType": "text-editor"
+                }
+              ],
+              "isInner": true
+            },
+            {
+              "id": "189eec4",
+              "elType": "container",
+              "settings": {
+                "content_width": "full",
+                "flex_direction": "column",
+                "flex_align_items": "flex-start",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 12,
+                  "column": "12",
+                  "row": "12",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "32",
+                  "right": "32",
+                  "bottom": "32",
+                  "left": "32",
+                  "isLinked": false
+                },
+                "border_radius": {
+                  "unit": "px",
+                  "top": "4",
+                  "right": "4",
+                  "bottom": "4",
+                  "left": "4",
+                  "isLinked": false
+                },
+                "flex_grow": 1,
+                "flex_basis": {
+                  "unit": "px",
+                  "size": 280,
+                  "sizes": []
+                },
+                "background_background": "classic",
+                "background_color": "#463A2D"
+              },
+              "elements": [
+                {
+                  "id": "c57ac3c",
+                  "elType": "widget",
+                  "settings": {
+                    "image": {
+                      "url": "https://curtisms.com/wp-content/uploads/2024/08/Angel-Install-5.jpg",
+                      "id": "",
+                      "source": "url"
+                    },
+                    "image_size": "full",
+                    "align": "left",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "2",
+                      "right": "2",
+                      "bottom": "2",
+                      "left": "2",
+                      "isLinked": false
+                    },
+                    "_animation": "fadeIn",
+                    "_animation_delay": 80
+                  },
+                  "elements": [],
+                  "widgetType": "image"
+                },
+                {
+                  "id": "c987b19",
+                  "elType": "widget",
+                  "settings": {
+                    "title": "Executive suites & boardrooms",
+                    "header_size": "h3",
+                    "align": "left",
+                    "title_color": "#FDFBF8",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Cormorant Garamond",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 22,
+                      "sizes": []
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 20,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "800",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.1,
+                      "sizes": []
+                    },
+                    "typography_line_height_mobile": {
+                      "unit": "em",
+                      "size": 1.18,
+                      "sizes": []
+                    },
+                    "typography_letter_spacing": {
+                      "unit": "px",
+                      "size": -0.5,
+                      "sizes": []
+                    },
+                    "_animation": "fadeInUp",
+                    "_animation_delay": 90
+                  },
+                  "elements": [],
+                  "widgetType": "heading"
+                },
+                {
+                  "id": "fa21a5f",
+                  "elType": "widget",
+                  "settings": {
+                    "editor": "<p>Executive furniture, boardroom tables and fine art moved with the same white glove care Curtis brings to luxury homes.</p>",
+                    "align": "left",
+                    "text_color": "#5C564F",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Inter",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 16,
+                      "sizes": []
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 15,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "400",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.7,
+                      "sizes": []
+                    },
+                    "_animation": "fadeInUp",
+                    "_animation_delay": 130
+                  },
+                  "elements": [],
+                  "widgetType": "text-editor"
+                },
+                {
+                  "id": "6b5318a",
+                  "elType": "widget",
+                  "settings": {
+                    "editor": "<p><a href=\"https://curtisms.com/services/white-glove-moving/\" style=\"color:#B53C07;font-weight:700;text-decoration:none;\">White glove moving &rarr;</a></p>",
+                    "align": "left",
+                    "text_color": "#B53C07",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Inter",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 15,
+                      "sizes": []
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 15,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "400",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.7,
+                      "sizes": []
+                    },
+                    "_animation": "fadeInUp",
+                    "_animation_delay": 170
+                  },
+                  "elements": [],
+                  "widgetType": "text-editor"
+                }
+              ],
+              "isInner": true
+            },
+            {
+              "id": "d968e78",
+              "elType": "container",
+              "settings": {
+                "content_width": "full",
+                "flex_direction": "column",
+                "flex_align_items": "flex-start",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 12,
+                  "column": "12",
+                  "row": "12",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "32",
+                  "right": "32",
+                  "bottom": "32",
+                  "left": "32",
+                  "isLinked": false
+                },
+                "border_radius": {
+                  "unit": "px",
+                  "top": "4",
+                  "right": "4",
+                  "bottom": "4",
+                  "left": "4",
+                  "isLinked": false
+                },
+                "flex_grow": 1,
+                "flex_basis": {
+                  "unit": "px",
+                  "size": 280,
+                  "sizes": []
+                },
+                "background_background": "classic",
+                "background_color": "#463A2D"
+              },
+              "elements": [
+                {
+                  "id": "6f6e689",
+                  "elType": "widget",
+                  "settings": {
+                    "image": {
+                      "url": "https://curtisms.com/wp-content/uploads/2024/08/UTjAHO3Q-1-1024x768.jpeg",
+                      "id": "",
+                      "source": "url"
+                    },
+                    "image_size": "full",
+                    "align": "left",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "2",
+                      "right": "2",
+                      "bottom": "2",
+                      "left": "2",
+                      "isLinked": false
+                    },
+                    "_animation": "fadeIn",
+                    "_animation_delay": 160
+                  },
+                  "elements": [],
+                  "widgetType": "image"
+                },
+                {
+                  "id": "cccc8d0",
+                  "elType": "widget",
+                  "settings": {
+                    "title": "Furniture delivery & installation",
+                    "header_size": "h3",
+                    "align": "left",
+                    "title_color": "#FDFBF8",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Cormorant Garamond",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 22,
+                      "sizes": []
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 20,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "800",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.1,
+                      "sizes": []
+                    },
+                    "typography_line_height_mobile": {
+                      "unit": "em",
+                      "size": 1.18,
+                      "sizes": []
+                    },
+                    "typography_letter_spacing": {
+                      "unit": "px",
+                      "size": -0.5,
+                      "sizes": []
+                    },
+                    "_animation": "fadeInUp",
+                    "_animation_delay": 180
+                  },
+                  "elements": [],
+                  "widgetType": "heading"
+                },
+                {
+                  "id": "7098851",
+                  "elType": "widget",
+                  "settings": {
+                    "editor": "<p>New office furniture delivered, assembled and placed — the service Dallas interior design firms have relied on Curtis for for years.</p>",
+                    "align": "left",
+                    "text_color": "#5C564F",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Inter",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 16,
+                      "sizes": []
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 15,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "400",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.7,
+                      "sizes": []
+                    },
+                    "_animation": "fadeInUp",
+                    "_animation_delay": 220
+                  },
+                  "elements": [],
+                  "widgetType": "text-editor"
+                },
+                {
+                  "id": "c740580",
+                  "elType": "widget",
+                  "settings": {
+                    "editor": "<p><a href=\"https://curtisms.com/services/delivery-and-installation/\" style=\"color:#B53C07;font-weight:700;text-decoration:none;\">Delivery & installation &rarr;</a></p>",
+                    "align": "left",
+                    "text_color": "#B53C07",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Inter",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 15,
+                      "sizes": []
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 15,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "400",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.7,
+                      "sizes": []
+                    },
+                    "_animation": "fadeInUp",
+                    "_animation_delay": 260
+                  },
+                  "elements": [],
+                  "widgetType": "text-editor"
+                }
+              ],
+              "isInner": true
+            },
+            {
+              "id": "0de78e2",
+              "elType": "container",
+              "settings": {
+                "content_width": "full",
+                "flex_direction": "column",
+                "flex_align_items": "flex-start",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 12,
+                  "column": "12",
+                  "row": "12",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "32",
+                  "right": "32",
+                  "bottom": "32",
+                  "left": "32",
+                  "isLinked": false
+                },
+                "border_radius": {
+                  "unit": "px",
+                  "top": "4",
+                  "right": "4",
+                  "bottom": "4",
+                  "left": "4",
+                  "isLinked": false
+                },
+                "flex_grow": 1,
+                "flex_basis": {
+                  "unit": "px",
+                  "size": 280,
+                  "sizes": []
+                },
+                "background_background": "classic",
+                "background_color": "#463A2D"
+              },
+              "elements": [
+                {
+                  "id": "41e30a5",
+                  "elType": "widget",
+                  "settings": {
+                    "image": {
+                      "url": "https://curtisms.com/wp-content/uploads/2024/08/men-in-storage.jpg",
+                      "id": "",
+                      "source": "url"
+                    },
+                    "image_size": "full",
+                    "align": "left",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "2",
+                      "right": "2",
+                      "bottom": "2",
+                      "left": "2",
+                      "isLinked": false
+                    },
+                    "_animation": "fadeIn",
+                    "_animation_delay": 240
+                  },
+                  "elements": [],
+                  "widgetType": "image"
+                },
+                {
+                  "id": "68c67fe",
+                  "elType": "widget",
+                  "settings": {
+                    "title": "Receiving, inspection & crating",
+                    "header_size": "h3",
+                    "align": "left",
+                    "title_color": "#FDFBF8",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Cormorant Garamond",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 22,
+                      "sizes": []
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 20,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "800",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.1,
+                      "sizes": []
+                    },
+                    "typography_line_height_mobile": {
+                      "unit": "em",
+                      "size": 1.18,
+                      "sizes": []
+                    },
+                    "typography_letter_spacing": {
+                      "unit": "px",
+                      "size": -0.5,
+                      "sizes": []
+                    },
+                    "_animation": "fadeInUp",
+                    "_animation_delay": 270
+                  },
+                  "elements": [],
+                  "widgetType": "heading"
+                },
+                {
+                  "id": "4a5e9ae",
+                  "elType": "widget",
+                  "settings": {
+                    "editor": "<p>Shipments received on your behalf, inspected for damage, documented, and crated for anything that needs to travel again.</p>",
+                    "align": "left",
+                    "text_color": "#5C564F",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Inter",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 16,
+                      "sizes": []
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 15,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "400",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.7,
+                      "sizes": []
+                    },
+                    "_animation": "fadeInUp",
+                    "_animation_delay": 310
+                  },
+                  "elements": [],
+                  "widgetType": "text-editor"
+                },
+                {
+                  "id": "b8a3fad",
+                  "elType": "widget",
+                  "settings": {
+                    "editor": "<p><a href=\"https://curtisms.com/services/receiving-inspection-crating-and-shipping/\" style=\"color:#B53C07;font-weight:700;text-decoration:none;\">Receiving services &rarr;</a></p>",
+                    "align": "left",
+                    "text_color": "#B53C07",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Inter",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 15,
+                      "sizes": []
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 15,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "400",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.7,
+                      "sizes": []
+                    },
+                    "_animation": "fadeInUp",
+                    "_animation_delay": 350
+                  },
+                  "elements": [],
+                  "widgetType": "text-editor"
+                }
+              ],
+              "isInner": true
+            },
+            {
+              "id": "b38330f",
+              "elType": "container",
+              "settings": {
+                "content_width": "full",
+                "flex_direction": "column",
+                "flex_align_items": "flex-start",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 12,
+                  "column": "12",
+                  "row": "12",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "32",
+                  "right": "32",
+                  "bottom": "32",
+                  "left": "32",
+                  "isLinked": false
+                },
+                "border_radius": {
+                  "unit": "px",
+                  "top": "4",
+                  "right": "4",
+                  "bottom": "4",
+                  "left": "4",
+                  "isLinked": false
+                },
+                "flex_grow": 1,
+                "flex_basis": {
+                  "unit": "px",
+                  "size": 280,
+                  "sizes": []
+                },
+                "background_background": "classic",
+                "background_color": "#463A2D"
+              },
+              "elements": [
+                {
+                  "id": "a95a902",
+                  "elType": "widget",
+                  "settings": {
+                    "image": {
+                      "url": "https://curtisms.com/wp-content/uploads/2024/08/Chandelier-Paul-4.jpg",
+                      "id": "",
+                      "source": "url"
+                    },
+                    "image_size": "full",
+                    "align": "left",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "2",
+                      "right": "2",
+                      "bottom": "2",
+                      "left": "2",
+                      "isLinked": false
+                    },
+                    "_animation": "fadeIn",
+                    "_animation_delay": 320
+                  },
+                  "elements": [],
+                  "widgetType": "image"
+                },
+                {
+                  "id": "20b0187",
+                  "elType": "widget",
+                  "settings": {
+                    "title": "Art & mirror installation",
+                    "header_size": "h3",
+                    "align": "left",
+                    "title_color": "#FDFBF8",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Cormorant Garamond",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 22,
+                      "sizes": []
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 20,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "800",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.1,
+                      "sizes": []
+                    },
+                    "typography_line_height_mobile": {
+                      "unit": "em",
+                      "size": 1.18,
+                      "sizes": []
+                    },
+                    "typography_letter_spacing": {
+                      "unit": "px",
+                      "size": -0.5,
+                      "sizes": []
+                    },
+                    "_animation": "fadeInUp",
+                    "_animation_delay": 360
+                  },
+                  "elements": [],
+                  "widgetType": "heading"
+                },
+                {
+                  "id": "314892c",
+                  "elType": "widget",
+                  "settings": {
+                    "editor": "<p>Lobby art, mirrors and statement pieces hung and installed so the new office looks finished on day one.</p>",
+                    "align": "left",
+                    "text_color": "#5C564F",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Inter",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 16,
+                      "sizes": []
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 15,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "400",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.7,
+                      "sizes": []
+                    },
+                    "_animation": "fadeInUp",
+                    "_animation_delay": 400
+                  },
+                  "elements": [],
+                  "widgetType": "text-editor"
+                },
+                {
+                  "id": "0804cff",
+                  "elType": "widget",
+                  "settings": {
+                    "editor": "<p><a href=\"https://curtisms.com/services2/art-mirror-statuary-tapestry-and-chandelier-installation-hanging/\" style=\"color:#B53C07;font-weight:700;text-decoration:none;\">Art installation &rarr;</a></p>",
+                    "align": "left",
+                    "text_color": "#B53C07",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Inter",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 15,
+                      "sizes": []
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 15,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "400",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.7,
+                      "sizes": []
+                    },
+                    "_animation": "fadeInUp",
+                    "_animation_delay": 440
+                  },
+                  "elements": [],
+                  "widgetType": "text-editor"
+                }
+              ],
+              "isInner": true
+            },
+            {
+              "id": "3f94dc7",
+              "elType": "container",
+              "settings": {
+                "content_width": "full",
+                "flex_direction": "column",
+                "flex_align_items": "flex-start",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 12,
+                  "column": "12",
+                  "row": "12",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "32",
+                  "right": "32",
+                  "bottom": "32",
+                  "left": "32",
+                  "isLinked": false
+                },
+                "border_radius": {
+                  "unit": "px",
+                  "top": "4",
+                  "right": "4",
+                  "bottom": "4",
+                  "left": "4",
+                  "isLinked": false
+                },
+                "flex_grow": 1,
+                "flex_basis": {
+                  "unit": "px",
+                  "size": 280,
+                  "sizes": []
+                },
+                "background_background": "classic",
+                "background_color": "#463A2D"
+              },
+              "elements": [
+                {
+                  "id": "0ae0475",
+                  "elType": "widget",
+                  "settings": {
+                    "image": {
+                      "url": "https://curtisms.com/wp-content/uploads/2024/11/3577593251549950599.jpeg",
+                      "id": "",
+                      "source": "url"
+                    },
+                    "image_size": "full",
+                    "align": "left",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "2",
+                      "right": "2",
+                      "bottom": "2",
+                      "left": "2",
+                      "isLinked": false
+                    },
+                    "_animation": "fadeIn",
+                    "_animation_delay": 400
+                  },
+                  "elements": [],
+                  "widgetType": "image"
+                },
+                {
+                  "id": "36f1077",
+                  "elType": "widget",
+                  "settings": {
+                    "title": "Climate-controlled storage",
+                    "header_size": "h3",
+                    "align": "left",
+                    "title_color": "#FDFBF8",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Cormorant Garamond",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 22,
+                      "sizes": []
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 20,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "800",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.1,
+                      "sizes": []
+                    },
+                    "typography_line_height_mobile": {
+                      "unit": "em",
+                      "size": 1.18,
+                      "sizes": []
+                    },
+                    "typography_letter_spacing": {
+                      "unit": "px",
+                      "size": -0.5,
+                      "sizes": []
+                    },
+                    "_animation": "fadeInUp",
+                    "_animation_delay": 450
+                  },
+                  "elements": [],
+                  "widgetType": "heading"
+                },
+                {
+                  "id": "673496d",
+                  "elType": "widget",
+                  "settings": {
+                    "editor": "<p>Furniture, files and fixtures held securely between spaces, individually catalogued, and delivered when you're ready.</p>",
+                    "align": "left",
+                    "text_color": "#5C564F",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Inter",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 16,
+                      "sizes": []
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 15,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "400",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.7,
+                      "sizes": []
+                    },
+                    "_animation": "fadeInUp",
+                    "_animation_delay": 490
+                  },
+                  "elements": [],
+                  "widgetType": "text-editor"
+                },
+                {
+                  "id": "6e0c2b9",
+                  "elType": "widget",
+                  "settings": {
+                    "editor": "<p><a href=\"https://curtisms.com/services/climate-controlled-storage/\" style=\"color:#B53C07;font-weight:700;text-decoration:none;\">Storage details &rarr;</a></p>",
+                    "align": "left",
+                    "text_color": "#B53C07",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Inter",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 15,
+                      "sizes": []
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 15,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "400",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.7,
+                      "sizes": []
+                    },
+                    "_animation": "fadeInUp",
+                    "_animation_delay": 530
+                  },
+                  "elements": [],
+                  "widgetType": "text-editor"
+                }
+              ],
+              "isInner": true
+            }
+          ],
+          "isInner": true
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "e1fe1a9",
+      "elType": "container",
+      "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "flex_align_items": "center",
+        "flex_justify_content": "center",
+        "padding": {
+          "unit": "px",
+          "top": "120",
+          "right": "24",
+          "bottom": "120",
+          "left": "24",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "64",
+          "right": "20",
+          "bottom": "64",
+          "left": "20",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#F5F1EA"
+      },
+      "elements": [
+        {
+          "id": "93d01d1",
+          "elType": "container",
+          "settings": {
+            "content_width": "boxed",
+            "boxed_width": {
+              "unit": "px",
+              "size": 1140,
+              "sizes": []
+            },
+            "width": {
+              "unit": "%",
+              "size": 100,
+              "sizes": []
+            },
+            "flex_direction": "row",
+            "flex_align_items": "center",
+            "flex_justify_content": "center",
+            "flex_gap": {
+              "unit": "px",
+              "size": 48,
+              "column": "48",
+              "row": "48",
+              "isLinked": true
+            },
+            "flex_wrap": "wrap",
+            "flex_direction_mobile": "column"
+          },
+          "elements": [
+            {
+              "id": "eabb70d",
+              "elType": "container",
+              "settings": {
+                "content_width": "full",
+                "flex_direction": "column",
+                "flex_align_items": "flex-start",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 14,
+                  "column": "14",
+                  "row": "14",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": false
+                },
+                "border_radius": {
+                  "unit": "px",
+                  "top": "4",
+                  "right": "4",
+                  "bottom": "4",
+                  "left": "4",
+                  "isLinked": false
+                },
+                "flex_grow": 1.15,
+                "flex_basis": {
+                  "unit": "px",
+                  "size": 0,
+                  "sizes": []
+                },
+                "flex_justify_content": "center"
+              },
+              "elements": [
+                {
+                  "id": "bba48b4",
+                  "elType": "widget",
+                  "settings": {
+                    "title": "Who calls us",
+                    "header_size": "div",
+                    "align": "left",
+                    "title_color": "#A8894F",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Inter",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 13,
+                      "sizes": []
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 12,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "700",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.4,
+                      "sizes": []
+                    },
+                    "typography_letter_spacing": {
+                      "unit": "px",
+                      "size": 2.4,
+                      "sizes": []
+                    },
+                    "typography_text_transform": "uppercase",
+                    "_animation": "fadeInUp"
+                  },
+                  "elements": [],
+                  "widgetType": "heading"
+                },
+                {
+                  "id": "dbb48f9",
+                  "elType": "widget",
+                  "settings": {
+                    "title": "Dallas design firms trust Curtis with their clients' offices",
+                    "header_size": "h2",
+                    "align": "left",
+                    "title_color": "#2B2118",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Cormorant Garamond",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 40,
+                      "sizes": []
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 30,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "800",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.1,
+                      "sizes": []
+                    },
+                    "typography_line_height_mobile": {
+                      "unit": "em",
+                      "size": 1.18,
+                      "sizes": []
+                    },
+                    "typography_letter_spacing": {
+                      "unit": "px",
+                      "size": -0.5,
+                      "sizes": []
+                    },
+                    "_animation": "fadeInUp",
+                    "_animation_delay": 80
+                  },
+                  "elements": [],
+                  "widgetType": "heading"
+                },
+                {
+                  "id": "4e6224e",
+                  "elType": "widget",
+                  "settings": {
+                    "editor": "<p>Commercial interior designers, showrooms and businesses across Dallas use Curtis to receive, store, deliver and install furniture — because when a client's new office opens, it has to be right.</p>",
+                    "align": "left",
+                    "text_color": "#5C564F",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Inter",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 17,
+                      "sizes": []
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 15,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "400",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.7,
+                      "sizes": []
+                    },
+                    "_animation": "fadeInUp",
+                    "_animation_delay": 140
+                  },
+                  "elements": [],
+                  "widgetType": "text-editor"
+                },
+                {
+                  "id": "51ad818",
+                  "elType": "widget",
+                  "settings": {
+                    "editor": "<p>The same planning and the same employee crews handle a single executive suite or a full office relocation.</p>",
+                    "align": "left",
+                    "text_color": "#5C564F",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Inter",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 17,
+                      "sizes": []
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 15,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "400",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.7,
+                      "sizes": []
+                    },
+                    "_animation": "fadeInUp",
+                    "_animation_delay": 200
+                  },
+                  "elements": [],
+                  "widgetType": "text-editor"
+                },
+                {
+                  "id": "d248845",
+                  "elType": "widget",
+                  "settings": {
+                    "editor": "<p style=\"margin:0\"><strong style=\"color:#B53C07\">&#10003;</strong>&nbsp;Project manager on moves with 4+ movers</p>",
+                    "align": "left",
+                    "text_color": "#2B2118",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Inter",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 16,
+                      "sizes": []
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 15,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "400",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.7,
+                      "sizes": []
+                    },
+                    "_animation": "fadeInUp",
+                    "_animation_delay": 200
+                  },
+                  "elements": [],
+                  "widgetType": "text-editor"
+                },
+                {
+                  "id": "1ede7cb",
+                  "elType": "widget",
+                  "settings": {
+                    "editor": "<p style=\"margin:0\"><strong style=\"color:#B53C07\">&#10003;</strong>&nbsp;Receiving, inspection and damage documentation</p>",
+                    "align": "left",
+                    "text_color": "#2B2118",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Inter",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 16,
+                      "sizes": []
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 15,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "400",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.7,
+                      "sizes": []
+                    },
+                    "_animation": "fadeInUp",
+                    "_animation_delay": 250
+                  },
+                  "elements": [],
+                  "widgetType": "text-editor"
+                },
+                {
+                  "id": "7d3abf0",
+                  "elType": "widget",
+                  "settings": {
+                    "editor": "<p style=\"margin:0\"><strong style=\"color:#B53C07\">&#10003;</strong>&nbsp;Furniture assembly, placement and art hanging</p>",
+                    "align": "left",
+                    "text_color": "#2B2118",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Inter",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 16,
+                      "sizes": []
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 15,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "400",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.7,
+                      "sizes": []
+                    },
+                    "_animation": "fadeInUp",
+                    "_animation_delay": 300
+                  },
+                  "elements": [],
+                  "widgetType": "text-editor"
+                },
+                {
+                  "id": "9900cd7",
+                  "elType": "widget",
+                  "settings": {
+                    "editor": "<p style=\"margin:0\"><strong style=\"color:#B53C07\">&#10003;</strong>&nbsp;Insurance & valuation coverage defined in your agreement</p>",
+                    "align": "left",
+                    "text_color": "#2B2118",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Inter",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 16,
+                      "sizes": []
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 15,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "400",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.7,
+                      "sizes": []
+                    },
+                    "_animation": "fadeInUp",
+                    "_animation_delay": 350
+                  },
+                  "elements": [],
+                  "widgetType": "text-editor"
+                },
+                {
+                  "id": "78fdd69",
+                  "elType": "widget",
+                  "settings": {
+                    "text": "Plan Your Office Move",
+                    "link": {
+                      "url": "#contact",
+                      "is_external": "",
+                      "nofollow": "",
+                      "custom_attributes": ""
+                    },
+                    "align": "center",
+                    "size": "lg",
+                    "background_color": "#B53C07",
+                    "button_text_color": "#FDFBF8",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "4",
+                      "right": "4",
+                      "bottom": "4",
+                      "left": "4",
+                      "isLinked": false
+                    },
+                    "text_padding": {
+                      "unit": "px",
+                      "top": "18",
+                      "right": "36",
+                      "bottom": "18",
+                      "left": "36",
+                      "isLinked": false
+                    },
+                    "hover_animation": "grow",
+                    "_element_width": "initial",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Inter",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 16,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "700",
+                    "typography_letter_spacing": {
+                      "unit": "px",
+                      "size": 0.2,
+                      "sizes": []
+                    },
+                    "_animation": "fadeInUp",
+                    "_animation_delay": 320
+                  },
+                  "elements": [],
+                  "widgetType": "button"
+                }
+              ],
+              "isInner": true
+            },
+            {
+              "id": "614e282",
+              "elType": "container",
+              "settings": {
+                "content_width": "full",
+                "flex_direction": "column",
+                "flex_align_items": "flex-start",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 12,
+                  "column": "12",
+                  "row": "12",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": false
+                },
+                "border_radius": {
+                  "unit": "px",
+                  "top": "4",
+                  "right": "4",
+                  "bottom": "4",
+                  "left": "4",
+                  "isLinked": false
+                },
+                "flex_grow": 1,
+                "flex_basis": {
+                  "unit": "px",
+                  "size": 0,
+                  "sizes": []
+                },
+                "flex_justify_content": "center"
+              },
+              "elements": [
+                {
+                  "id": "ae787aa",
+                  "elType": "widget",
+                  "settings": {
+                    "image": {
+                      "url": "https://curtisms.com/wp-content/uploads/2024/11/2024-11-06-171117.jpg",
+                      "id": "",
+                      "source": "url"
+                    },
+                    "image_size": "full",
+                    "align": "center",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "8",
+                      "right": "8",
+                      "bottom": "8",
+                      "left": "8",
+                      "isLinked": false
+                    },
+                    "_animation": "fadeInRight",
+                    "_animation_delay": 120
+                  },
+                  "elements": [],
+                  "widgetType": "image"
+                }
+              ],
+              "isInner": true
+            }
+          ],
+          "isInner": true
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "2b24735",
+      "elType": "container",
+      "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "flex_align_items": "center",
+        "flex_justify_content": "center",
+        "padding": {
+          "unit": "px",
+          "top": "120",
+          "right": "24",
+          "bottom": "120",
+          "left": "24",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "64",
+          "right": "20",
+          "bottom": "64",
+          "left": "20",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#2B2118"
+      },
+      "elements": [
+        {
+          "id": "c0f4044",
+          "elType": "container",
+          "settings": {
+            "content_width": "boxed",
+            "boxed_width": {
+              "unit": "px",
+              "size": 1140,
+              "sizes": []
+            },
+            "width": {
+              "unit": "%",
+              "size": 100,
+              "sizes": []
+            },
+            "flex_direction": "column",
+            "flex_align_items": "center",
+            "flex_justify_content": "center",
+            "flex_gap": {
+              "unit": "px",
+              "size": 14,
+              "column": "14",
+              "row": "14",
+              "isLinked": true
+            }
+          },
+          "elements": [
+            {
+              "id": "9a452d3",
+              "elType": "widget",
+              "settings": {
+                "title": "How a Curtis office move works",
+                "header_size": "div",
+                "align": "center",
+                "title_color": "#A8894F",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 13,
+                  "sizes": []
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 12,
+                  "sizes": []
+                },
+                "typography_font_weight": "700",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.4,
+                  "sizes": []
+                },
+                "typography_letter_spacing": {
+                  "unit": "px",
+                  "size": 2.4,
+                  "sizes": []
+                },
+                "typography_text_transform": "uppercase",
+                "_animation": "fadeInUp"
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "0a9287c",
+              "elType": "widget",
+              "settings": {
+                "title": "From walkthrough to a working office",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#FDFBF8",
+                "typography_typography": "custom",
+                "typography_font_family": "Cormorant Garamond",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 44,
+                  "sizes": []
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 30,
+                  "sizes": []
+                },
+                "typography_font_weight": "800",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.1,
+                  "sizes": []
+                },
+                "typography_line_height_mobile": {
+                  "unit": "em",
+                  "size": 1.18,
+                  "sizes": []
+                },
+                "typography_letter_spacing": {
+                  "unit": "px",
+                  "size": -0.5,
+                  "sizes": []
+                },
+                "_animation": "fadeInUp",
+                "_animation_delay": 80
+              },
+              "elements": [],
+              "widgetType": "heading"
+            }
+          ],
+          "isInner": true
+        },
+        {
+          "id": "0e055a5",
+          "elType": "widget",
+          "settings": {
+            "space": {
+              "unit": "px",
+              "size": 24,
+              "sizes": []
+            }
+          },
+          "elements": [],
+          "widgetType": "spacer"
+        },
+        {
+          "id": "6ec755a",
+          "elType": "container",
+          "settings": {
+            "content_width": "boxed",
+            "boxed_width": {
+              "unit": "px",
+              "size": 1140,
+              "sizes": []
+            },
+            "width": {
+              "unit": "%",
+              "size": 100,
+              "sizes": []
+            },
+            "flex_direction": "row",
+            "flex_align_items": "flex-start",
+            "flex_justify_content": "center",
+            "flex_gap": {
+              "unit": "px",
+              "size": 32,
+              "column": "32",
+              "row": "32",
+              "isLinked": true
+            },
+            "flex_wrap": "wrap",
+            "flex_direction_mobile": "column"
+          },
+          "elements": [
+            {
+              "id": "739423e",
+              "elType": "container",
+              "settings": {
+                "content_width": "full",
+                "flex_direction": "column",
+                "flex_align_items": "flex-start",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 12,
+                  "column": "12",
+                  "row": "12",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": false
+                },
+                "border_radius": {
+                  "unit": "px",
+                  "top": "4",
+                  "right": "4",
+                  "bottom": "4",
+                  "left": "4",
+                  "isLinked": false
+                },
+                "flex_grow": 1,
+                "flex_basis": {
+                  "unit": "px",
+                  "size": 240,
+                  "sizes": []
+                }
+              },
+              "elements": [
+                {
+                  "id": "9c3af77",
+                  "elType": "widget",
+                  "settings": {
+                    "title": "01",
+                    "header_size": "h3",
+                    "align": "left",
+                    "title_color": "#A8894F",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Cormorant Garamond",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 46,
+                      "sizes": []
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 36,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "800",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.1,
+                      "sizes": []
+                    },
+                    "typography_line_height_mobile": {
+                      "unit": "em",
+                      "size": 1.18,
+                      "sizes": []
+                    },
+                    "typography_letter_spacing": {
+                      "unit": "px",
+                      "size": -0.5,
+                      "sizes": []
+                    },
+                    "_animation": "fadeInUp"
+                  },
+                  "elements": [],
+                  "widgetType": "heading"
+                },
+                {
+                  "id": "1673fe3",
+                  "elType": "widget",
+                  "settings": {
+                    "title": "Walkthrough & plan",
+                    "header_size": "h3",
+                    "align": "left",
+                    "title_color": "#FDFBF8",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Cormorant Garamond",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 20,
+                      "sizes": []
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 18,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "800",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.1,
+                      "sizes": []
+                    },
+                    "typography_line_height_mobile": {
+                      "unit": "em",
+                      "size": 1.18,
+                      "sizes": []
+                    },
+                    "typography_letter_spacing": {
+                      "unit": "px",
+                      "size": -0.5,
+                      "sizes": []
+                    },
+                    "_animation": "fadeInUp",
+                    "_animation_delay": 40
+                  },
+                  "elements": [],
+                  "widgetType": "heading"
+                },
+                {
+                  "id": "9d64f3e",
+                  "elType": "widget",
+                  "settings": {
+                    "editor": "<p>We walk both spaces, inventory what's moving, and build the timeline, crew plan and cost with you.</p>",
+                    "align": "left",
+                    "text_color": "#5C564F",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Inter",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 15,
+                      "sizes": []
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 15,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "400",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.7,
+                      "sizes": []
+                    },
+                    "_animation": "fadeInUp",
+                    "_animation_delay": 80
+                  },
+                  "elements": [],
+                  "widgetType": "text-editor"
+                }
+              ],
+              "isInner": true
+            },
+            {
+              "id": "3034eea",
+              "elType": "container",
+              "settings": {
+                "content_width": "full",
+                "flex_direction": "column",
+                "flex_align_items": "flex-start",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 12,
+                  "column": "12",
+                  "row": "12",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": false
+                },
+                "border_radius": {
+                  "unit": "px",
+                  "top": "4",
+                  "right": "4",
+                  "bottom": "4",
+                  "left": "4",
+                  "isLinked": false
+                },
+                "flex_grow": 1,
+                "flex_basis": {
+                  "unit": "px",
+                  "size": 240,
+                  "sizes": []
+                }
+              },
+              "elements": [
+                {
+                  "id": "10d1d09",
+                  "elType": "widget",
+                  "settings": {
+                    "title": "02",
+                    "header_size": "h3",
+                    "align": "left",
+                    "title_color": "#A8894F",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Cormorant Garamond",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 46,
+                      "sizes": []
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 36,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "800",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.1,
+                      "sizes": []
+                    },
+                    "typography_line_height_mobile": {
+                      "unit": "em",
+                      "size": 1.18,
+                      "sizes": []
+                    },
+                    "typography_letter_spacing": {
+                      "unit": "px",
+                      "size": -0.5,
+                      "sizes": []
+                    },
+                    "_animation": "fadeInUp",
+                    "_animation_delay": 90
+                  },
+                  "elements": [],
+                  "widgetType": "heading"
+                },
+                {
+                  "id": "11049e1",
+                  "elType": "widget",
+                  "settings": {
+                    "title": "Pack, crate & label",
+                    "header_size": "h3",
+                    "align": "left",
+                    "title_color": "#FDFBF8",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Cormorant Garamond",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 20,
+                      "sizes": []
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 18,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "800",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.1,
+                      "sizes": []
+                    },
+                    "typography_line_height_mobile": {
+                      "unit": "em",
+                      "size": 1.18,
+                      "sizes": []
+                    },
+                    "typography_letter_spacing": {
+                      "unit": "px",
+                      "size": -0.5,
+                      "sizes": []
+                    },
+                    "_animation": "fadeInUp",
+                    "_animation_delay": 130
+                  },
+                  "elements": [],
+                  "widgetType": "heading"
+                },
+                {
+                  "id": "ffa0144",
+                  "elType": "widget",
+                  "settings": {
+                    "editor": "<p>Packing specialists wrap furniture, files and fragile pieces; anything high-value gets custom crating.</p>",
+                    "align": "left",
+                    "text_color": "#5C564F",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Inter",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 15,
+                      "sizes": []
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 15,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "400",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.7,
+                      "sizes": []
+                    },
+                    "_animation": "fadeInUp",
+                    "_animation_delay": 170
+                  },
+                  "elements": [],
+                  "widgetType": "text-editor"
+                }
+              ],
+              "isInner": true
+            },
+            {
+              "id": "6976274",
+              "elType": "container",
+              "settings": {
+                "content_width": "full",
+                "flex_direction": "column",
+                "flex_align_items": "flex-start",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 12,
+                  "column": "12",
+                  "row": "12",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": false
+                },
+                "border_radius": {
+                  "unit": "px",
+                  "top": "4",
+                  "right": "4",
+                  "bottom": "4",
+                  "left": "4",
+                  "isLinked": false
+                },
+                "flex_grow": 1,
+                "flex_basis": {
+                  "unit": "px",
+                  "size": 240,
+                  "sizes": []
+                }
+              },
+              "elements": [
+                {
+                  "id": "6ca6eba",
+                  "elType": "widget",
+                  "settings": {
+                    "title": "03",
+                    "header_size": "h3",
+                    "align": "left",
+                    "title_color": "#A8894F",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Cormorant Garamond",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 46,
+                      "sizes": []
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 36,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "800",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.1,
+                      "sizes": []
+                    },
+                    "typography_line_height_mobile": {
+                      "unit": "em",
+                      "size": 1.18,
+                      "sizes": []
+                    },
+                    "typography_letter_spacing": {
+                      "unit": "px",
+                      "size": -0.5,
+                      "sizes": []
+                    },
+                    "_animation": "fadeInUp",
+                    "_animation_delay": 180
+                  },
+                  "elements": [],
+                  "widgetType": "heading"
+                },
+                {
+                  "id": "2368552",
+                  "elType": "widget",
+                  "settings": {
+                    "title": "Move & install",
+                    "header_size": "h3",
+                    "align": "left",
+                    "title_color": "#FDFBF8",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Cormorant Garamond",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 20,
+                      "sizes": []
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 18,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "800",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.1,
+                      "sizes": []
+                    },
+                    "typography_line_height_mobile": {
+                      "unit": "em",
+                      "size": 1.18,
+                      "sizes": []
+                    },
+                    "typography_letter_spacing": {
+                      "unit": "px",
+                      "size": -0.5,
+                      "sizes": []
+                    },
+                    "_animation": "fadeInUp",
+                    "_animation_delay": 220
+                  },
+                  "elements": [],
+                  "widgetType": "heading"
+                },
+                {
+                  "id": "e195298",
+                  "elType": "widget",
+                  "settings": {
+                    "editor": "<p>Your crew leads move, unwrap, assemble and place everything to the floor plan, with your project manager on site for larger moves.</p>",
+                    "align": "left",
+                    "text_color": "#5C564F",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Inter",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 15,
+                      "sizes": []
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 15,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "400",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.7,
+                      "sizes": []
+                    },
+                    "_animation": "fadeInUp",
+                    "_animation_delay": 260
+                  },
+                  "elements": [],
+                  "widgetType": "text-editor"
+                }
+              ],
+              "isInner": true
+            },
+            {
+              "id": "2f94e90",
+              "elType": "container",
+              "settings": {
+                "content_width": "full",
+                "flex_direction": "column",
+                "flex_align_items": "flex-start",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 12,
+                  "column": "12",
+                  "row": "12",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": false
+                },
+                "border_radius": {
+                  "unit": "px",
+                  "top": "4",
+                  "right": "4",
+                  "bottom": "4",
+                  "left": "4",
+                  "isLinked": false
+                },
+                "flex_grow": 1,
+                "flex_basis": {
+                  "unit": "px",
+                  "size": 240,
+                  "sizes": []
+                }
+              },
+              "elements": [
+                {
+                  "id": "4b106c9",
+                  "elType": "widget",
+                  "settings": {
+                    "title": "04",
+                    "header_size": "h3",
+                    "align": "left",
+                    "title_color": "#A8894F",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Cormorant Garamond",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 46,
+                      "sizes": []
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 36,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "800",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.1,
+                      "sizes": []
+                    },
+                    "typography_line_height_mobile": {
+                      "unit": "em",
+                      "size": 1.18,
+                      "sizes": []
+                    },
+                    "typography_letter_spacing": {
+                      "unit": "px",
+                      "size": -0.5,
+                      "sizes": []
+                    },
+                    "_animation": "fadeInUp",
+                    "_animation_delay": 270
+                  },
+                  "elements": [],
+                  "widgetType": "heading"
+                },
+                {
+                  "id": "3fe7751",
+                  "elType": "widget",
+                  "settings": {
+                    "title": "Finish or store",
+                    "header_size": "h3",
+                    "align": "left",
+                    "title_color": "#FDFBF8",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Cormorant Garamond",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 20,
+                      "sizes": []
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 18,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "800",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.1,
+                      "sizes": []
+                    },
+                    "typography_line_height_mobile": {
+                      "unit": "em",
+                      "size": 1.18,
+                      "sizes": []
+                    },
+                    "typography_letter_spacing": {
+                      "unit": "px",
+                      "size": -0.5,
+                      "sizes": []
+                    },
+                    "_animation": "fadeInUp",
+                    "_animation_delay": 310
+                  },
+                  "elements": [],
+                  "widgetType": "heading"
+                },
+                {
+                  "id": "03d7622",
+                  "elType": "widget",
+                  "settings": {
+                    "editor": "<p>Art hung, boxes removed, punch list closed. Anything not needed yet goes into climate-controlled storage.</p>",
+                    "align": "left",
+                    "text_color": "#5C564F",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Inter",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 15,
+                      "sizes": []
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 15,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "400",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.7,
+                      "sizes": []
+                    },
+                    "_animation": "fadeInUp",
+                    "_animation_delay": 350
+                  },
+                  "elements": [],
+                  "widgetType": "text-editor"
+                }
+              ],
+              "isInner": true
+            }
+          ],
+          "isInner": true
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "2e4893f",
+      "elType": "container",
+      "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "flex_align_items": "center",
+        "flex_justify_content": "center",
+        "padding": {
+          "unit": "px",
+          "top": "120",
+          "right": "24",
+          "bottom": "120",
+          "left": "24",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "64",
+          "right": "20",
+          "bottom": "64",
+          "left": "20",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#F5F1EA"
+      },
+      "elements": [
+        {
+          "id": "fa77a3f",
+          "elType": "container",
+          "settings": {
+            "content_width": "boxed",
+            "boxed_width": {
+              "unit": "px",
+              "size": 1140,
+              "sizes": []
+            },
+            "width": {
+              "unit": "%",
+              "size": 100,
+              "sizes": []
+            },
+            "flex_direction": "column",
+            "flex_align_items": "center",
+            "flex_justify_content": "center",
+            "flex_gap": {
+              "unit": "px",
+              "size": 14,
+              "column": "14",
+              "row": "14",
+              "isLinked": true
+            }
+          },
+          "elements": [
+            {
+              "id": "edf66ca",
+              "elType": "widget",
+              "settings": {
+                "title": "From Google reviews",
+                "header_size": "div",
+                "align": "center",
+                "title_color": "#A8894F",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 13,
+                  "sizes": []
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 12,
+                  "sizes": []
+                },
+                "typography_font_weight": "700",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.4,
+                  "sizes": []
+                },
+                "typography_letter_spacing": {
+                  "unit": "px",
+                  "size": 2.4,
+                  "sizes": []
+                },
+                "typography_text_transform": "uppercase",
+                "_animation": "fadeInUp"
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "83cfc2e",
+              "elType": "widget",
+              "settings": {
+                "title": "What Dallas businesses say",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#2B2118",
+                "typography_typography": "custom",
+                "typography_font_family": "Cormorant Garamond",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 44,
+                  "sizes": []
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 30,
+                  "sizes": []
+                },
+                "typography_font_weight": "800",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.1,
+                  "sizes": []
+                },
+                "typography_line_height_mobile": {
+                  "unit": "em",
+                  "size": 1.18,
+                  "sizes": []
+                },
+                "typography_letter_spacing": {
+                  "unit": "px",
+                  "size": -0.5,
+                  "sizes": []
+                },
+                "_animation": "fadeInUp",
+                "_animation_delay": 80
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "e5c7d8c",
+              "elType": "widget",
+              "settings": {
+                "editor": "<p>Real reviews, lightly trimmed. <a href=\"https://maps.google.com/maps?cid=17056811098054460691\" target=\"_blank\" rel=\"noopener\" style=\"color:#93300A;font-weight:600\">Read all 87 reviews on Google →</a></p>",
+                "align": "center",
+                "text_color": "#5C564F",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 18,
+                  "sizes": []
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 16,
+                  "sizes": []
+                },
+                "typography_font_weight": "400",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.7,
+                  "sizes": []
+                },
+                "_element_width": "initial",
+                "_element_custom_width": {
+                  "unit": "px",
+                  "size": 760,
+                  "sizes": []
+                },
+                "_element_custom_width_tablet": {
+                  "unit": "%",
+                  "size": 100,
+                  "sizes": []
+                },
+                "_element_custom_width_mobile": {
+                  "unit": "%",
+                  "size": 100,
+                  "sizes": []
+                },
+                "_animation": "fadeInUp",
+                "_animation_delay": 140
+              },
+              "elements": [],
+              "widgetType": "text-editor"
+            }
+          ],
+          "isInner": true
+        },
+        {
+          "id": "9fb71a6",
+          "elType": "widget",
+          "settings": {
+            "space": {
+              "unit": "px",
+              "size": 24,
+              "sizes": []
+            }
+          },
+          "elements": [],
+          "widgetType": "spacer"
+        },
+        {
+          "id": "19ee15c",
+          "elType": "container",
+          "settings": {
+            "content_width": "boxed",
+            "boxed_width": {
+              "unit": "px",
+              "size": 1140,
+              "sizes": []
+            },
+            "width": {
+              "unit": "%",
+              "size": 100,
+              "sizes": []
+            },
+            "flex_direction": "row",
+            "flex_align_items": "stretch",
+            "flex_justify_content": "center",
+            "flex_gap": {
+              "unit": "px",
+              "size": 24,
+              "column": "24",
+              "row": "24",
+              "isLinked": true
+            },
+            "flex_wrap": "wrap",
+            "flex_direction_mobile": "column"
+          },
+          "elements": [
+            {
+              "id": "d39d736",
+              "elType": "container",
+              "settings": {
+                "content_width": "full",
+                "flex_direction": "column",
+                "flex_align_items": "flex-start",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 12,
+                  "column": "12",
+                  "row": "12",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "32",
+                  "right": "32",
+                  "bottom": "32",
+                  "left": "32",
+                  "isLinked": false
+                },
+                "border_radius": {
+                  "unit": "px",
+                  "top": "4",
+                  "right": "4",
+                  "bottom": "4",
+                  "left": "4",
+                  "isLinked": false
+                },
+                "flex_grow": 1,
+                "flex_basis": {
+                  "unit": "px",
+                  "size": 280,
+                  "sizes": []
+                },
+                "background_background": "classic",
+                "background_color": "#FDFBF8",
+                "border_border": "solid",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": false
+                },
+                "border_color": "#E6E9F2"
+              },
+              "elements": [
+                {
+                  "id": "8ed4896",
+                  "elType": "widget",
+                  "settings": {
+                    "testimonial_content": "Starting with Martinez, who planned the move with our client and constantly checked in on the progress… Our two leads, Sinclair and Emilio spearheaded the packing, loading and delivery with care and precision. We have used Curtis SM&S many times and will continue to do so.",
+                    "testimonial_name": "Terry Caskey",
+                    "testimonial_job": "Repeat client",
+                    "testimonial_alignment": "left",
+                    "testimonial_image_position": "aside",
+                    "content_content_color": "#2B2118",
+                    "name_text_color": "#2B2118",
+                    "job_text_color": "#5C564F",
+                    "content_typography_typography": "custom",
+                    "content_typography_font_family": "Inter",
+                    "content_typography_font_size": {
+                      "unit": "px",
+                      "size": 17,
+                      "sizes": []
+                    },
+                    "content_typography_font_weight": "400",
+                    "content_typography_line_height": {
+                      "unit": "em",
+                      "size": 1.7,
+                      "sizes": []
+                    },
+                    "_animation": "fadeInUp"
+                  },
+                  "elements": [],
+                  "widgetType": "testimonial"
+                }
+              ],
+              "isInner": true
+            },
+            {
+              "id": "0701783",
+              "elType": "container",
+              "settings": {
+                "content_width": "full",
+                "flex_direction": "column",
+                "flex_align_items": "flex-start",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 12,
+                  "column": "12",
+                  "row": "12",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "32",
+                  "right": "32",
+                  "bottom": "32",
+                  "left": "32",
+                  "isLinked": false
+                },
+                "border_radius": {
+                  "unit": "px",
+                  "top": "4",
+                  "right": "4",
+                  "bottom": "4",
+                  "left": "4",
+                  "isLinked": false
+                },
+                "flex_grow": 1,
+                "flex_basis": {
+                  "unit": "px",
+                  "size": 280,
+                  "sizes": []
+                },
+                "background_background": "classic",
+                "background_color": "#FDFBF8",
+                "border_border": "solid",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": false
+                },
+                "border_color": "#E6E9F2"
+              },
+              "elements": [
+                {
+                  "id": "b87e7e7",
+                  "elType": "widget",
+                  "settings": {
+                    "testimonial_content": "Our design firm loves working with the Curtis Moving team! They are professional on deliveries and installations, are quick to respond to emails and phone calls, and are on top of ensuring that the product they receive on our behalf is thoroughly inspected for damages and stored safely until we are ready for installation.",
+                    "testimonial_name": "Sarah Harkin",
+                    "testimonial_job": "Interior design firm",
+                    "testimonial_alignment": "left",
+                    "testimonial_image_position": "aside",
+                    "content_content_color": "#2B2118",
+                    "name_text_color": "#2B2118",
+                    "job_text_color": "#5C564F",
+                    "content_typography_typography": "custom",
+                    "content_typography_font_family": "Inter",
+                    "content_typography_font_size": {
+                      "unit": "px",
+                      "size": 17,
+                      "sizes": []
+                    },
+                    "content_typography_font_weight": "400",
+                    "content_typography_line_height": {
+                      "unit": "em",
+                      "size": 1.7,
+                      "sizes": []
+                    },
+                    "_animation": "fadeInUp",
+                    "_animation_delay": 90
+                  },
+                  "elements": [],
+                  "widgetType": "testimonial"
+                }
+              ],
+              "isInner": true
+            },
+            {
+              "id": "8b63a7a",
+              "elType": "container",
+              "settings": {
+                "content_width": "full",
+                "flex_direction": "column",
+                "flex_align_items": "flex-start",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 12,
+                  "column": "12",
+                  "row": "12",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "32",
+                  "right": "32",
+                  "bottom": "32",
+                  "left": "32",
+                  "isLinked": false
+                },
+                "border_radius": {
+                  "unit": "px",
+                  "top": "4",
+                  "right": "4",
+                  "bottom": "4",
+                  "left": "4",
+                  "isLinked": false
+                },
+                "flex_grow": 1,
+                "flex_basis": {
+                  "unit": "px",
+                  "size": 280,
+                  "sizes": []
+                },
+                "background_background": "classic",
+                "background_color": "#FDFBF8",
+                "border_border": "solid",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": false
+                },
+                "border_color": "#E6E9F2"
+              },
+              "elements": [
+                {
+                  "id": "b3d9703",
+                  "elType": "widget",
+                  "settings": {
+                    "testimonial_content": "Literally for many years I have used Curtis Delivery for All my Commercial & Residential Interior Design projects… My Client's ALWAYS speak highly of them and are so appreciative of their attention to details!!!",
+                    "testimonial_name": "Kenneth Jorns",
+                    "testimonial_job": "Commercial & residential interior design",
+                    "testimonial_alignment": "left",
+                    "testimonial_image_position": "aside",
+                    "content_content_color": "#2B2118",
+                    "name_text_color": "#2B2118",
+                    "job_text_color": "#5C564F",
+                    "content_typography_typography": "custom",
+                    "content_typography_font_family": "Inter",
+                    "content_typography_font_size": {
+                      "unit": "px",
+                      "size": 17,
+                      "sizes": []
+                    },
+                    "content_typography_font_weight": "400",
+                    "content_typography_line_height": {
+                      "unit": "em",
+                      "size": 1.7,
+                      "sizes": []
+                    },
+                    "_animation": "fadeInUp",
+                    "_animation_delay": 180
+                  },
+                  "elements": [],
+                  "widgetType": "testimonial"
+                }
+              ],
+              "isInner": true
+            }
+          ],
+          "isInner": true
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "8c0f13f",
+      "elType": "container",
+      "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "flex_align_items": "center",
+        "flex_justify_content": "center",
+        "padding": {
+          "unit": "px",
+          "top": "56",
+          "right": "24",
+          "bottom": "56",
+          "left": "24",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "64",
+          "right": "20",
+          "bottom": "64",
+          "left": "20",
+          "isLinked": false
+        },
+        "_element_id": "areas",
+        "element_id": "areas",
+        "background_background": "classic",
+        "background_color": "#2B2118"
+      },
+      "elements": [
+        {
+          "id": "61f1281",
+          "elType": "container",
+          "settings": {
+            "content_width": "boxed",
+            "boxed_width": {
+              "unit": "px",
+              "size": 1140,
+              "sizes": []
+            },
+            "width": {
+              "unit": "%",
+              "size": 100,
+              "sizes": []
+            },
+            "flex_direction": "column",
+            "flex_align_items": "center",
+            "flex_justify_content": "center",
+            "flex_gap": {
+              "unit": "px",
+              "size": 20,
+              "column": "20",
+              "row": "20",
+              "isLinked": true
+            }
+          },
+          "elements": [
+            {
+              "id": "4080bdb",
+              "elType": "widget",
+              "settings": {
+                "html": "<div style=\"text-align:center;font-family:Inter,sans-serif;color:#F5F1EA\">\n<p style=\"font-size:13px;letter-spacing:2.5px;text-transform:uppercase;color:#A8894F;font-weight:600;margin:0 0 14px\">Office moves across Dallas–Fort Worth</p>\n<p style=\"font-family:'Cormorant Garamond',serif;font-size:30px;line-height:1.3;margin:0 auto;max-width:900px\">Downtown Dallas · Uptown · Design District · Las Colinas · Addison · Plano · Frisco · Irving · Fort Worth</p>\n<p style=\"font-size:16px;color:#D8D2C8;margin:16px 0 0\">Based at 460 W Mockingbird Lane, minutes from the Dallas Design District.</p></div>"
+              },
+              "elements": [],
+              "widgetType": "html"
+            }
+          ],
+          "isInner": true
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "5228fe9",
+      "elType": "container",
+      "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "flex_align_items": "center",
+        "flex_justify_content": "center",
+        "padding": {
+          "unit": "px",
+          "top": "120",
+          "right": "24",
+          "bottom": "120",
+          "left": "24",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "64",
+          "right": "20",
+          "bottom": "64",
+          "left": "20",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#FDFBF8"
+      },
+      "elements": [
+        {
+          "id": "ba18cda",
+          "elType": "container",
+          "settings": {
+            "content_width": "boxed",
+            "boxed_width": {
+              "unit": "px",
+              "size": 1140,
+              "sizes": []
+            },
+            "width": {
+              "unit": "%",
+              "size": 100,
+              "sizes": []
+            },
+            "flex_direction": "column",
+            "flex_align_items": "center",
+            "flex_justify_content": "center",
+            "flex_gap": {
+              "unit": "px",
+              "size": 14,
+              "column": "14",
+              "row": "14",
+              "isLinked": true
+            }
+          },
+          "elements": [
+            {
+              "id": "37151a6",
+              "elType": "widget",
+              "settings": {
+                "title": "Straight answers",
+                "header_size": "div",
+                "align": "center",
+                "title_color": "#A8894F",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 13,
+                  "sizes": []
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 12,
+                  "sizes": []
+                },
+                "typography_font_weight": "700",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.4,
+                  "sizes": []
+                },
+                "typography_letter_spacing": {
+                  "unit": "px",
+                  "size": 2.4,
+                  "sizes": []
+                },
+                "typography_text_transform": "uppercase",
+                "_animation": "fadeInUp"
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "ee524d9",
+              "elType": "widget",
+              "settings": {
+                "title": "Office moving questions",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#2B2118",
+                "typography_typography": "custom",
+                "typography_font_family": "Cormorant Garamond",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 44,
+                  "sizes": []
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 30,
+                  "sizes": []
+                },
+                "typography_font_weight": "800",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.1,
+                  "sizes": []
+                },
+                "typography_line_height_mobile": {
+                  "unit": "em",
+                  "size": 1.18,
+                  "sizes": []
+                },
+                "typography_letter_spacing": {
+                  "unit": "px",
+                  "size": -0.5,
+                  "sizes": []
+                },
+                "_animation": "fadeInUp",
+                "_animation_delay": 80
+              },
+              "elements": [],
+              "widgetType": "heading"
+            }
+          ],
+          "isInner": true
+        },
+        {
+          "id": "8513b67",
+          "elType": "widget",
+          "settings": {
+            "space": {
+              "unit": "px",
+              "size": 20,
+              "sizes": []
+            }
+          },
+          "elements": [],
+          "widgetType": "spacer"
+        },
+        {
+          "id": "d29e8d9",
+          "elType": "container",
+          "settings": {
+            "content_width": "boxed",
+            "boxed_width": {
+              "unit": "px",
+              "size": 880,
+              "sizes": []
+            },
+            "width": {
+              "unit": "%",
+              "size": 100,
+              "sizes": []
+            },
+            "flex_direction": "column",
+            "flex_align_items": "center",
+            "flex_justify_content": "center",
+            "flex_gap": {
+              "unit": "px",
+              "size": 0,
+              "column": "0",
+              "row": "0",
+              "isLinked": true
+            }
+          },
+          "elements": [
+            {
+              "id": "fa4283a",
+              "elType": "widget",
+              "settings": {
+                "tabs": [
+                  {
+                    "tab_title": "How much do office movers cost in Dallas?",
+                    "tab_content": "<p>Curtis Specialized Moving & Storage publishes its Dallas rates: delivery and installation is $160 per hour for two installers and a truck (one-hour minimum), custom packing is $80 per hour per specialist, and a project manager is $90 per hour on moves with four or more movers. Full office moves are quoted after a walkthrough.</p>",
+                    "_id": "d39961d"
+                  },
+                  {
+                    "tab_title": "Do you assign a project manager to office moves?",
+                    "tab_content": "<p>Yes. On Dallas office moves with four or more movers or installers, Curtis assigns a project manager who plans the move with you, checks in on progress, and coordinates the crew leads from packing through final placement.</p>",
+                    "_id": "d430a37"
+                  },
+                  {
+                    "tab_title": "Does Curtis use subcontractors for office moves?",
+                    "tab_content": "<p>No. Every crew member on a Curtis Specialized Moving & Storage office move in Dallas is a Curtis employee — packers, drivers, installers and crew leads alike.</p>",
+                    "_id": "3b8a4d9"
+                  },
+                  {
+                    "tab_title": "Can you install office furniture and hang art?",
+                    "tab_content": "<p>Yes. Curtis delivers, assembles and places office furniture and hangs art and mirrors as part of Dallas office moves. Interior design firms and showrooms use the same delivery and installation service for their commercial clients.</p>",
+                    "_id": "145c402"
+                  },
+                  {
+                    "tab_title": "Can you store our furniture between offices?",
+                    "tab_content": "<p>Yes. Curtis receives, inspects and stores office furniture and fixtures in climate-controlled storage in Dallas, with each item catalogued, then delivers and installs everything when the new space is ready.</p>",
+                    "_id": "b51ad1f"
+                  },
+                  {
+                    "tab_title": "Are our furniture and equipment insured during the move?",
+                    "tab_content": "<p>Yes. Curtis Specialized Moving & Storage offers insurance and valuation coverage on office moves in Dallas, and the coverage for your move is defined in your client agreement before any work begins.</p>",
+                    "_id": "91d0e43"
+                  },
+                  {
+                    "tab_title": "What areas do your office movers serve?",
+                    "tab_content": "<p>Curtis is based at 460 W Mockingbird Lane in Dallas and moves offices across Dallas–Fort Worth, including Downtown Dallas, Uptown, the Design District, Las Colinas, Addison, Plano, Frisco, Irving and Fort Worth. Long-distance and interstate relocations are also available.</p>",
+                    "_id": "7ce2c96"
+                  }
+                ],
+                "title_color": "#2B2118",
+                "tab_active_color": "#B53C07",
+                "content_color": "#5C564F",
+                "border_width": {
+                  "unit": "px",
+                  "size": 1,
+                  "sizes": []
+                },
+                "border_color": "#E6E9F2",
+                "title_typography_typography": "custom",
+                "title_typography_font_family": "Cormorant Garamond",
+                "title_typography_font_size": {
+                  "unit": "px",
+                  "size": 18,
+                  "sizes": []
+                },
+                "title_typography_font_weight": "700",
+                "title_typography_line_height": {
+                  "unit": "em",
+                  "size": 1.4,
+                  "sizes": []
+                },
+                "_animation": "fadeInUp",
+                "_animation_delay": 60
+              },
+              "elements": [],
+              "widgetType": "accordion"
+            }
+          ],
+          "isInner": true
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "ddd02f1",
+      "elType": "container",
+      "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "flex_align_items": "center",
+        "flex_justify_content": "center",
+        "padding": {
+          "unit": "px",
+          "top": "84",
+          "right": "24",
+          "bottom": "84",
+          "left": "24",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "64",
+          "right": "20",
+          "bottom": "64",
+          "left": "20",
+          "isLinked": false
+        },
+        "background_background": "gradient",
+        "background_color": "#B53C07",
+        "background_color_b": "#2B2118",
+        "background_gradient_type": "linear",
+        "background_gradient_angle": {
+          "unit": "deg",
+          "size": 135,
+          "sizes": []
+        }
+      },
+      "elements": [
+        {
+          "id": "ea073d3",
+          "elType": "container",
+          "settings": {
+            "content_width": "boxed",
+            "boxed_width": {
+              "unit": "px",
+              "size": 1140,
+              "sizes": []
+            },
+            "width": {
+              "unit": "%",
+              "size": 100,
+              "sizes": []
+            },
+            "flex_direction": "column",
+            "flex_align_items": "center",
+            "flex_justify_content": "center",
+            "flex_gap": {
+              "unit": "px",
+              "size": 14,
+              "column": "14",
+              "row": "14",
+              "isLinked": true
+            }
+          },
+          "elements": [
+            {
+              "id": "a3a5f0a",
+              "elType": "widget",
+              "settings": {
+                "title": "Tell us when you need to be up and running",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#FDFBF8",
+                "typography_typography": "custom",
+                "typography_font_family": "Cormorant Garamond",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 42,
+                  "sizes": []
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 28,
+                  "sizes": []
+                },
+                "typography_font_weight": "800",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.1,
+                  "sizes": []
+                },
+                "typography_line_height_mobile": {
+                  "unit": "em",
+                  "size": 1.18,
+                  "sizes": []
+                },
+                "typography_letter_spacing": {
+                  "unit": "px",
+                  "size": -0.5,
+                  "sizes": []
+                },
+                "_animation": "fadeInUp",
+                "_animation_delay": 80
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "a00ca0e",
+              "elType": "widget",
+              "settings": {
+                "editor": "<p>A walkthrough of both spaces, a clear plan and cost up front — before anything is packed.</p>",
+                "align": "center",
+                "text_color": "#E4E7F2",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 18,
+                  "sizes": []
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 16,
+                  "sizes": []
+                },
+                "typography_font_weight": "400",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.7,
+                  "sizes": []
+                },
+                "_element_width": "initial",
+                "_element_custom_width": {
+                  "unit": "px",
+                  "size": 760,
+                  "sizes": []
+                },
+                "_element_custom_width_tablet": {
+                  "unit": "%",
+                  "size": 100,
+                  "sizes": []
+                },
+                "_element_custom_width_mobile": {
+                  "unit": "%",
+                  "size": 100,
+                  "sizes": []
+                },
+                "_animation": "fadeInUp",
+                "_animation_delay": 140
+              },
+              "elements": [],
+              "widgetType": "text-editor"
+            },
+            {
+              "id": "4774a65",
+              "elType": "container",
+              "settings": {
+                "content_width": "full",
+                "flex_direction": "row",
+                "flex_justify_content": "center",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 14,
+                  "column": "14",
+                  "row": "14",
+                  "isLinked": true
+                },
+                "flex_wrap": "wrap",
+                "padding": {
+                  "unit": "px",
+                  "top": "10",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": false
+                }
+              },
+              "elements": [
+                {
+                  "id": "38220cb",
+                  "elType": "widget",
+                  "settings": {
+                    "text": "Plan Your Office Move",
+                    "link": {
+                      "url": "#contact",
+                      "is_external": "",
+                      "nofollow": "",
+                      "custom_attributes": ""
+                    },
+                    "align": "center",
+                    "size": "lg",
+                    "background_color": "#FDFBF8",
+                    "button_text_color": "#2B2118",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "4",
+                      "right": "4",
+                      "bottom": "4",
+                      "left": "4",
+                      "isLinked": false
+                    },
+                    "text_padding": {
+                      "unit": "px",
+                      "top": "18",
+                      "right": "36",
+                      "bottom": "18",
+                      "left": "36",
+                      "isLinked": false
+                    },
+                    "hover_animation": "grow",
+                    "_element_width": "initial",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Inter",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 16,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "700",
+                    "typography_letter_spacing": {
+                      "unit": "px",
+                      "size": 0.2,
+                      "sizes": []
+                    },
+                    "_animation": "fadeInUp",
+                    "_animation_delay": 200
+                  },
+                  "elements": [],
+                  "widgetType": "button"
+                },
+                {
+                  "id": "9b327d2",
+                  "elType": "widget",
+                  "settings": {
+                    "text": "Call (214) 634-0304",
+                    "link": {
+                      "url": "tel:2146340304",
+                      "is_external": "",
+                      "nofollow": "",
+                      "custom_attributes": ""
+                    },
+                    "align": "center",
+                    "size": "lg",
+                    "background_color": "#00000000",
+                    "button_text_color": "#FDFBF8",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "4",
+                      "right": "4",
+                      "bottom": "4",
+                      "left": "4",
+                      "isLinked": false
+                    },
+                    "text_padding": {
+                      "unit": "px",
+                      "top": "18",
+                      "right": "36",
+                      "bottom": "18",
+                      "left": "36",
+                      "isLinked": false
+                    },
+                    "hover_animation": "grow",
+                    "_element_width": "initial",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Inter",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 16,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "700",
+                    "typography_letter_spacing": {
+                      "unit": "px",
+                      "size": 0.2,
+                      "sizes": []
+                    },
+                    "border_border": "solid",
+                    "border_width": {
+                      "unit": "px",
+                      "top": "2",
+                      "right": "2",
+                      "bottom": "2",
+                      "left": "2",
+                      "isLinked": false
+                    },
+                    "border_color": "#FDFBF8",
+                    "_animation": "fadeInUp",
+                    "_animation_delay": 270
+                  },
+                  "elements": [],
+                  "widgetType": "button"
+                }
+              ],
+              "isInner": true
+            }
+          ],
+          "isInner": true
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "4ae7159",
+      "elType": "container",
+      "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "flex_align_items": "center",
+        "flex_justify_content": "center",
+        "padding": {
+          "unit": "px",
+          "top": "120",
+          "right": "24",
+          "bottom": "120",
+          "left": "24",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "64",
+          "right": "20",
+          "bottom": "64",
+          "left": "20",
+          "isLinked": false
+        },
+        "_element_id": "contact",
+        "element_id": "contact",
+        "background_background": "classic",
+        "background_color": "#2B2118"
+      },
+      "elements": [
+        {
+          "id": "61c2553",
+          "elType": "container",
+          "settings": {
+            "content_width": "boxed",
+            "boxed_width": {
+              "unit": "px",
+              "size": 1140,
+              "sizes": []
+            },
+            "width": {
+              "unit": "%",
+              "size": 100,
+              "sizes": []
+            },
+            "flex_direction": "row",
+            "flex_align_items": "center",
+            "flex_justify_content": "center",
+            "flex_gap": {
+              "unit": "px",
+              "size": 40,
+              "column": "40",
+              "row": "40",
+              "isLinked": true
+            },
+            "flex_wrap": "wrap",
+            "flex_direction_mobile": "column"
+          },
+          "elements": [
+            {
+              "id": "f1c537b",
+              "elType": "container",
+              "settings": {
+                "content_width": "full",
+                "flex_direction": "column",
+                "flex_align_items": "flex-start",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 14,
+                  "column": "14",
+                  "row": "14",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": false
+                },
+                "border_radius": {
+                  "unit": "px",
+                  "top": "4",
+                  "right": "4",
+                  "bottom": "4",
+                  "left": "4",
+                  "isLinked": false
+                },
+                "flex_grow": 1,
+                "flex_basis": {
+                  "unit": "px",
+                  "size": 0,
+                  "sizes": []
+                },
+                "flex_justify_content": "center"
+              },
+              "elements": [
+                {
+                  "id": "160f29e",
+                  "elType": "widget",
+                  "settings": {
+                    "title": "Office move consultation",
+                    "header_size": "div",
+                    "align": "left",
+                    "title_color": "#A8894F",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Inter",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 13,
+                      "sizes": []
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 12,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "700",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.4,
+                      "sizes": []
+                    },
+                    "typography_letter_spacing": {
+                      "unit": "px",
+                      "size": 2.4,
+                      "sizes": []
+                    },
+                    "typography_text_transform": "uppercase",
+                    "_animation": "fadeInUp"
+                  },
+                  "elements": [],
+                  "widgetType": "heading"
+                },
+                {
+                  "id": "d1c1895",
+                  "elType": "widget",
+                  "settings": {
+                    "title": "Start with a walkthrough",
+                    "header_size": "h2",
+                    "align": "left",
+                    "title_color": "#FDFBF8",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Cormorant Garamond",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 44,
+                      "sizes": []
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 30,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "800",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.1,
+                      "sizes": []
+                    },
+                    "typography_line_height_mobile": {
+                      "unit": "em",
+                      "size": 1.18,
+                      "sizes": []
+                    },
+                    "typography_letter_spacing": {
+                      "unit": "px",
+                      "size": -0.5,
+                      "sizes": []
+                    },
+                    "_animation": "fadeInUp",
+                    "_animation_delay": 80
+                  },
+                  "elements": [],
+                  "widgetType": "heading"
+                },
+                {
+                  "id": "65bb519",
+                  "elType": "widget",
+                  "settings": {
+                    "editor": "<p>Tell us where you're moving from and to, roughly when, and anything that needs special handling. A member of our Dallas team will reach out to schedule a walkthrough.</p>",
+                    "align": "left",
+                    "text_color": "#C3CADB",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Inter",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 18,
+                      "sizes": []
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 16,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "400",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.7,
+                      "sizes": []
+                    },
+                    "_element_custom_width_tablet": {
+                      "unit": "%",
+                      "size": 100,
+                      "sizes": []
+                    },
+                    "_element_custom_width_mobile": {
+                      "unit": "%",
+                      "size": 100,
+                      "sizes": []
+                    },
+                    "_animation": "fadeInUp",
+                    "_animation_delay": 140
+                  },
+                  "elements": [],
+                  "widgetType": "text-editor"
+                },
+                {
+                  "id": "f566e5e",
+                  "elType": "widget",
+                  "settings": {
+                    "editor": "<p style=\"margin:0\"><strong style=\"color:#A8894F\">&#10003;</strong>&nbsp;Family-owned, serving Dallas since 2003</p>",
+                    "align": "left",
+                    "text_color": "#C3CADB",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Inter",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 16,
+                      "sizes": []
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 15,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "400",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.7,
+                      "sizes": []
+                    },
+                    "_animation": "fadeInUp",
+                    "_animation_delay": 180
+                  },
+                  "elements": [],
+                  "widgetType": "text-editor"
+                },
+                {
+                  "id": "5385d98",
+                  "elType": "widget",
+                  "settings": {
+                    "editor": "<p style=\"margin:0\"><strong style=\"color:#A8894F\">&#10003;</strong>&nbsp;Every crew member a Curtis employee</p>",
+                    "align": "left",
+                    "text_color": "#C3CADB",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Inter",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 16,
+                      "sizes": []
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 15,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "400",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.7,
+                      "sizes": []
+                    },
+                    "_animation": "fadeInUp",
+                    "_animation_delay": 230
+                  },
+                  "elements": [],
+                  "widgetType": "text-editor"
+                },
+                {
+                  "id": "b1c098d",
+                  "elType": "widget",
+                  "settings": {
+                    "editor": "<p style=\"margin:0\"><strong style=\"color:#A8894F\">&#10003;</strong>&nbsp;Project manager on moves with 4+ movers</p>",
+                    "align": "left",
+                    "text_color": "#C3CADB",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Inter",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 16,
+                      "sizes": []
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 15,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "400",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.7,
+                      "sizes": []
+                    },
+                    "_animation": "fadeInUp",
+                    "_animation_delay": 280
+                  },
+                  "elements": [],
+                  "widgetType": "text-editor"
+                },
+                {
+                  "id": "465bd6d",
+                  "elType": "widget",
+                  "settings": {
+                    "editor": "<p style=\"margin:0\"><strong style=\"color:#A8894F\">&#10003;</strong>&nbsp;Office hours Monday–Friday, 8am–5pm</p>",
+                    "align": "left",
+                    "text_color": "#C3CADB",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Inter",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 16,
+                      "sizes": []
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 15,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "400",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.7,
+                      "sizes": []
+                    },
+                    "_animation": "fadeInUp",
+                    "_animation_delay": 330
+                  },
+                  "elements": [],
+                  "widgetType": "text-editor"
+                },
+                {
+                  "id": "c8e46ca",
+                  "elType": "widget",
+                  "settings": {
+                    "title": "(214) 634-0304",
+                    "header_size": "h3",
+                    "align": "left",
+                    "title_color": "#A8894F",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Cormorant Garamond",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 32,
+                      "sizes": []
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 26,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "800",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.1,
+                      "sizes": []
+                    },
+                    "typography_line_height_mobile": {
+                      "unit": "em",
+                      "size": 1.18,
+                      "sizes": []
+                    },
+                    "typography_letter_spacing": {
+                      "unit": "px",
+                      "size": -0.5,
+                      "sizes": []
+                    },
+                    "_animation": "fadeInUp",
+                    "_animation_delay": 320
+                  },
+                  "elements": [],
+                  "widgetType": "heading"
+                }
+              ],
+              "isInner": true
+            },
+            {
+              "id": "35cd2e9",
+              "elType": "container",
+              "settings": {
+                "content_width": "full",
+                "flex_direction": "column",
+                "flex_align_items": "flex-start",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 12,
+                  "column": "12",
+                  "row": "12",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "28",
+                  "right": "28",
+                  "bottom": "28",
+                  "left": "28",
+                  "isLinked": false
+                },
+                "border_radius": {
+                  "unit": "px",
+                  "top": "4",
+                  "right": "4",
+                  "bottom": "4",
+                  "left": "4",
+                  "isLinked": false
+                },
+                "flex_grow": 1,
+                "flex_basis": {
+                  "unit": "px",
+                  "size": 0,
+                  "sizes": []
+                },
+                "background_background": "classic",
+                "background_color": "#FDFBF8"
+              },
+              "elements": [
+                {
+                  "id": "1f9039d",
+                  "elType": "widget",
+                  "settings": {
+                    "html": "<!-- TMC: paste the GoHighLevel form embed here. GHL > Sites > Forms > Integrate > Embed Code. -->\n<div style=\"padding:28px;border:1px dashed #8A93AB;border-radius:10px;color:#8A93AB;font-family:sans-serif;text-align:center;\">GHL form embed goes here</div>",
+                    "_animation": "fadeInUp",
+                    "_animation_delay": 160
+                  },
+                  "elements": [],
+                  "widgetType": "html"
+                }
+              ],
+              "isInner": true
+            }
+          ],
+          "isInner": true
+        }
+      ],
+      "isInner": false
+    }
+  ],
+  "page_settings": {
+    "hide_title": "yes",
+    "template": "elementor_header_footer"
+  },
+  "version": "0.4",
+  "title": "Office Movers — Curtis Specialized Moving & Storage, Dallas TX",
+  "type": "page"
+}
